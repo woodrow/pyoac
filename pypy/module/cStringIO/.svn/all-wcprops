@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/module/cStringIO
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/pypy/module/cStringIO/__init__.py
+END
+interp_stringio.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/module/cStringIO/interp_stringio.py
+END

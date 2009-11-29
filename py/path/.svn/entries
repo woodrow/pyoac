@@ -1,0 +1,66 @@
+8
+
+dir
+64398
+http://codespeak.net/svn/py/dist/py/path
+http://codespeak.net/svn
+
+
+
+2009-04-17T11:18:33.748286Z
+64253
+afa
+has-props
+
+svn:special svn:externals svn:needs-lock
+svn:externals
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+common.py
+file
+
+
+
+
+2009-11-16T04:58:45.000000Z
+187734608ef7b735d684f22733c7c7be
+2009-02-27T10:18:27.450373Z
+62211
+hpk
+has-props
+
+gateway
+dir
+
+svn
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:58:45.000000Z
+7ae4b9e85faaf923dbfa931be380a07d
+2007-02-04T14:27:10.694448Z
+37912
+guido
+has-props
+
+local
+dir
+
+testing
+dir
+

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/64170/py/dist/py/test
+END
+defaultconftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63361/py/dist/py/test/defaultconftest.py
+END
+parseopt.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/test/parseopt.py
+END
+pycollect.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/test/pycollect.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/test/__init__.py
+END
+custompdb.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/test/custompdb.py
+END
+conftesthandle.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/63361/py/dist/py/test/conftesthandle.py
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/test/config.py
+END
+pytestplugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/63361/py/dist/py/test/pytestplugin.py
+END
+runner.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/64170/py/dist/py/test/runner.py
+END
+outcome.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/test/outcome.py
+END
+cmdline.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/test/cmdline.py
+END
+event.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/63361/py/dist/py/test/event.py
+END
+session.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/test/session.py
+END
+compat.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/test/compat.py
+END
+collect.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/test/collect.py
+END

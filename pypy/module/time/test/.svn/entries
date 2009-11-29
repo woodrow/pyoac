@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/time/test
+http://codespeak.net/svn
+
+
+
+2006-07-13T10:38:23.843508Z
+30009
+guido
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_time.py
+file
+
+
+
+
+2009-11-16T04:55:44.000000Z
+b072126d49128c075611ebee85ef1375
+2006-07-13T10:38:23.843508Z
+30009
+guido
+has-props
+

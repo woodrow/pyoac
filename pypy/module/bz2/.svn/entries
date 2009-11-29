@@ -1,0 +1,57 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/bz2
+http://codespeak.net/svn
+
+
+
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+interp_bz2.py
+file
+
+
+
+
+2009-11-16T04:55:44.000000Z
+270fe8c043c66dfb333aaffd1c686e1d
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:44.000000Z
+6dd2e37eaa8cdf679a86a70fd015da72
+2007-12-07T20:16:58.440355Z
+49538
+arigo
+has-props
+

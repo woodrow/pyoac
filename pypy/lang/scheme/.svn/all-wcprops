@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme
+END
+procedure.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/procedure.py
+END
+r5rs_derived_expr.ss
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/r5rs_derived_expr.ss
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/TODO.txt
+END
+interactive.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/interactive.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/__init__.py
+END
+macro.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/macro.py
+END
+ssparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/ssparser.py
+END
+execution.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/execution.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/autopath.py
+END
+object.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/object.py
+END
+syntax.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/scheme/syntax.py
+END

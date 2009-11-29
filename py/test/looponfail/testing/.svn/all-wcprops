@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63361/py/dist/py/test/looponfail/testing
+END
+test_remote.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/63361/py/dist/py/test/looponfail/testing/test_remote.py
+END
+test_util.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/63361/py/dist/py/test/looponfail/testing/test_util.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/63361/py/dist/py/test/looponfail/testing/__init__.py
+END

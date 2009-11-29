@@ -1,0 +1,53 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/unicodedata/test
+http://codespeak.net/svn
+
+
+
+2009-04-17T18:06:04.638422Z
+64304
+afa
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_unicodedata.py
+file
+
+
+
+
+2009-11-16T04:55:45.000000Z
+ebf15c64a549c8e4457f29285e7a6409
+2009-04-17T18:06:04.638422Z
+64304
+afa
+has-props
+
+test_trie.py
+file
+
+
+
+
+2009-11-16T04:55:45.000000Z
+f84edf12fac6b38396e41d76b3248a18
+2008-10-22T13:07:08.761165Z
+59314
+arigo
+

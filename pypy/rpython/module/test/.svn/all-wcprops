@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test
+END
+test_ll_termios.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test/test_ll_termios.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test/__init__.py
+END
+test_posix.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test/test_posix.py
+END
+test_ll_os_stat.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test/test_ll_os_stat.py
+END
+test_ll_os_path.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test/test_ll_os_path.py
+END
+test_ll_time.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test/test_ll_time.py
+END
+test_ll_strtod.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test/test_ll_strtod.py
+END
+test_ll_os.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test/test_ll_os.py
+END
+test_ll_os_environ.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/module/test/test_ll_os_environ.py
+END

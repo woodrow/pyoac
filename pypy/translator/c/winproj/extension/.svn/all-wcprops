@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/c/winproj/extension
+END
+extension.sln
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/c/winproj/extension/extension.sln
+END
+extension.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/c/winproj/extension/extension.vcproj
+END

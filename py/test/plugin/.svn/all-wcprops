@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/63361/py/dist/py/test/plugin
+END
+pytest_resultlog.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_resultlog.py
+END
+pytest_monkeypatch.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_monkeypatch.py
+END
+pytest_eventlog.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_eventlog.py
+END
+pytest_default.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_default.py
+END
+pytest_plugintester.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_plugintester.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63361/py/dist/py/test/plugin/__init__.py
+END
+pytest_iocapture.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_iocapture.py
+END
+pytest_tmpdir.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_tmpdir.py
+END
+pytest_restdoc.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_restdoc.py
+END
+pytest_execnetcleanup.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_execnetcleanup.py
+END
+pytest_xfail.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_xfail.py
+END
+pytest_doctest.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_doctest.py
+END
+pytest_terminal.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_terminal.py
+END
+conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63361/py/dist/py/test/plugin/conftest.py
+END
+pytest_unittest.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_unittest.py
+END
+pytest_pytester.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_pytester.py
+END
+pytest_pocoo.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/test/plugin/pytest_pocoo.py
+END

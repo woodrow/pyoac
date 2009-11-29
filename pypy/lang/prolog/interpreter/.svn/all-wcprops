@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter
+END
+arithmetic.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/arithmetic.py
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/error.py
+END
+choice.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/choice.py
+END
+targetparserstandalone.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/targetparserstandalone.py
+END
+interactive.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/interactive.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/__init__.py
+END
+helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/helper.py
+END
+parsing.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/parsing.py
+END
+eclipseprologparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/eclipseprologparser.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/autopath.py
+END
+conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/conftest.py
+END
+engine.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/engine.py
+END
+translatedmain.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/translatedmain.py
+END
+term.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/term.py
+END

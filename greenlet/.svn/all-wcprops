@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/69152/greenlet/trunk/c
+END
+buildcmodule.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/69152/greenlet/trunk/c/buildcmodule.py
+END
+switch_x86_unix.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/68480/greenlet/trunk/c/switch_x86_unix.h
+END
+switch_sparc_sun_gcc.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63368/greenlet/trunk/c/switch_sparc_sun_gcc.h
+END
+switch_mips_unix.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63368/greenlet/trunk/c/switch_mips_unix.h
+END
+switch_ppc_macosx.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/63368/greenlet/trunk/c/switch_ppc_macosx.h
+END
+switch_x86_msvc.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63368/greenlet/trunk/c/switch_x86_msvc.h
+END
+_greenlet.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63371/greenlet/trunk/c/_greenlet.c
+END
+switch_amd64_unix.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/63368/greenlet/trunk/c/switch_amd64_unix.h
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/69152/greenlet/trunk/c/__init__.py
+END
+slp_platformselect.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/63368/greenlet/trunk/c/slp_platformselect.h
+END
+switch_s390_unix.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63368/greenlet/trunk/c/switch_s390_unix.h
+END
+greenlet.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63368/greenlet/trunk/c/greenlet.h
+END
+switch_ppc_unix.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63368/greenlet/trunk/c/switch_ppc_unix.h
+END

@@ -1,0 +1,207 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module
+http://codespeak.net/svn
+
+
+
+2009-04-28T13:29:02.096637Z
+64770
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+_random
+dir
+
+select
+dir
+
+clr
+dir
+
+_weakref
+dir
+
+itertools
+dir
+
+md5
+dir
+
+recparser
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+d5b0eaf0ea4aa52b0dab64b782f42a29
+2005-07-06T12:40:14.835876Z
+14328
+arigo
+has-props
+
+marshal
+dir
+
+_socket
+dir
+
+_sre
+dir
+
+math
+dir
+
+pyexpat
+dir
+
+_stackless
+dir
+
+bz2
+dir
+
+__pypy__
+dir
+
+time
+dir
+
+_codecs
+dir
+
+zlib
+dir
+
+dyngram
+dir
+
+_lsprof
+dir
+
+thread
+dir
+
+signal
+dir
+
+unicodedata
+dir
+
+termios
+dir
+
+_demo
+dir
+
+rctime
+dir
+
+readline
+dir
+
+struct
+dir
+
+errno
+dir
+
+gc
+dir
+
+_winreg
+dir
+
+mmap
+dir
+
+operator
+dir
+
+zipimport
+dir
+
+_locale
+dir
+
+_ssl
+dir
+
+crypt
+dir
+
+cStringIO
+dir
+
+rbench
+dir
+
+Numeric
+dir
+
+__builtin__
+dir
+
+_pickle_support
+dir
+
+posix
+dir
+
+symbol
+dir
+
+fcntl
+dir
+
+pypyjit
+dir
+
+_minimal_curses
+dir
+
+sha
+dir
+
+README.txt
+file
+
+
+
+
+2009-11-16T04:56:09.000000Z
+2d70e98d13d1847b80e49ca63ab19831
+2006-02-06T08:20:24.495892Z
+23058
+ericvrp
+has-props
+
+_rawffi
+dir
+
+_file
+dir
+
+sys
+dir
+

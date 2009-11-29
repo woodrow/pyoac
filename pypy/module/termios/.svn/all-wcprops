@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/module/termios
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/module/termios/__init__.py
+END
+app_termios.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/module/termios/app_termios.py
+END
+interp_termios.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/module/termios/interp_termios.py
+END

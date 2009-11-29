@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread
+END
+os_thread.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/os_thread.py
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/error.py
+END
+os_lock.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/os_lock.py
+END
+gil.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/gil.py
+END
+os_local.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/os_local.py
+END
+ll_thread.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/ll_thread.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/__init__.py
+END
+importlock.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/importlock.py
+END
+threadlocals.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/threadlocals.py
+END
+app_thread.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/module/thread/app_thread.py
+END

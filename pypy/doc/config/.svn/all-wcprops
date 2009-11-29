@@ -1,0 +1,1037 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config
+END
+objspace.usemodules.pyexpat.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.pyexpat.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/__init__.py
+END
+objspace.logbytecodes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.logbytecodes.txt
+END
+objspace.usemodules.dyngram.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.dyngram.txt
+END
+objspace.std.optimized_comparison_op.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.optimized_comparison_op.txt
+END
+objspace.disable_call_speedhacks.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.disable_call_speedhacks.txt
+END
+translation.ootype.mangle.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.ootype.mangle.txt
+END
+objspace.std.withrope.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withrope.txt
+END
+objspace.std.withtproxy.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withtproxy.txt
+END
+translation.cli.trace_calls.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.cli.trace_calls.txt
+END
+translation.fork_before.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.fork_before.txt
+END
+objspace.parser.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.parser.txt
+END
+objspace.std.withshadowtracking.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withshadowtracking.txt
+END
+translation.debug.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.debug.txt
+END
+objspace.std.withfastslice.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withfastslice.txt
+END
+objspace.usemodules.select.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.select.txt
+END
+translation.stackless.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.stackless.txt
+END
+translation.backendopt.heap2stack.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.heap2stack.txt
+END
+objspace.std.logspaceoptypes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.logspaceoptypes.txt
+END
+objspace.usemodules.math.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.math.txt
+END
+objspace.usemodules._winreg.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._winreg.txt
+END
+translation.rweakref.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.rweakref.txt
+END
+mergedblocks.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/mergedblocks.png
+END
+translation.insist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.insist.txt
+END
+translation.instrumentctl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.instrumentctl.txt
+END
+objspace.usemodules.posix.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.posix.txt
+END
+objspace.std.withprebuiltint.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withprebuiltint.txt
+END
+objspace.usemodules.Numeric.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.Numeric.txt
+END
+translation.backendopt.print_statistics.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.print_statistics.txt
+END
+translation.gcconfig.debugprint.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.gcconfig.debugprint.txt
+END
+makemodules.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/makemodules.py
+END
+objspace.usemodules.thread.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.thread.txt
+END
+translation.backendopt.profile_based_inline_heuristic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.profile_based_inline_heuristic.txt
+END
+translation.platform.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.platform.txt
+END
+translation.vanilla.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.vanilla.txt
+END
+objspace.usemodules.signal.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.signal.txt
+END
+objspace.usemodules._random.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._random.txt
+END
+objspace.usemodules.readline.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.readline.txt
+END
+objspace.usemodules.itertools.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.itertools.txt
+END
+translation.linkerflags.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.linkerflags.txt
+END
+translation.backendopt.inline_threshold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.inline_threshold.txt
+END
+objspace.usemodules._socket.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._socket.txt
+END
+objspace.usemodules.gc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.gc.txt
+END
+objspace.std.sharesmallstr.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.sharesmallstr.txt
+END
+objspace.std.withstrslice.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withstrslice.txt
+END
+translation.verbose.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.verbose.txt
+END
+objspace.usemodules.mmap.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.mmap.txt
+END
+objspace.usemodules.operator.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.operator.txt
+END
+translation.list_comprehension_operations.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.list_comprehension_operations.txt
+END
+translation.thread.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.thread.txt
+END
+index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/index.txt
+END
+objspace.std.immutable_builtintypes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.immutable_builtintypes.txt
+END
+translation.gcconfig.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.gcconfig.txt
+END
+objspace.usemodules._lsprof.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._lsprof.txt
+END
+objspace.std.getattributeshortcut.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.getattributeshortcut.txt
+END
+objspace.usemodules.symbol.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.symbol.txt
+END
+objspace.nofaking.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.nofaking.txt
+END
+objspace.lonepycfiles.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.lonepycfiles.txt
+END
+translation.noprofopt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.noprofopt.txt
+END
+translation.backend.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backend.txt
+END
+translation.gc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.gc.txt
+END
+objspace.std.withblist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withblist.txt
+END
+translation.simplifying.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.simplifying.txt
+END
+objspace.std.optimized_list_getitem.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.optimized_list_getitem.txt
+END
+translation.output.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.output.txt
+END
+objspace.std.withprebuiltchar.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withprebuiltchar.txt
+END
+translation.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.txt
+END
+translation.backendopt.clever_malloc_removal.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.clever_malloc_removal.txt
+END
+opt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/opt.txt
+END
+objspace.std.withdictmeasurement.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withdictmeasurement.txt
+END
+objspace.usemodules._stackless.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._stackless.txt
+END
+translation.backendopt.none.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.none.txt
+END
+objspace.name.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.name.txt
+END
+objspace.usemodules.zipimport.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.zipimport.txt
+END
+objspace.usemodules.time.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.time.txt
+END
+translation.backendopt.raisingop2direct_call.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.raisingop2direct_call.txt
+END
+objspace.usemodules.cStringIO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.cStringIO.txt
+END
+translation.ootype.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.ootype.txt
+END
+translation.withsmallfuncsets.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.withsmallfuncsets.txt
+END
+objspace.usepycfiles.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usepycfiles.txt
+END
+objspace.usemodules.pypyjit.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.pypyjit.txt
+END
+objspace.opcodes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.opcodes.txt
+END
+objspace.std.prebuiltintto.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.prebuiltintto.txt
+END
+translation.compilerflags.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.compilerflags.txt
+END
+objspace.usemodules.sys.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.sys.txt
+END
+objspace.opcodes.CALL_LIKELY_BUILTIN.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.opcodes.CALL_LIKELY_BUILTIN.txt
+END
+confrest.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/confrest.py
+END
+objspace.usemodules.struct.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.struct.txt
+END
+objspace.std.withsmartresizablelist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withsmartresizablelist.txt
+END
+objspace.usemodules.md5.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.md5.txt
+END
+objspace.compiler.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.compiler.txt
+END
+translation.backendopt.constfold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.constfold.txt
+END
+objspace.std.withstrjoin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withstrjoin.txt
+END
+translation.backendopt.inline_heuristic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.inline_heuristic.txt
+END
+objspace.usemodules.bz2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.bz2.txt
+END
+objspace.usemodules.rbench.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.rbench.txt
+END
+translation.backendopt.clever_malloc_removal_threshold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.clever_malloc_removal_threshold.txt
+END
+objspace.std.withchunklist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withchunklist.txt
+END
+objspace.std.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.txt
+END
+objspace.std.builtinshortcut.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.builtinshortcut.txt
+END
+objspace.geninterp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.geninterp.txt
+END
+translation.backendopt.stack_optimization.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.stack_optimization.txt
+END
+translation.cli.exception_transformer.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.cli.exception_transformer.txt
+END
+translation.backendopt.inline.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.inline.txt
+END
+objspace.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.txt
+END
+translation.profopt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.profopt.txt
+END
+objspace.usemodules.errno.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.errno.txt
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/autopath.py
+END
+translation.backendopt.mallocs.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.mallocs.txt
+END
+objspace.usemodules._sre.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._sre.txt
+END
+generate.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/generate.py
+END
+objspace.std.optimized_int_add.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.optimized_int_add.txt
+END
+objspace.usemodules.__pypy__.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.__pypy__.txt
+END
+objspace.usemodules._locale.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._locale.txt
+END
+translation.backendopt.remove_asserts.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.remove_asserts.txt
+END
+unmergedblocks.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/unmergedblocks.png
+END
+objspace.usemodules.crypt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.crypt.txt
+END
+objspace.usemodules._pickle_support.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._pickle_support.txt
+END
+objspace.usemodules.__builtin__.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.__builtin__.txt
+END
+translation.dump_static_data_info.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.dump_static_data_info.txt
+END
+objspace.usemodules.fcntl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.fcntl.txt
+END
+objspace.honor__builtins__.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.honor__builtins__.txt
+END
+objspace.usemodules._minimal_curses.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._minimal_curses.txt
+END
+translation.jit.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.jit.txt
+END
+objspace.usemodules.sha.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.sha.txt
+END
+objspace.allworkingmodules.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.allworkingmodules.txt
+END
+objspace.usemodules.clr.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.clr.txt
+END
+objspace.opcodes.CALL_METHOD.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.opcodes.CALL_METHOD.txt
+END
+translation.builtins_can_raise_exceptions.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.builtins_can_raise_exceptions.txt
+END
+objspace.usemodules.rctime.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.rctime.txt
+END
+objspace.std.withsmallint.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withsmallint.txt
+END
+objspace.usemodules.marshal.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.marshal.txt
+END
+objspace.std.withtypeversion.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withtypeversion.txt
+END
+translation.backendopt.profile_based_inline.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.profile_based_inline.txt
+END
+objspace.std.withrangelist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withrangelist.txt
+END
+translation.cli.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.cli.txt
+END
+translation.backendopt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.txt
+END
+objspace.usemodules._codecs.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._codecs.txt
+END
+objspace.usemodules._ssl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._ssl.txt
+END
+objspace.std.withsharingdict.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withsharingdict.txt
+END
+translation.gctransformer.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.gctransformer.txt
+END
+objspace.usemodules.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.txt
+END
+objspace.timing.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.timing.txt
+END
+objspace.std.withmethodcache.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withmethodcache.txt
+END
+translation.backendopt.clever_malloc_removal_heuristic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.clever_malloc_removal_heuristic.txt
+END
+translation.cc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.cc.txt
+END
+translation.gcrootfinder.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.gcrootfinder.txt
+END
+commandline.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/commandline.txt
+END
+objspace.std.withropeunicode.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withropeunicode.txt
+END
+objspace.usemodules.unicodedata.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.unicodedata.txt
+END
+objspace.std.methodcachesizeexp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.methodcachesizeexp.txt
+END
+objspace.usemodules.termios.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.termios.txt
+END
+objspace.std.withbucketdict.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withbucketdict.txt
+END
+objspace.usemodules._weakref.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._weakref.txt
+END
+objspace.usemodules._demo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._demo.txt
+END
+objspace.std.prebuiltintfrom.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.prebuiltintfrom.txt
+END
+translation.instrument.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.instrument.txt
+END
+objspace.std.withmultidict.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withmultidict.txt
+END
+objspace.usemodules.zlib.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.zlib.txt
+END
+objspace.std.withsmalldicts.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withsmalldicts.txt
+END
+objspace.std.withmethodcachecounter.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withmethodcachecounter.txt
+END
+translation.backendopt.profile_based_inline_threshold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.profile_based_inline_threshold.txt
+END
+translation.backendopt.merge_if_blocks.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.backendopt.merge_if_blocks.txt
+END
+translation.type_system.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.type_system.txt
+END
+objspace.usemodules._rawffi.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._rawffi.txt
+END
+objspace.usemodules._file.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules._file.txt
+END
+translation.sandbox.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.sandbox.txt
+END
+objspace.std.multimethods.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.multimethods.txt
+END
+objspace.usemodules.recparser.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.usemodules.recparser.txt
+END
+translation.no__thread.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.no__thread.txt
+END
+objspace.std.withmultilist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/objspace.std.withmultilist.txt
+END
+translation.countmallocs.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/config/translation.countmallocs.txt
+END

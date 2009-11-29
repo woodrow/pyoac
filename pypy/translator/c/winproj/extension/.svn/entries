@@ -1,0 +1,52 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/translator/c/winproj/extension
+http://codespeak.net/svn
+
+
+
+2007-02-04T05:57:46.863533Z
+37890
+tismer
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+extension.sln
+file
+
+
+
+
+2009-11-16T04:56:22.000000Z
+3580c3096c5388626cb420d841e63f54
+2006-02-16T16:45:39.605789Z
+23421
+tismer
+
+extension.vcproj
+file
+
+
+
+
+2009-11-16T04:56:22.000000Z
+9f620529e7a80aad30dd013f9b745c54
+2007-02-04T05:57:46.863533Z
+37890
+tismer
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/bench/test
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/bench/test/__init__.py
+END
+test_pypyresult.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/bench/test/test_pypyresult.py
+END
+test_benchmark_report.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/bench/test/test_benchmark_report.py
+END

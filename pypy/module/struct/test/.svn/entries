@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/struct/test
+http://codespeak.net/svn
+
+
+
+2008-10-30T15:33:38.167245Z
+59572
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_struct.py
+file
+
+
+
+
+2009-11-16T04:56:05.000000Z
+31b55701b53f22de1a83a69480a2a433
+2008-10-30T15:33:38.167245Z
+59572
+arigo
+has-props
+

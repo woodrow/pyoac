@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/module/_rawffi/test
+END
+test_tracker.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/module/_rawffi/test/test_tracker.py
+END
+test__rawffi.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/module/_rawffi/test/test__rawffi.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/module/_rawffi/test/__init__.py
+END
+test_nested.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/module/_rawffi/test/test_nested.py
+END
+test_struct.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/module/_rawffi/test/test_struct.py
+END

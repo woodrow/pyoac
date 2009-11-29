@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test
+END
+test_constant.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_constant.py
+END
+test_int.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_int.py
+END
+test_cast.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_cast.py
+END
+test_bool.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_bool.py
+END
+test_range.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_range.py
+END
+test_exception.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_exception.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/__init__.py
+END
+test_overflow.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_overflow.py
+END
+test_runtest.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_runtest.py
+END
+runtest.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/runtest.py
+END
+test_class.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_class.py
+END
+test_float.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_float.py
+END
+test_string.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_string.py
+END
+test_carbonpython.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_carbonpython.py
+END
+test_list.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_list.py
+END
+mylib.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/mylib.py
+END
+test_op.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_op.py
+END
+test_snippet.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_snippet.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/autopath.py
+END
+test_tuple.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_tuple.py
+END
+test_cts.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_cts.py
+END
+test_dotnet.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_dotnet.py
+END
+test_pbc.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_pbc.py
+END
+test_query.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_query.py
+END
+test_builtin.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_builtin.py
+END
+test_primitive.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_primitive.py
+END
+test_backendopt.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_backendopt.py
+END
+test_oo.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_oo.py
+END
+test_streamio.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_streamio.py
+END
+test_dict.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_dict.py
+END
+test_weakref.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_weakref.py
+END
+test_unicode.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_unicode.py
+END
+test_objectmodel.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/cli/test/test_objectmodel.py
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/module/_lsprof
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/module/_lsprof/__init__.py
+END
+interp_lsprof.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/module/_lsprof/interp_lsprof.py
+END

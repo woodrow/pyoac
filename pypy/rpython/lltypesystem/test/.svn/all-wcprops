@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/test
+END
+test_lltype.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/test/test_lltype.py
+END
+test_rtagged.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/test/test_rtagged.py
+END
+test_llarena.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/test/test_llarena.py
+END
+test_rvirtualizable.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/test/test_rvirtualizable.py
+END
+test_llmemory.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/test/test_llmemory.py
+END
+test_ll2ctypes.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/test/test_ll2ctypes.py
+END
+test_rffi.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/test/test_rffi.py
+END
+test_lloperation.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/test/test_lloperation.py
+END

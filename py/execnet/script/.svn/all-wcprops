@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/execnet/script
+END
+loop_socketserver.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/63361/py/dist/py/execnet/script/loop_socketserver.py
+END
+quitserver.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/execnet/script/quitserver.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/63361/py/dist/py/execnet/script/__init__.py
+END
+socketserver.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/execnet/script/socketserver.py
+END
+xx.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/63361/py/dist/py/execnet/script/xx.py
+END
+socketserverservice.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/63361/py/dist/py/execnet/script/socketserverservice.py
+END
+shell.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63361/py/dist/py/execnet/script/shell.py
+END

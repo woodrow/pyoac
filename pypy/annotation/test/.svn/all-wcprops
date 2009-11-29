@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/annotation/test
+END
+test_annsimplifyrpython.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/annotation/test/test_annsimplifyrpython.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/annotation/test/__init__.py
+END
+test_annrpython.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/annotation/test/test_annrpython.py
+END
+test_model.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/annotation/test/test_model.py
+END
+test_signature.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/annotation/test/test_signature.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/annotation/test/autopath.py
+END
+test_annmm.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/annotation/test/test_annmm.py
+END

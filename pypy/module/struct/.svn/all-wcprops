@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64776/pypy/dist/pypy/module/struct
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/module/struct/__init__.py
+END
+formatiterator.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/module/struct/formatiterator.py
+END
+app_struct.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/module/struct/app_struct.py
+END
+interp_struct.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/module/struct/interp_struct.py
+END

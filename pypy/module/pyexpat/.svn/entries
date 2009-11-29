@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/pyexpat
+http://codespeak.net/svn
+
+
+
+2009-04-17T14:52:19.436943Z
+64285
+afa
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+app_pyexpat.py
+file
+
+
+
+
+2009-11-16T04:55:43.000000Z
+f71bcfdc6121f72699ddce102c79bddb
+2009-03-13T13:11:01.953026Z
+62934
+afa
+has-props
+
+interp_pyexpat.py
+file
+
+
+
+
+2009-11-16T04:55:43.000000Z
+6e9c8ecd20564b361b1917f7b315b2d2
+2009-04-17T14:52:19.436943Z
+64285
+afa
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:43.000000Z
+d7e44dfb612e7eb124c7a433a3ee59c3
+2009-03-18T16:24:57.721317Z
+63045
+afa
+has-props
+

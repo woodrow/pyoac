@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-sunos5
+END
+regen
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-sunos5/regen
+END
+CDIO.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-sunos5/CDIO.py
+END
+STROPTS.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-sunos5/STROPTS.py
+END
+TYPES.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-sunos5/TYPES.py
+END
+DLFCN.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-sunos5/DLFCN.py
+END
+IN.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-sunos5/IN.py
+END
+SUNAUDIODEV.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-sunos5/SUNAUDIODEV.py
+END

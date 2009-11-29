@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/gc
+http://codespeak.net/svn
+
+
+
+2009-03-20T15:24:53.469378Z
+63143
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+app_gc.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+9a245a57407d2825577df0d9781b1c74
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+interp_gc.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+6821d001e4fe76ccb8ec2e69eadcec02
+2009-03-20T15:24:53.469378Z
+63143
+pedronis
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+2b6a05736bfcd1db20971739983542ba
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/sandbox/test
+END
+test_pypy_interact.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/sandbox/test/test_pypy_interact.py
+END
+test_sandlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/sandbox/test/test_sandlib.py
+END
+test_sandbox.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/sandbox/test/test_sandbox.py
+END
+test_vfs.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/sandbox/test/test_vfs.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/sandbox/test/__init__.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/sandbox/test/autopath.py
+END

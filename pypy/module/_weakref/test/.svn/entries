@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_weakref/test
+http://codespeak.net/svn
+
+
+
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_weakref.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+4a1bf0c7f66a8b4ebc0dbbeb142a2887
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+

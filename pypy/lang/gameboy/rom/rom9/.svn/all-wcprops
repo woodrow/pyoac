@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom9
+END
+make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom9/make.bat
+END
+rom9.asm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom9/rom9.asm
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom9/readme.txt
+END
+rom9.gb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom9/rom9.gb
+END

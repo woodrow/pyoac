@@ -1,0 +1,70 @@
+8
+
+dir
+64398
+http://codespeak.net/svn/py/dist/py/thread
+http://codespeak.net/svn
+
+
+
+2007-02-01T15:20:39.755920Z
+37741
+hpk
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+pool.py
+file
+
+
+
+
+2009-11-16T04:58:46.000000Z
+1a9904d5831f0b6228cc1494b57f137d
+2007-01-09T13:23:32.117397Z
+36352
+hpk
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:58:46.000000Z
+552dacb15f2019c8f3f74c55befa242c
+2005-04-15T15:37:15.632420Z
+10680
+hpk
+has-props
+
+testing
+dir
+
+io.py
+file
+
+
+
+
+2009-11-16T04:58:46.000000Z
+32ac99ac834bad0552327f2f9463b4c2
+2007-01-09T13:23:32.117397Z
+36352
+hpk
+has-props
+

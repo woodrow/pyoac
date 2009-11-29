@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gc
+END
+semispace.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gc/semispace.py
+END
+base.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gc/base.py
+END
+generation.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gc/generation.py
+END
+marksweep.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gc/marksweep.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gc/__init__.py
+END
+hybrid.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gc/hybrid.py
+END
+markcompact.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gc/markcompact.py
+END

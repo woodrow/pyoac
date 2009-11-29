@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem
+END
+rbuiltin.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rbuiltin.py
+END
+exceptiondata.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/exceptiondata.py
+END
+rstr.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rstr.py
+END
+rlist.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rlist.py
+END
+rgeneric.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rgeneric.py
+END
+ooopimpl.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/ooopimpl.py
+END
+ll_str.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/ll_str.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/__init__.py
+END
+rootype.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rootype.py
+END
+rdict.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rdict.py
+END
+ooregistry.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/ooregistry.py
+END
+rbuilder.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rbuilder.py
+END
+rtuple.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rtuple.py
+END
+rtupletype.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rtupletype.py
+END
+rrange.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rrange.py
+END
+ootype.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/ootype.py
+END
+rpbc.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rpbc.py
+END
+rclass.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/ootypesystem/rclass.py
+END

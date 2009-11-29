@@ -1,0 +1,437 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/69073/pypy/dist/pypy/doc
+END
+prolog-interpreter.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/prolog-interpreter.txt
+END
+confrest_oldpy.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/confrest_oldpy.py
+END
+clr-module.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/clr-module.txt
+END
+carbonpython.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/carbonpython.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/__init__.py
+END
+low-level-encapsulation.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/low-level-encapsulation.txt
+END
+contributor.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/contributor.txt
+END
+release-1.1.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64848/pypy/dist/pypy/doc/release-1.1.0.txt
+END
+release-0.7.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/release-0.7.0.txt
+END
+index-report.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/index-report.txt
+END
+release-0.9.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/release-0.9.0.txt
+END
+architecture.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/architecture.txt
+END
+objspace.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/objspace.txt
+END
+cleanup-todo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/cleanup-todo.txt
+END
+geninterp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/geninterp.txt
+END
+how-to-release.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/how-to-release.txt
+END
+svn-help.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/svn-help.txt
+END
+docindex.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64844/pypy/dist/pypy/doc/docindex.txt
+END
+maemo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/maemo.txt
+END
+coding-guide.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/coding-guide.txt
+END
+translation-aspects.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/translation-aspects.txt
+END
+eventhistory.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64844/pypy/dist/pypy/doc/eventhistory.txt
+END
+garbage_collection.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/garbage_collection.txt
+END
+parse_logs.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/parse_logs.py
+END
+download.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64848/pypy/dist/pypy/doc/download.txt
+END
+faq.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/faq.txt
+END
+old_news.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/old_news.txt
+END
+release-0.99.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/release-0.99.0.txt
+END
+_ref.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/_ref.txt
+END
+__pypy__-module.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/__pypy__-module.txt
+END
+getting-started-dev.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/getting-started-dev.txt
+END
+release-0.6.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/release-0.6.txt
+END
+extending.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/extending.txt
+END
+rtyper.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/rtyper.txt
+END
+README.Debian
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/README.Debian
+END
+navlist
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/navlist
+END
+getting-started.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/getting-started.txt
+END
+javascript-interpreter.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/javascript-interpreter.txt
+END
+index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/69073/pypy/dist/pypy/doc/index.txt
+END
+extradoc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/extradoc.txt
+END
+style.css
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/style.css
+END
+release-1.0.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/release-1.0.0.txt
+END
+interpreter-optimizations.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/interpreter-optimizations.txt
+END
+theory.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/theory.txt
+END
+redirections
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/redirections
+END
+objspace-proxies.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/objspace-proxies.txt
+END
+release-0.8.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/release-0.8.0.txt
+END
+rlib.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/rlib.txt
+END
+project-ideas.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/project-ideas.txt
+END
+ctypes-implementation.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/ctypes-implementation.txt
+END
+windows.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/windows.txt
+END
+cli-backend.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/cli-backend.txt
+END
+stackless.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/stackless.txt
+END
+buildtool.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/buildtool.txt
+END
+translation.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/translation.txt
+END
+test_redirections.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/test_redirections.py
+END
+externaltools.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/externaltools.txt
+END
+interpreter.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/interpreter.txt
+END
+glossary.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/glossary.txt
+END
+configuration.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/configuration.txt
+END
+video-index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/video-index.txt
+END
+sprint-reports.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/sprint-reports.txt
+END
+dev_method.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/dev_method.txt
+END
+distribution.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/distribution.txt
+END
+cpython_differences.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/cpython_differences.txt
+END
+getting-started-python.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/getting-started-python.txt
+END
+rffi.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/rffi.txt
+END
+parser.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/parser.txt
+END
+confrest.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/confrest.py
+END
+conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/conftest.py
+END
+sandbox.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/sandbox.txt
+END
+README.compiling
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/README.compiling
+END

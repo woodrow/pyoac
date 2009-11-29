@@ -1,0 +1,53 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/lib-python/2.5.2/plat-freebsd4
+http://codespeak.net/svn
+
+
+
+2008-09-22T20:04:52.540358Z
+58345
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+regen
+file
+
+
+
+
+2009-11-16T04:57:45.000000Z
+f38762de7858b6bfafb96a6a88e91ef6
+2008-08-11T14:59:01.228136Z
+57197
+bgola
+
+IN.py
+file
+
+
+
+
+2009-11-16T04:57:45.000000Z
+aa5bb2ce1b9e38c35c435b02852763b1
+2008-08-11T14:59:01.228136Z
+57197
+bgola
+has-props
+

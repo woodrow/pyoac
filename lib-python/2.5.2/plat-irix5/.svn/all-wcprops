@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5
+END
+SV.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/SV.py
+END
+cddb.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/cddb.py
+END
+CL_old.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/CL_old.py
+END
+AL.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/AL.py
+END
+CL.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/CL.py
+END
+flp.doc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/flp.doc
+END
+DEVICE.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/DEVICE.py
+END
+panel.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/panel.py
+END
+readcd.doc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/readcd.doc
+END
+FL.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/FL.py
+END
+GL.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/GL.py
+END
+cdplayer.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/cdplayer.py
+END
+WAIT.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/WAIT.py
+END
+IN.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/IN.py
+END
+regen
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/regen
+END
+IOCTL.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/IOCTL.py
+END
+GLWS.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/GLWS.py
+END
+panelparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/panelparser.py
+END
+torgb.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/torgb.py
+END
+GET.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/GET.py
+END
+FILE.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/FILE.py
+END
+flp.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/flp.py
+END
+readcd.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/readcd.py
+END
+ERRNO.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/ERRNO.py
+END
+jpeg.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/jpeg.py
+END
+CD.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-irix5/CD.py
+END

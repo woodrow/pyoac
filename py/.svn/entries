@@ -1,0 +1,172 @@
+8
+
+dir
+64398
+http://codespeak.net/svn/py/dist/py
+http://codespeak.net/svn
+
+
+
+2009-04-17T11:18:33.748286Z
+64253
+afa
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+env.py
+file
+
+
+
+
+2009-11-16T04:58:48.000000Z
+f27676122fd9b27ef9335ae74ea48500
+2006-05-06T08:47:46.074534Z
+26847
+jan
+has-props
+
+magic
+dir
+
+log
+dir
+
+LICENSE
+file
+
+
+
+
+2009-11-16T04:58:48.000000Z
+95c28cae896473afe1183b4eca2d4ed0
+2008-08-22T13:41:17.415690Z
+57587
+hpk
+
+compat
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:58:48.000000Z
+d48bc189025563ffdf0c9f3cc51d4df7
+2009-03-26T12:51:47.647043Z
+63360
+hpk
+has-props
+
+env.cmd
+file
+
+
+
+
+2009-11-16T04:58:48.000000Z
+dede67a97e6a067058b0020f4c891baa
+2006-05-06T08:47:46.074534Z
+26847
+jan
+has-props
+
+execnet
+dir
+
+misc
+dir
+
+xmlobj
+dir
+
+path
+dir
+
+initpkg.py
+file
+
+
+
+
+2009-11-16T04:58:48.000000Z
+0abc1acd5c87f4a1171a13e6460b157e
+2009-03-17T23:34:59.181804Z
+63016
+hpk
+has-props
+
+_com.py
+file
+
+
+
+
+2009-11-16T04:58:48.000000Z
+a50791450544f212d8cef35e4dff80d4
+2009-03-24T22:00:07.824674Z
+63300
+hpk
+has-props
+
+doc
+dir
+
+builtin
+dir
+
+thread
+dir
+
+io
+dir
+
+bin
+dir
+
+code
+dir
+
+cmdline
+dir
+
+conftest.py
+file
+
+
+
+
+2009-11-16T04:58:48.000000Z
+a6d77155c6661e71e97a3e09c3cc497c
+2009-03-26T12:50:12.641899Z
+63359
+hpk
+has-props
+
+rest
+dir
+
+tool
+dir
+
+process
+dir
+

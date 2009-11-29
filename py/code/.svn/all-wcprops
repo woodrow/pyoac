@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/64004/py/dist/py/code
+END
+code.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/63361/py/dist/py/code/code.py
+END
+frame.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/64002/py/dist/py/code/frame.py
+END
+excinfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/code/excinfo.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/code/__init__.py
+END
+source.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/code/source.py
+END
+traceback2.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/63361/py/dist/py/code/traceback2.py
+END
+safe_repr.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/code/safe_repr.py
+END

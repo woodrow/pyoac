@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/pypy/module/recparser/leftout
+END
+builders.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/module/recparser/leftout/builders.py
+END
+pgen.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/module/recparser/leftout/pgen.py
+END
+compiler.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/module/recparser/leftout/compiler.py
+END
+gen_ast.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/module/recparser/leftout/gen_ast.py
+END
+parse_grammar.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/module/recparser/leftout/parse_grammar.py
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/64253/py/dist/py/path/local
+END
+common.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/63361/py/dist/py/path/local/common.py
+END
+local.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64232/py/dist/py/path/local/local.py
+END
+win.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/path/local/win.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/63361/py/dist/py/path/local/__init__.py
+END
+posix.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/63361/py/dist/py/path/local/posix.py
+END

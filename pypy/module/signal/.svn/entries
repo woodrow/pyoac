@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/signal
+http://codespeak.net/svn
+
+
+
+2009-01-30T15:02:07.474738Z
+61460
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+app_signal.py
+file
+
+
+
+
+2009-11-16T04:55:45.000000Z
+1ea2c8912c31f9181185b473fd0ea27c
+2007-01-18T07:34:48.892189Z
+36905
+hpk
+has-props
+
+interp_signal.py
+file
+
+
+
+
+2009-11-16T04:55:45.000000Z
+28226c303017cd830208b0a02c167877
+2009-01-30T10:08:56.098161Z
+61456
+fijal
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:45.000000Z
+d9560da29bbd838bbe37bdc9a471bb61
+2009-01-30T10:08:56.098161Z
+61456
+fijal
+has-props
+

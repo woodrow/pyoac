@@ -1,0 +1,144 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/objspace
+http://codespeak.net/svn
+
+
+
+2009-04-18T02:44:10.516197Z
+64323
+benjamin
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+reflective.py
+file
+
+
+
+
+2009-11-16T04:56:14.000000Z
+aa2af3140ca767a5796b65b5b6a79a4f
+2008-10-11T17:01:14.329582Z
+59000
+arigo
+has-props
+
+thunk.py
+file
+
+
+
+
+2009-11-16T04:56:14.000000Z
+8761eb438ee1856e944958a54e34307b
+2008-10-11T17:01:14.329582Z
+59000
+arigo
+has-props
+
+trace.py
+file
+
+
+
+
+2009-11-16T04:56:14.000000Z
+406ff40befcef7aa9b90f5d2e16fb856
+2007-12-13T15:03:28.535856Z
+49719
+arigo
+has-props
+
+fake
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:14.000000Z
+d5b0eaf0ea4aa52b0dab64b782f42a29
+2005-07-06T12:40:14.835876Z
+14328
+arigo
+has-props
+
+taint.py
+file
+
+
+
+
+2009-11-16T04:56:14.000000Z
+6c7587b2e6c48cef0fd6b0ef358c92f0
+2007-03-21T22:37:46.005864Z
+40991
+cfbolz
+has-props
+
+flow
+dir
+
+descroperation.py
+file
+
+
+
+
+2009-11-16T04:56:14.000000Z
+dc8d89f085d93ae963a998fc2c066b8c
+2009-03-19T11:29:01.216743Z
+63065
+pedronis
+has-props
+
+proxy.py
+file
+
+
+
+
+2009-11-16T04:56:14.000000Z
+5469caef0746115ee9eeac07fe5ccdda
+2005-08-30T18:23:50.407899Z
+17099
+arigo
+has-props
+
+std
+dir
+
+dump.py
+file
+
+
+
+
+2009-11-16T04:56:14.000000Z
+26bbd0262866c9dbdb48196d1e927602
+2007-11-11T12:38:13.350382Z
+48558
+fijal
+has-props
+

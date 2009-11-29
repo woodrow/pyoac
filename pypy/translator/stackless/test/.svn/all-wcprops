@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/stackless/test
+END
+test_resume_point.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/stackless/test/test_resume_point.py
+END
+test_transform.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/stackless/test/test_transform.py
+END
+test_callback.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/stackless/test/test_callback.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/stackless/test/__init__.py
+END
+test_clone.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/stackless/test/test_clone.py
+END
+test_depth.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/stackless/test/test_depth.py
+END
+test_yield_current_frame_to_caller.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/stackless/test/test_yield_current_frame_to_caller.py
+END
+test_coroutine_reconstruction.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/stackless/test/test_coroutine_reconstruction.py
+END

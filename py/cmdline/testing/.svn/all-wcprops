@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/cmdline/testing
+END
+test_cmdline.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/cmdline/testing/test_cmdline.py
+END
+test_generic.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/cmdline/testing/test_generic.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/cmdline/testing/__init__.py
+END

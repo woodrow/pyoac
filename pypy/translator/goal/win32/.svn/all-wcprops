@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/goal/win32
+END
+gc_patch_windows.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/goal/win32/gc_patch_windows.py
+END

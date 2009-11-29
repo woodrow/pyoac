@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/63361/py/dist/py/magic
+END
+exprinfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/magic/exprinfo.py
+END
+invoke.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/magic/invoke.py
+END
+viewtype.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/magic/viewtype.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/magic/__init__.py
+END
+patch.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/magic/patch.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/magic/autopath.py
+END
+greenlet.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/magic/greenlet.py
+END
+assertion.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/63361/py/dist/py/magic/assertion.py
+END

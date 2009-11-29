@@ -1,0 +1,52 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages
+http://codespeak.net/svn
+
+
+
+2008-09-22T20:04:52.540358Z
+58345
+fijal
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+CodeWarrior
+dir
+
+Explorer
+dir
+
+Netscape
+dir
+
+_builtinSuites
+dir
+
+Finder
+dir
+
+StdSuites
+dir
+
+SystemEvents
+dir
+
+Terminal
+dir
+

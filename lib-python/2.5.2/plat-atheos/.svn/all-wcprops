@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-atheos
+END
+regen
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-atheos/regen
+END
+TYPES.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-atheos/TYPES.py
+END
+IN.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-atheos/IN.py
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/63361/py/dist/py/magic/testing
+END
+test_exprinfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/magic/testing/test_exprinfo.py
+END
+test_invoke.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/magic/testing/test_invoke.py
+END
+test_viewtype.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/magic/testing/test_viewtype.py
+END
+test_patch.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/magic/testing/test_patch.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/63361/py/dist/py/magic/testing/__init__.py
+END
+test_autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/magic/testing/test_autopath.py
+END
+test_assertion.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/magic/testing/test_assertion.py
+END

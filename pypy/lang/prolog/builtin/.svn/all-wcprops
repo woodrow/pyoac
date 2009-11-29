@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin
+END
+unify.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/unify.py
+END
+exception.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/exception.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/__init__.py
+END
+source.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/source.py
+END
+database.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/database.py
+END
+allsolution.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/allsolution.py
+END
+formatting.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/formatting.py
+END
+atomconstruction.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/atomconstruction.py
+END
+parseraccess.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/parseraccess.py
+END
+control.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/control.py
+END
+arithmeticbuiltin.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/arithmeticbuiltin.py
+END
+type.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/type.py
+END
+termconstruction.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/termconstruction.py
+END
+metacall.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/metacall.py
+END
+register.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/builtin/register.py
+END

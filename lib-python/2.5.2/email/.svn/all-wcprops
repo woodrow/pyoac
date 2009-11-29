@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email
+END
+header.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/header.py
+END
+charset.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/charset.py
+END
+base64mime.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/base64mime.py
+END
+parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/parser.py
+END
+errors.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/errors.py
+END
+iterators.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/iterators.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/__init__.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/utils.py
+END
+feedparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/feedparser.py
+END
+encoders.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/encoders.py
+END
+_parseaddr.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/_parseaddr.py
+END
+message.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/message.py
+END
+generator.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/generator.py
+END
+quoprimime.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/quoprimime.py
+END

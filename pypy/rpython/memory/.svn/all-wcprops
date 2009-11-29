@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory
+END
+gctypelayout.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gctypelayout.py
+END
+gcwrapper.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gcwrapper.py
+END
+lldict.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/lldict.py
+END
+support.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/support.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/__init__.py
+END
+gcheader.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gcheader.py
+END
+lltypelayout.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/lltypelayout.py
+END

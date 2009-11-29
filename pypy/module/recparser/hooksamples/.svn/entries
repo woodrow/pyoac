@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/recparser/hooksamples
+http://codespeak.net/svn
+
+
+
+2007-03-16T16:39:40.182758Z
+40589
+afayolle
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+constchanger.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+4daaeb4b96afd7c0b57218712a78798e
+2007-03-16T16:39:40.182758Z
+40589
+afayolle
+has-props
+
+tracer.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+a2249259362cd427cbd0678d96496fa9
+2007-03-16T16:39:40.182758Z
+40589
+afayolle
+has-props
+

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler
+END
+symbols.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/symbols.py
+END
+consts.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/consts.py
+END
+future.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/future.py
+END
+misc.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/misc.py
+END
+pycodegen.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/pycodegen.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/__init__.py
+END
+visitor.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/visitor.py
+END
+pyassem.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/pyassem.py
+END
+transformer.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/transformer.py
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/README.txt
+END
+syntax.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/syntax.py
+END
+ast.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/stablecompiler/ast.py
+END

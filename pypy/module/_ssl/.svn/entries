@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_ssl
+http://codespeak.net/svn
+
+
+
+2009-04-27T09:27:03.983025Z
+64718
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:07.000000Z
+ac42d2dc2632fabe12a5a73a05c29cab
+2009-04-09T14:51:25.615457Z
+63903
+afa
+has-props
+
+app_ssl.py
+file
+
+
+
+
+2009-11-16T04:56:07.000000Z
+1e2b55943b2aeb23105edad051b334c7
+2006-07-28T11:00:42.287002Z
+30679
+rhymes
+has-props
+
+interp_ssl.py
+file
+
+
+
+
+2009-11-16T04:56:07.000000Z
+2fd40065118be0c60f744bbcff94f558
+2009-04-27T09:27:03.983025Z
+64718
+pedronis
+has-props
+

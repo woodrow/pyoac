@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/64776/pypy/dist/pypy/tool
+END
+ansicolor.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/ansicolor.py
+END
+alarm.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/alarm.py
+END
+unicodefuzzer.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/unicodefuzzer.py
+END
+traceop.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/traceop.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/__init__.py
+END
+release_dates.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/release_dates.py
+END
+isolate.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/isolate.py
+END
+watchdog.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/watchdog.py
+END
+genstatistic.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/genstatistic.py
+END
+ansi_mandelbrot.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/ansi_mandelbrot.py
+END
+watchdog_nt.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/watchdog_nt.py
+END
+tls.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/tls.py
+END
+udir.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/udir.py
+END
+_enum_exceptions_broken.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/_enum_exceptions_broken.py
+END
+statistic_irc_log.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/statistic_irc_log.py
+END
+ansi_print.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/ansi_print.py
+END
+rundictbenchmarks.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/rundictbenchmarks.py
+END
+stdlib___future__.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/stdlib___future__.py
+END
+option.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/option.py
+END
+stdlib_opcode.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/stdlib_opcode.py
+END
+staticmethods.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/staticmethods.py
+END
+makerelease.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/makerelease.py
+END
+getdocstrings.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/getdocstrings.py
+END
+lsprofcalltree.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/lsprofcalltree.py
+END
+importfun.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/importfun.py
+END
+traceconfig.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/traceconfig.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/autopath.py
+END
+pydis.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pydis.py
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/error.py
+END
+isolate_slave.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/isolate_slave.py
+END
+import_graph.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/import_graph.py
+END
+readdictinfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/readdictinfo.py
+END
+pairtype.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pairtype.py
+END
+slaveproc.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/slaveproc.py
+END
+fixeol
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/fixeol
+END
+cache.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/cache.py
+END
+killsubprocess.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/killsubprocess.py
+END
+pypyrev.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pypyrev.py
+END
+descriptor.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/descriptor.py
+END
+gcc_cache.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/gcc_cache.py
+END
+statistic_over_time.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/statistic_over_time.py
+END
+sourcetools.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/sourcetools.py
+END
+uid.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/uid.py
+END
+compat.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/compat.py
+END
+asterisk.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/asterisk.py
+END

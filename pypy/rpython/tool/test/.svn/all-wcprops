@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/tool/test
+END
+test_rffi_platform.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/tool/test/test_rffi_platform.py
+END
+test_rfficache.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/tool/test/test_rfficache.py
+END
+test_mkrffi.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/tool/test/test_mkrffi.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/tool/test/__init__.py
+END
+test_c.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/tool/test/test_c.py
+END

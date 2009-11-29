@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_random/test
+http://codespeak.net/svn
+
+
+
+2009-04-19T13:01:47.262051Z
+64365
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:41.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2006-08-31T10:02:59.522865Z
+31869
+arigo
+has-props
+
+test_random.py
+file
+
+
+
+
+2009-11-16T04:55:41.000000Z
+53de9b0aa64ce2099b8c5bb4bd9831de
+2009-04-19T13:01:47.262051Z
+64365
+arigo
+has-props
+

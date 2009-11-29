@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/microbench/pybench/package
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/microbench/pybench/package/__init__.py
+END
+submodule.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/microbench/pybench/package/submodule.py
+END

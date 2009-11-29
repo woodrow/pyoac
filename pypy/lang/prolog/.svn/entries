@@ -1,0 +1,47 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lang/prolog
+http://codespeak.net/svn
+
+
+
+2009-04-17T10:00:17.180412Z
+64234
+cfbolz
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+interpreter
+dir
+
+builtin
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:16.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2006-11-12T21:16:10.426380Z
+34536
+cfbolz
+has-props
+

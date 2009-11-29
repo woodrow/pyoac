@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites
+END
+Required_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/Required_Suite.py
+END
+Standard_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/Standard_Suite.py
+END
+Text_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/Text_Suite.py
+END
+Type_Names_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/Type_Names_Suite.py
+END
+AppleScript_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/AppleScript_Suite.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/__init__.py
+END
+Table_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/Table_Suite.py
+END
+QuickDraw_Graphics_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/QuickDraw_Graphics_Suite.py
+END
+QuickDraw_Graphics_Suppleme.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/QuickDraw_Graphics_Suppleme.py
+END
+Macintosh_Connectivity_Clas.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/StdSuites/Macintosh_Connectivity_Clas.py
+END

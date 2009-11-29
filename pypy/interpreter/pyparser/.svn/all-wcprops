@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/error.py
+END
+pytoken.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/pytoken.py
+END
+astbuilder.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/astbuilder.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/__init__.py
+END
+tuplebuilder.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/tuplebuilder.py
+END
+parsestring.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/parsestring.py
+END
+pytokenize.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/pytokenize.py
+END
+ebnfparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/ebnfparse.py
+END
+symbol.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/symbol.py
+END
+syntaxtree.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/syntaxtree.py
+END
+future.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/future.py
+END
+ebnflexer.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/ebnflexer.py
+END
+automata.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/automata.py
+END
+pythonparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/pythonparse.py
+END
+pysymbol.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/pysymbol.py
+END
+pythonutil.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/pythonutil.py
+END
+pythonlexer.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/pythonlexer.py
+END
+ebnfgrammar.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/ebnfgrammar.py
+END
+grammar.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/grammar.py
+END
+asthelper.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/asthelper.py
+END

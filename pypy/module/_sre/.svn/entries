@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_sre
+http://codespeak.net/svn
+
+
+
+2009-04-18T15:32:56.193696Z
+64332
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+app_sre.py
+file
+
+
+
+
+2009-11-16T04:55:43.000000Z
+2a5dc50222d437dad91b643215df6adc
+2009-01-17T12:03:17.758654Z
+61054
+fijal
+has-props
+
+interp_sre.py
+file
+
+
+
+
+2009-11-16T04:55:43.000000Z
+a91d0825ef6a960bdf61e3fb3c4dc31f
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:43.000000Z
+6952c46288e20acb8b531b8a6d0ff1e6
+2005-08-27T15:59:05.819056Z
+16796
+nik
+has-props
+

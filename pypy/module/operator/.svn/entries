@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/operator
+http://codespeak.net/svn
+
+
+
+2008-10-08T11:40:19.456264Z
+58802
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+app_operator.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+22571032e67338d56b8ca66549b97391
+2008-10-07T15:45:05.944183Z
+58776
+jlg
+has-props
+
+interp_operator.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+4d6e34a02eaaeab1f96c0e746673766a
+2008-10-08T11:40:19.456264Z
+58802
+pedronis
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+c396a06af197abca2cb412b90f8baf58
+2008-10-07T17:23:23.838175Z
+58787
+jlg
+has-props
+

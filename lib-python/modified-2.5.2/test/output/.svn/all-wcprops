@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/output
+END
+test_cProfile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/output/test_cProfile
+END
+test_extcall
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/output/test_extcall
+END

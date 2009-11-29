@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/builtin/testing
+END
+test_set.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/builtin/testing/test_set.py
+END
+test_exception.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/63361/py/dist/py/builtin/testing/test_exception.py
+END
+test_reversed.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/63361/py/dist/py/builtin/testing/test_reversed.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/builtin/testing/__init__.py
+END
+test_sorted.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/builtin/testing/test_sorted.py
+END
+test_enumerate.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/63361/py/dist/py/builtin/testing/test_enumerate.py
+END

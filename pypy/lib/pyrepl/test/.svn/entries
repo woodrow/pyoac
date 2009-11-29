@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pyrepl/trunk/pyrepl/pyrepl/test
+http://codespeak.net/svn
+
+
+
+2007-11-02T07:44:49.289731Z
+48250
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_functional.py
+file
+
+
+
+
+2009-11-16T04:58:57.000000Z
+8ac0b7fd2fd1d9e624e79c8934747618
+2007-08-03T11:31:47.264345Z
+45472
+fijal
+has-props
+

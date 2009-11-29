@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/61465/pypy/pysqlite2
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/55838/pypy/pysqlite2/__init__.py
+END
+dbapi2.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/55980/pypy/pysqlite2/dbapi2.py
+END

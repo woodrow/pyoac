@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lang/prolog/builtin/test
+http://codespeak.net/svn
+
+
+
+2007-01-25T12:17:59.121988Z
+37323
+cfbolz
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_formatting.py
+file
+
+
+
+
+2009-11-16T04:55:16.000000Z
+9252feb100326f2be1314de849c6c3d7
+2007-01-25T12:17:59.121988Z
+37323
+cfbolz
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:16.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2006-11-12T21:16:10.426380Z
+34536
+cfbolz
+has-props
+

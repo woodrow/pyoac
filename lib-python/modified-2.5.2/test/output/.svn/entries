@@ -1,0 +1,52 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/lib-python/modified-2.5.2/test/output
+http://codespeak.net/svn
+
+
+
+2009-02-02T15:18:45.007282Z
+61519
+antocuni
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_cProfile
+file
+
+
+
+
+2009-11-16T04:57:18.000000Z
+0c34504f7c12b55913ca4bf759a9d747
+2009-02-02T15:18:45.007282Z
+61519
+antocuni
+
+test_extcall
+file
+
+
+
+
+2009-11-16T04:57:18.000000Z
+15fd41c494e090be57a40a56616c8fd1
+2008-10-10T12:50:52.956225Z
+58905
+arigo
+

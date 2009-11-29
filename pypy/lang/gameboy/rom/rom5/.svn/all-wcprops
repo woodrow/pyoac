@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom5
+END
+make-2.bat
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom5/make-2.bat
+END
+rom5.asm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom5/rom5.asm
+END
+rom5.gb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom5/rom5.gb
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom5/readme.txt
+END

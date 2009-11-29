@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/cStringIO/test
+http://codespeak.net/svn
+
+
+
+2008-04-14T14:46:44.415390Z
+53760
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_interp_stringio.py
+file
+
+
+
+
+2009-11-16T04:56:07.000000Z
+cd5c71dd68ad73995fb0178cbdd9a2a5
+2008-04-14T14:46:44.415390Z
+53760
+arigo
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:07.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-04-14T13:32:17.104163Z
+53755
+arigo
+has-props
+

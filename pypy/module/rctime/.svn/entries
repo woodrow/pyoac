@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/rctime
+http://codespeak.net/svn
+
+
+
+2009-04-19T14:06:10.690619Z
+64372
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+app_time.py
+file
+
+
+
+
+2009-11-16T04:56:05.000000Z
+934d8e1c94355437cca3c5bccd51ca16
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:05.000000Z
+6757eca09b9af5a95131b9799d4d3fc1
+2009-03-20T16:25:17.706292Z
+63146
+afa
+has-props
+
+interp_time.py
+file
+
+
+
+
+2009-11-16T04:56:05.000000Z
+ea4ce27904c851430c3ab3a65e605b7f
+2009-03-23T13:32:22.679017Z
+63227
+afa
+has-props
+

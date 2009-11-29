@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion
+END
+distribution-implementation.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/distribution-implementation.txt
+END
+VM-integration.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/VM-integration.txt
+END
+list_comprehension_ootype.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/list_comprehension_ootype.txt
+END
+oz-thread-api.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/oz-thread-api.txt
+END
+distribution-newattempt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/distribution-newattempt.txt
+END
+removing-stable-compiler.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/removing-stable-compiler.txt
+END
+thoughts_string_interning.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/thoughts_string_interning.txt
+END
+paper-wishlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/paper-wishlist.txt
+END
+outline-external-ootype.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/outline-external-ootype.txt
+END
+cmd-prompt-translation.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/cmd-prompt-translation.txt
+END
+cli-optimizations.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/cli-optimizations.txt
+END
+distribution.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/distribution.txt
+END
+compiled-swamp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/compiled-swamp.txt
+END
+somepbc-refactoring-plan.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/somepbc-refactoring-plan.txt
+END
+translation-swamp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/translation-swamp.txt
+END
+emptying-the-malloc-zoo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/emptying-the-malloc-zoo.txt
+END
+chained_getattr.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/chained_getattr.txt
+END
+parsing-ideas.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/parsing-ideas.txt
+END
+GC-performance.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/GC-performance.txt
+END
+testing-zope.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/testing-zope.txt
+END
+use_case_of_logic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/use_case_of_logic.txt
+END
+gc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/gc.txt
+END
+pypy_metaclasses_in_cl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/pypy_metaclasses_in_cl.txt
+END
+security-ideas.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/security-ideas.txt
+END
+howtoimplementpickling.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/howtoimplementpickling.txt
+END
+finalizer-order.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/finalizer-order.txt
+END
+ctypes_todo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/ctypes_todo.txt
+END
+ctypes_modules.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/ctypes_modules.txt
+END
+summer-of-pypy-pytest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/summer-of-pypy-pytest.txt
+END
+distribution-roadmap.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/doc/discussion/distribution-roadmap.txt
+END

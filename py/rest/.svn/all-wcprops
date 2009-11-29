@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/63361/py/dist/py/rest
+END
+rst.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/63361/py/dist/py/rest/rst.py
+END
+transform.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/rest/transform.py
+END
+latex.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/63361/py/dist/py/rest/latex.py
+END
+directive.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/rest/directive.py
+END
+rest.sty.template
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/63361/py/dist/py/rest/rest.sty.template
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/rest/__init__.py
+END
+convert.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/rest/convert.py
+END

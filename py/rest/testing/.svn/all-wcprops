@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/63361/py/dist/py/rest/testing
+END
+test_transform.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/rest/testing/test_transform.py
+END
+test_directive.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/rest/testing/test_directive.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/rest/testing/__init__.py
+END
+test_convert.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/rest/testing/test_convert.py
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/63361/py/dist/py/rest/testing/setup.py
+END
+test_htmlrest.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/rest/testing/test_htmlrest.py
+END
+test_rst2pdf.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/rest/testing/test_rst2pdf.py
+END
+test_rst.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/rest/testing/test_rst.py
+END

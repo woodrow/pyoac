@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/63361/py/dist/py/cmdline
+END
+pytest.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/cmdline/pytest.py
+END
+pywhich.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/63361/py/dist/py/cmdline/pywhich.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/63361/py/dist/py/cmdline/__init__.py
+END
+pycountloc.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/63361/py/dist/py/cmdline/pycountloc.py
+END
+pycleanup.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/63361/py/dist/py/cmdline/pycleanup.py
+END
+pysvnwcrevert.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/cmdline/pysvnwcrevert.py
+END
+pylookup.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/63361/py/dist/py/cmdline/pylookup.py
+END
+pyrest.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/cmdline/pyrest.py
+END

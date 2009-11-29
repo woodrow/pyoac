@@ -1,0 +1,86 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/lib-python/2.5.2/ctypes
+http://codespeak.net/svn
+
+
+
+2008-10-07T09:44:20.267920Z
+58700
+iko
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+_endian.py
+file
+
+
+
+
+2009-11-16T04:57:44.000000Z
+a7ab0a4cd69597fe26678fc2f1f27fcd
+2008-08-11T14:59:01.228136Z
+57197
+bgola
+has-props
+
+util.py
+file
+
+
+
+
+2009-11-16T04:57:44.000000Z
+55f65600df77030c5333d62ad17ef014
+2008-10-07T09:44:20.267920Z
+58700
+iko
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:57:44.000000Z
+8fb507e3579b18b125a0d6de9c39d5f2
+2008-10-07T09:44:20.267920Z
+58700
+iko
+has-props
+
+wintypes.py
+file
+
+
+
+
+2009-11-16T04:57:44.000000Z
+ddc400fcb1cbee0ef2c3b3844632b525
+2008-10-07T09:44:20.267920Z
+58700
+iko
+has-props
+
+macholib
+dir
+

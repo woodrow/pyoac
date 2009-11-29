@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/dom
+END
+expatbuilder.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/dom/expatbuilder.py
+END
+NodeFilter.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/dom/NodeFilter.py
+END
+minidom.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/dom/minidom.py
+END
+pulldom.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/dom/pulldom.py
+END
+domreg.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/dom/domreg.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/dom/__init__.py
+END
+minicompat.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/dom/minicompat.py
+END
+xmlbuilder.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/dom/xmlbuilder.py
+END

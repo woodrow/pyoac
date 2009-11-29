@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/error.py
+END
+primitives.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/primitives.py
+END
+todo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/todo.txt
+END
+squeakimage.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/squeakimage.py
+END
+running-something-mini.image
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/running-something-mini.image
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/__init__.py
+END
+model.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/model.py
+END
+interpreter.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/interpreter.py
+END
+constants.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/constants.py
+END
+find_untested_bytecodes.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/find_untested_bytecodes.sh
+END
+wrapper.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/wrapper.py
+END
+shadow.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/shadow.py
+END
+conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/conftest.py
+END
+objspace.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/objspace.py
+END
+mini.image
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/mini.image
+END
+find_untested_prims.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/find_untested_prims.sh
+END

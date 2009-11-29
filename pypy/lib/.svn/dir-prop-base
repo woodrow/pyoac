@@ -1,0 +1,13 @@
+K 13
+svn:externals
+V 109
+pyrepl http://codespeak.net/svn/pyrepl/trunk/pyrepl/pyrepl
+pysqlite2 http://codespeak.net/svn/pypy/pysqlite2
+
+K 10
+svn:ignore
+V 12
+*.pyc
+*.pyo
+
+END

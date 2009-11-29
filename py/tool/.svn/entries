@@ -1,0 +1,57 @@
+8
+
+dir
+64398
+http://codespeak.net/svn/py/dist/py/tool
+http://codespeak.net/svn
+
+
+
+2008-01-15T17:46:55.482541Z
+50645
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:58:48.000000Z
+552dacb15f2019c8f3f74c55befa242c
+2005-04-16T18:45:00.605324Z
+10742
+hpk
+has-props
+
+utestconvert.py
+file
+
+
+
+
+2009-11-16T04:58:48.000000Z
+1154bbf8e8989344ddd23efd66d27158
+2008-01-15T17:46:55.482541Z
+50645
+arigo
+has-props
+
+testing
+dir
+

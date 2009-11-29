@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom7
+END
+make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom7/make.bat
+END
+rom7.asm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom7/rom7.asm
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom7/readme.txt
+END
+rom7.gb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/rom/rom7/rom7.gb
+END

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata
+END
+UnihanNumeric-5.0.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/UnihanNumeric-5.0.0.txt
+END
+UnihanNumeric-4.1.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/UnihanNumeric-4.1.0.txt
+END
+UnihanNumeric-3.2.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/UnihanNumeric-3.2.0.txt
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/LICENSE
+END
+interp_ucd.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/interp_ucd.py
+END
+EastAsianWidth-5.0.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/EastAsianWidth-5.0.0.txt
+END
+EastAsianWidth-4.1.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/EastAsianWidth-4.1.0.txt
+END
+EastAsianWidth-3.2.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/EastAsianWidth-3.2.0.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/__init__.py
+END
+UnicodeData-5.0.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/UnicodeData-5.0.0.txt
+END
+UnicodeData-4.1.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/UnicodeData-4.1.0.txt
+END
+UnicodeData-3.2.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/UnicodeData-3.2.0.txt
+END
+CompositionExclusions-5.0.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/CompositionExclusions-5.0.0.txt
+END
+CompositionExclusions-4.1.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/CompositionExclusions-4.1.0.txt
+END
+CompositionExclusions-3.2.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/CompositionExclusions-3.2.0.txt
+END
+generate_unicodedb.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/generate_unicodedb.py
+END
+triegenerator.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/triegenerator.py
+END
+unicodedb_3_2_0.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/unicodedb_3_2_0.py
+END
+unicodedb_4_1_0.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/unicodedb_4_1_0.py
+END
+unicodedb_5_0_0.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/module/unicodedata/unicodedb_5_0_0.py
+END

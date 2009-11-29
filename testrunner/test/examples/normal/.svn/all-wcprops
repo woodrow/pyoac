@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/58320/pypy/build/testrunner/test/examples/normal
+END
+failingsetup.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/58320/pypy/build/testrunner/test/examples/normal/failingsetup.py
+END
+example.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/58320/pypy/build/testrunner/test/examples/normal/example.py
+END
+example_importerror.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/58320/pypy/build/testrunner/test/examples/normal/example_importerror.py
+END
+failingsetup_tricky.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/58320/pypy/build/testrunner/test/examples/normal/failingsetup_tricky.py
+END

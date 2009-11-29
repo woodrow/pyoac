@@ -1,0 +1,114 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/recparser
+http://codespeak.net/svn
+
+
+
+2009-02-09T15:22:57.177569Z
+61663
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+leftout
+dir
+
+hooksamples
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+61480b39f79dbb6ce27b8fde6396871f
+2009-01-24T19:15:29.210168Z
+61313
+fijal
+has-props
+
+compat.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+5cefd72f2acbaf79453c7cb05b4ef437
+2009-02-09T15:22:57.177569Z
+61663
+arigo
+has-props
+
+codegen.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+9d345cc4085a5b23205614c0174a155f
+2007-02-28T17:30:48.442304Z
+39609
+afayolle
+has-props
+
+app_class.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+8cbe0aadf1adf4a143a6502aaab3e6d3
+2007-03-09T17:30:00.653026Z
+40134
+afayolle
+has-props
+
+pyparser.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+b57734350ba24dbebabe8a67c0b68ab4
+2009-01-26T14:15:22.352546Z
+61354
+fijal
+has-props
+
+README
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+6a82fe54d3ec99ff010a2317cd79bfbe
+2005-07-06T12:40:14.835876Z
+14328
+arigo
+

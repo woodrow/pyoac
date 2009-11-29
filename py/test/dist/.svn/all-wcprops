@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/63361/py/dist/py/test/dist
+END
+mypickle.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/63361/py/dist/py/test/dist/mypickle.py
+END
+nodemanage.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63361/py/dist/py/test/dist/nodemanage.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/63361/py/dist/py/test/dist/__init__.py
+END
+txnode.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/63361/py/dist/py/test/dist/txnode.py
+END
+dsession.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/63361/py/dist/py/test/dist/dsession.py
+END

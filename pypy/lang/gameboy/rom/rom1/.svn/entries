@@ -1,0 +1,53 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lang/gameboy/rom/rom1
+http://codespeak.net/svn
+
+
+
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+rom1.raw
+file
+
+
+
+
+2009-11-16T04:55:18.000000Z
+eccd80b281bf216f3aa5e676d87472fe
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+
+readme.txt
+file
+
+
+
+
+2009-11-16T04:55:18.000000Z
+aa966ce0a5f92e33d9ddfc48f04ca4cf
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+

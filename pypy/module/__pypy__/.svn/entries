@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/__pypy__
+http://codespeak.net/svn
+
+
+
+2008-10-06T15:56:50.891904Z
+58675
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+bytebuffer.py
+file
+
+
+
+
+2009-11-16T04:55:44.000000Z
+314c495377af45b09a72e66a9ca2910e
+2008-03-09T12:35:55.723830Z
+52330
+arigo
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:44.000000Z
+68ff72da499229d0f5895524921631a7
+2008-10-06T15:56:50.891904Z
+58675
+arigo
+has-props
+
+interp_magic.py
+file
+
+
+
+
+2009-11-16T04:55:44.000000Z
+788fcc572055bdf2ececd22f9e8ea22d
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-beos5
+END
+regen
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-beos5/regen
+END
+IN.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-beos5/IN.py
+END

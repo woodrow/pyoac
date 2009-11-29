@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/md5/test
+http://codespeak.net/svn
+
+
+
+2009-04-21T10:04:19.015132Z
+64495
+iko
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_md5.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+7dd30d4ef00031107769f70dee185c52
+2009-04-21T10:04:19.015132Z
+64495
+iko
+has-props
+

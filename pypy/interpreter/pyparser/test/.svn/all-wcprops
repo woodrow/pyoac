@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test
+END
+fakes.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/fakes.py
+END
+test_parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/test_parser.py
+END
+test_astbuilder.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/test_astbuilder.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/__init__.py
+END
+test_parsestring.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/test_parsestring.py
+END
+test_futureautomaton.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/test_futureautomaton.py
+END
+expressions.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/expressions.py
+END
+test_pytokenizer.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/test_pytokenizer.py
+END
+test_samples.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/test_samples.py
+END
+unittest_samples.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/unittest_samples.py
+END
+test_lookahead.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/test_lookahead.py
+END

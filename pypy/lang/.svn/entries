@@ -1,0 +1,65 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lang
+http://codespeak.net/svn
+
+
+
+2009-04-21T10:04:19.015132Z
+64495
+iko
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+malbolge
+dir
+
+prolog
+dir
+
+gameboy
+dir
+
+scheme
+dir
+
+smalltalk
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:41.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2006-10-30T14:06:22.119694Z
+33889
+cfbolz
+has-props
+
+automata
+dir
+
+js
+dir
+

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test
+END
+test_arithmetic.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test/test_arithmetic.py
+END
+tool.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test/tool.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test/__init__.py
+END
+test_standard.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test/test_standard.py
+END
+dont_test_translate.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test/dont_test_translate.py
+END
+test_parsing.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test/test_parsing.py
+END
+test_engine.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test/test_engine.py
+END
+test_builtin.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test/test_builtin.py
+END
+test_unification.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/prolog/interpreter/test/test_unification.py
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template
+END
+constant.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/constant.py
+END
+cast.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/cast.py
+END
+exception.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/exception.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/__init__.py
+END
+overflow.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/overflow.py
+END
+runtest.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/runtest.py
+END
+class_.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/class_.py
+END
+snippets.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/snippets.py
+END
+string.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/string.py
+END
+builtin.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/builtin.py
+END
+extreme.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/extreme.py
+END
+backendopt.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/backendopt.py
+END
+operations.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/operations.py
+END
+dict.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/dict.py
+END
+objectmodel.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/oosupport/test_template/objectmodel.py
+END

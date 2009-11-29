@@ -1,0 +1,57 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/translator/c/gcc
+http://codespeak.net/svn
+
+
+
+2009-04-15T17:55:35.722108Z
+64115
+afa
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:23.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-01-23T15:19:43.157769Z
+50925
+arigo
+has-props
+
+trackgcroot.py
+file
+
+
+
+
+2009-11-16T04:56:23.000000Z
+4dd44c8e556dab517ed720efb2a687f0
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+

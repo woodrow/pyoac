@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2
+END
+pickletools.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/pickletools.py
+END
+socket.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/socket.py
+END
+subprocess.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/subprocess.py
+END
+uu.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/uu.py
+END
+mailbox.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/mailbox.py
+END
+pyclbr.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/pyclbr.py
+END
+ihooks.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/ihooks.py
+END
+trace.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/trace.py
+END
+sre_compile.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/sre_compile.py
+END
+zipfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/zipfile.py
+END
+cmd.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/cmd.py
+END
+popen2.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/popen2.py
+END
+site.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/site.py
+END
+doctest.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/doctest.py
+END
+inspect.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/inspect.py
+END
+pickle.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/pickle.py
+END
+opcode.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/opcode.py
+END
+gzip.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/gzip.py
+END
+netrc.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/netrc.py
+END
+pprint.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/pprint.py
+END
+pydoc.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/pydoc.py
+END
+filecmp.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/filecmp.py
+END
+random.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/random.py
+END
+platform.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/platform.py
+END
+gettext.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/gettext.py
+END
+sre_constants.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/sre_constants.py
+END

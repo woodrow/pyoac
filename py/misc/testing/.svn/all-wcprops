@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/63361/py/dist/py/misc/testing
+END
+test_api.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/misc/testing/test_api.py
+END
+test_error.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/63361/py/dist/py/misc/testing/test_error.py
+END
+test_std.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/misc/testing/test_std.py
+END
+test_svnlook.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/misc/testing/test_svnlook.py
+END
+test_terminal.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/misc/testing/test_terminal.py
+END
+test_com.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/misc/testing/test_com.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/misc/testing/__init__.py
+END
+test_cache.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/63361/py/dist/py/misc/testing/test_cache.py
+END
+test_initpkg.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/misc/testing/test_initpkg.py
+END
+test_warn.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/63361/py/dist/py/misc/testing/test_warn.py
+END

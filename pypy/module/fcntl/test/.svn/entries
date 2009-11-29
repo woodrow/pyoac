@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/fcntl/test
+http://codespeak.net/svn
+
+
+
+2009-01-14T22:37:45.650614Z
+60980
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_fcntl.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+56dd195172d04acbdb3205ef12d656cf
+2009-01-14T22:37:45.650614Z
+60980
+fijal
+has-props
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/63361/py/dist/py/path/svn
+END
+wccommand.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/63361/py/dist/py/path/svn/wccommand.py
+END
+quoting.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/63361/py/dist/py/path/svn/quoting.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/63361/py/dist/py/path/svn/__init__.py
+END
+svncommon.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/63361/py/dist/py/path/svn/svncommon.py
+END
+urlcommand.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/63361/py/dist/py/path/svn/urlcommand.py
+END
+cache.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/path/svn/cache.py
+END

@@ -1,0 +1,57 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/translator/jvm/src
+http://codespeak.net/svn
+
+
+
+2009-04-18T15:54:19.290869Z
+64333
+arigo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+pypy
+dir
+
+jna.jar
+file
+
+
+
+
+2009-11-16T04:56:30.000000Z
+a9bdf38dd0615183e507ec174bf24f48
+2007-12-06T11:37:42.670464Z
+49448
+antocuni
+has-props
+
+jasmin.jar
+file
+
+
+
+
+2009-11-16T04:56:30.000000Z
+826aa39a5cc6a6757c1164e1ffbcb5e9
+2009-04-18T15:54:19.290869Z
+64333
+arigo
+has-props
+

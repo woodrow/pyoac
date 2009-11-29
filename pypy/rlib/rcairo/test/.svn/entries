@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/rlib/rcairo/test
+http://codespeak.net/svn
+
+
+
+2007-11-22T17:20:32.565819Z
+48938
+cfbolz
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_ll_cairo.py
+file
+
+
+
+
+2009-11-16T04:56:16.000000Z
+0839a27b1e0c1a7dfdcb9a12edae34af
+2007-11-22T17:20:32.565819Z
+48938
+cfbolz
+has-props
+

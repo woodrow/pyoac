@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/64253/py/dist/py
+END
+env.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/63361/py/dist/py/env.py
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/63361/py/dist/py/LICENSE
+END
+_com.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/63361/py/dist/py/_com.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/63361/py/dist/py/__init__.py
+END
+env.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/63361/py/dist/py/env.cmd
+END
+initpkg.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/63361/py/dist/py/initpkg.py
+END
+conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/63361/py/dist/py/conftest.py
+END

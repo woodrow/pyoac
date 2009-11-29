@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/module/test
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/module/test/__init__.py
+END
+test_ll_math.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/lltypesystem/module/test/test_ll_math.py
+END

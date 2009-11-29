@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/path/svn/testing
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/path/svn/testing/__init__.py
+END
+test_auth.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/path/svn/testing/test_auth.py
+END
+test_urlcommand.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/63361/py/dist/py/path/svn/testing/test_urlcommand.py
+END
+svntestbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/path/svn/testing/svntestbase.py
+END
+repotest.dump
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/path/svn/testing/repotest.dump
+END
+test_test_repo.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/63361/py/dist/py/path/svn/testing/test_test_repo.py
+END
+test_wccommand.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/63361/py/dist/py/path/svn/testing/test_wccommand.py
+END

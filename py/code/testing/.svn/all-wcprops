@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/64004/py/dist/py/code/testing
+END
+test_code.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/63361/py/dist/py/code/testing/test_code.py
+END
+test_frame.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64004/py/dist/py/code/testing/test_frame.py
+END
+test_excinfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/code/testing/test_excinfo.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/code/testing/__init__.py
+END
+test_source.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/code/testing/test_source.py
+END
+test_safe_repr.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/code/testing/test_safe_repr.py
+END

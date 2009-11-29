@@ -1,0 +1,115 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lang/js/test/ecma
+http://codespeak.net/svn
+
+
+
+2007-06-04T13:24:17.169463Z
+44026
+santagada
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+Boolean
+dir
+
+ObjectObjects
+dir
+
+Expressions
+dir
+
+shell.js
+file
+
+
+
+
+2009-11-16T04:55:41.000000Z
+795bab238971034ef96fc8e1dbcd838c
+2007-05-28T14:06:27.182463Z
+43796
+santagada
+has-props
+
+TypeConversion
+dir
+
+Statements
+dir
+
+GlobalObject
+dir
+
+Number
+dir
+
+Math
+dir
+
+ExecutionContexts
+dir
+
+README
+file
+
+
+
+
+2009-11-16T04:55:41.000000Z
+5993342b28a6488a8f8d2e92be516650
+2007-01-20T10:55:12.248719Z
+37054
+santagada
+has-props
+
+FunctionObjects
+dir
+
+NativeObjects
+dir
+
+Types
+dir
+
+SourceText
+dir
+
+String
+dir
+
+LexicalConventions
+dir
+
+conftest.py
+file
+
+
+
+
+2009-11-16T04:55:41.000000Z
+0075b25593ddc47ea7d88bb069fa74c3
+2007-06-04T13:24:17.169463Z
+44026
+santagada
+has-props
+
+Array
+dir
+

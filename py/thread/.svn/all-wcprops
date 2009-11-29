@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/63361/py/dist/py/thread
+END
+pool.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/thread/pool.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/63361/py/dist/py/thread/__init__.py
+END
+io.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/63361/py/dist/py/thread/io.py
+END

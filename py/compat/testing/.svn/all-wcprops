@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/compat/testing
+END
+test_doctest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/compat/testing/test_doctest.txt
+END
+test_optparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/compat/testing/test_optparse.py
+END
+test_doctest2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/63361/py/dist/py/compat/testing/test_doctest2.txt
+END
+test_textwrap.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/compat/testing/test_textwrap.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/63361/py/dist/py/compat/testing/__init__.py
+END
+test_doctest.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/compat/testing/test_doctest.py
+END
+test_doctest2.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/compat/testing/test_doctest2.py
+END
+test_subprocess.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/63361/py/dist/py/compat/testing/test_subprocess.py
+END

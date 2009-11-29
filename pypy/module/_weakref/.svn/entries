@@ -1,0 +1,57 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_weakref
+http://codespeak.net/svn
+
+
+
+2009-04-16T13:26:16.652686Z
+64166
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+eb8263908f76fa74f6ed2c0d4acc4c35
+2007-09-13T08:43:53.412943Z
+46529
+arigo
+has-props
+
+interp__weakref.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+5f28d60ad7025cd8959e4d0bf7abeae2
+2009-04-15T14:43:11.312816Z
+64100
+cfbolz
+has-props
+

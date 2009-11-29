@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 83
+lattice1.png
+lattice2.png
+lattice3.png
+stackless_informal.png
+parsing_example*.png
+
+END

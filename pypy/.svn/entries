@@ -1,0 +1,145 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy
+http://codespeak.net/svn
+
+
+
+2009-11-08T16:59:50.197288Z
+69073
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+testrunner_cfg.py
+file
+
+
+
+
+2009-11-16T04:57:17.000000Z
+8a80827aab7c010535ade3be1dd601f2
+2009-03-17T10:06:00.702466Z
+62990
+fijal
+has-props
+
+lang
+dir
+
+module
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:57:17.000000Z
+2402d4d5cd982d8b74e5c4d62ab0b20b
+2006-02-07T14:52:11.316341Z
+23110
+ac
+has-props
+
+objspace
+dir
+
+rlib
+dir
+
+translator
+dir
+
+pytest-A-stackless.cfg
+file
+
+
+
+
+2009-11-16T04:57:17.000000Z
+19eb4460a253f1b80a48206f768e22be
+2009-01-09T13:56:35.489585Z
+60859
+pedronis
+has-props
+
+test_all.py
+file
+
+
+
+
+2009-11-16T04:57:17.000000Z
+9fcc4bbe57e224e97e8428b410464b9b
+2005-07-06T12:40:14.835876Z
+14328
+arigo
+has-props
+
+rpython
+dir
+
+interpreter
+dir
+
+pytest-A.cfg
+file
+
+
+
+
+2009-11-16T04:57:17.000000Z
+c4ca12c221c08b31598faf61520114d7
+2009-01-10T12:53:24.639779Z
+60868
+pedronis
+has-props
+
+doc
+dir
+
+config
+dir
+
+lib
+dir
+
+bin
+dir
+
+annotation
+dir
+
+conftest.py
+file
+
+
+
+
+2009-11-16T04:57:17.000000Z
+f5f6323667138510f25686a3bd7216c9
+2009-04-06T12:44:36.453853Z
+63716
+cfbolz
+has-props
+
+tool
+dir
+

@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lang/automata/test
+http://codespeak.net/svn
+
+
+
+2007-02-17T08:13:45.201562Z
+39077
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_dfa.py
+file
+
+
+
+
+2009-11-16T04:55:26.000000Z
+c2176bcb5c40fe4178b1b99b32580bb2
+2007-02-17T08:13:45.201562Z
+39077
+pedronis
+has-props
+

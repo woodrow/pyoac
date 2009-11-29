@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/63361/py/dist/py/bin
+END
+_findpy.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/bin/_findpy.py
+END
+py.svnwcrevert
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/63361/py/dist/py/bin/py.svnwcrevert
+END
+py.lookup
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/63361/py/dist/py/bin/py.lookup
+END
+py.rest
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/63361/py/dist/py/bin/py.rest
+END
+gendoc.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/63361/py/dist/py/bin/gendoc.py
+END
+py.test
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/63361/py/dist/py/bin/py.test
+END
+_genscripts.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/63361/py/dist/py/bin/_genscripts.py
+END
+py.which
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/63361/py/dist/py/bin/py.which
+END
+py.countloc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/bin/py.countloc
+END
+py.cleanup
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/bin/py.cleanup
+END

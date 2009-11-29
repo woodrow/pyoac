@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/demo/tproxy
+http://codespeak.net/svn
+
+
+
+2009-04-17T15:15:06.976671Z
+64287
+cfbolz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+print_operations.py
+file
+
+
+
+
+2009-11-16T04:57:17.000000Z
+0767a4e5cb55908d2ce66bca3a692afb
+2007-10-02T06:59:54.625623Z
+47081
+fijal
+has-props
+
+persistence.py
+file
+
+
+
+
+2009-11-16T04:57:17.000000Z
+fa025dd2c88f682cf05093a0ee1883a2
+2009-04-17T15:15:06.976671Z
+64287
+cfbolz
+has-props
+

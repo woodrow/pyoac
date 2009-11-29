@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/debug
+END
+debug_rpc_xml_connection.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/debug/debug_rpc_xml_connection.py
+END
+debug_comparator.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/debug/debug_comparator.py
+END
+gameboy_debug_implementation.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/debug/gameboy_debug_implementation.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/debug/__init__.py
+END
+gameboy_debug_parts.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/debug/gameboy_debug_parts.py
+END
+debug_util.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/debug/debug_util.py
+END
+gameboy_debug_entry_point.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/debug/gameboy_debug_entry_point.py
+END
+debug_socket_memory.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/gameboy/debug/debug_socket_memory.py
+END

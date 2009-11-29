@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/distutils/tests
+END
+support.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/distutils/tests/support.py
+END
+test_install_scripts.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/distutils/tests/test_install_scripts.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/distutils/tests/__init__.py
+END
+test_dist.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/distutils/tests/test_dist.py
+END
+test_build_scripts.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/distutils/tests/test_build_scripts.py
+END
+test_install.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/distutils/tests/test_install.py
+END
+test_versionpredicate.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/distutils/tests/test_versionpredicate.py
+END
+test_build_py.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/distutils/tests/test_build_py.py
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/malbolge/examples
+END
+hello-world.mb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/malbolge/examples/hello-world.mb
+END
+hello-world.mbs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/malbolge/examples/hello-world.mbs
+END
+copy.mbs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/malbolge/examples/copy.mbs
+END
+99bottles.mbs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/malbolge/examples/99bottles.mbs
+END

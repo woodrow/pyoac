@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-riscos
+END
+riscospath.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-riscos/riscospath.py
+END
+rourl2path.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-riscos/rourl2path.py
+END
+riscosenviron.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-riscos/riscosenviron.py
+END

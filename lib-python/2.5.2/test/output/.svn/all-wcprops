@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output
+END
+test_linuxaudiodev
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_linuxaudiodev
+END
+test_popen
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_popen
+END
+test_pkg
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_pkg
+END
+test_operations
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_operations
+END
+test_pep277
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_pep277
+END
+test_ossaudiodev
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_ossaudiodev
+END
+test_grammar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_grammar
+END
+test_logging
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_logging
+END
+test_resource
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_resource
+END
+test_tokenize
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_tokenize
+END
+test_math
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_math
+END
+test_new
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_new
+END
+test_nis
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_nis
+END
+test_winreg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_winreg
+END
+test_opcodes
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_opcodes
+END
+test_profile
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_profile
+END
+test_global
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_global
+END
+test_popen2
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_popen2
+END
+test_cProfile
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_cProfile
+END
+test_frozen
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_frozen
+END
+test_types
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_types
+END
+test_class
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_class
+END
+test_rgbimg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_rgbimg
+END
+test_thread
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_thread
+END
+test_scope
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_scope
+END
+test_cookie
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_cookie
+END
+test_signal
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_signal
+END
+test_MimeWriter
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_MimeWriter
+END
+test_xdrlib
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_xdrlib
+END
+xmltests
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/xmltests
+END
+test_pyexpat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_pyexpat
+END
+test_mmap
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_mmap
+END
+test_extcall
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_extcall
+END
+test_openpty
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_openpty
+END
+test_cgi
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_cgi
+END
+test_poll
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_poll
+END
+test_httplib
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_httplib
+END
+test_threadedtempfile
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_threadedtempfile
+END
+test_regex
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_regex
+END
+test_pty
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/output/test_pty
+END

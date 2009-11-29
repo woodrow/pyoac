@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/translator/oosupport/test
+http://codespeak.net/svn
+
+
+
+2008-03-07T14:43:19.400978Z
+52248
+niko
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:33.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-03-19T13:57:24.362024Z
+40772
+antocuni
+has-props
+
+test_treebuilder.py
+file
+
+
+
+
+2009-11-16T04:56:33.000000Z
+0c46c7bd318fecadf3103d6a84e0b1fe
+2008-03-07T14:43:19.400978Z
+52248
+niko
+has-props
+

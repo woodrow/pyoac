@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/zipimport
+http://codespeak.net/svn
+
+
+
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+app_zipimport.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+f36276a130bdae6a243f554717ae609c
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+interp_zipimport.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+6378c191ee7a414baca8e1623781f40c
+2009-04-19T21:52:53.514153Z
+64423
+pedronis
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+6d7008edf18e9108e600ba922bce8d6d
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/63361/py/dist/py/execnet
+END
+channel.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/63361/py/dist/py/execnet/channel.py
+END
+rsync_remote.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63361/py/dist/py/execnet/rsync_remote.py
+END
+multi.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/execnet/multi.py
+END
+rsync.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/execnet/rsync.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/63361/py/dist/py/execnet/__init__.py
+END
+inputoutput.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/63361/py/dist/py/execnet/inputoutput.py
+END
+NOTES
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/63361/py/dist/py/execnet/NOTES
+END
+gateway.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/63361/py/dist/py/execnet/gateway.py
+END
+improve-remote-tracebacks.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/63361/py/dist/py/execnet/improve-remote-tracebacks.txt
+END
+xspec.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/execnet/xspec.py
+END
+message.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/63361/py/dist/py/execnet/message.py
+END
+register.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/63361/py/dist/py/execnet/register.py
+END
+gwmanage.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/63361/py/dist/py/execnet/gwmanage.py
+END

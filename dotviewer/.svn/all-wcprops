@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/64776/pypy/dist/dotviewer
+END
+dotviewer.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/dotviewer/dotviewer.py
+END
+graphserver.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/dotviewer/graphserver.py
+END
+msgstruct.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/dotviewer/msgstruct.py
+END
+graphparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/dotviewer/graphparse.py
+END
+cyrvetic.ttf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/dotviewer/cyrvetic.ttf
+END
+graphpage.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/dotviewer/graphpage.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/dotviewer/__init__.py
+END
+drawgraph.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/dotviewer/drawgraph.py
+END
+graphclient.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/dotviewer/graphclient.py
+END
+VeraMoBd.ttf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/dotviewer/VeraMoBd.ttf
+END
+conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/dotviewer/conftest.py
+END
+sshgraphserver.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/dotviewer/sshgraphserver.py
+END
+graphdisplay.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/dotviewer/graphdisplay.py
+END

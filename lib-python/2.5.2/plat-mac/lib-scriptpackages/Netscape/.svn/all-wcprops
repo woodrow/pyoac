@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Netscape
+END
+Required_suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Netscape/Required_suite.py
+END
+Standard_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Netscape/Standard_Suite.py
+END
+PowerPlant.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Netscape/PowerPlant.py
+END
+Standard_URL_suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Netscape/Standard_URL_suite.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Netscape/__init__.py
+END
+Mozilla_suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Netscape/Mozilla_suite.py
+END
+Text.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Netscape/Text.py
+END
+WorldWideWeb_suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Netscape/WorldWideWeb_suite.py
+END

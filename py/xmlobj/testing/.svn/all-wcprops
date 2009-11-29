@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/xmlobj/testing
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/63361/py/dist/py/xmlobj/testing/__init__.py
+END
+test_xml.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/63361/py/dist/py/xmlobj/testing/test_xml.py
+END
+test_html.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/xmlobj/testing/test_html.py
+END

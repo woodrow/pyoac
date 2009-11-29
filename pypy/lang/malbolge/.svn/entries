@@ -1,0 +1,44 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lang/malbolge
+http://codespeak.net/svn
+
+
+
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+malbolge.py
+file
+
+
+
+
+2009-11-16T04:55:15.000000Z
+ca5d790c5c5490992d1b04e988dea1b9
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+examples
+dir
+

@@ -1,0 +1,32 @@
+K 35
+bzr:revision-id-v3:single-pypy/dist
+V 66
+3177 michael.hudson@canonical.com-20070718113855-mwz7pvag7cg8t2qh
+
+K 17
+bzr:revision-info
+V 140
+timestamp: Wed 2007-07-18 12:38:55.326999903 +0100
+committer: Michael Hudson <michael.hudson@canonical.com>
+properties: 
+	branch-nick: dist
+
+K 13
+svn:externals
+V 156
+py -r64398 http://codespeak.net/svn/py/dist/py
+testrunner http://codespeak.net/svn/pypy/build/testrunner
+greenlet http://codespeak.net/svn/greenlet/trunk/c
+
+K 10
+svn:ignore
+V 31
+*.pyc
+testresult
+site-packages
+
+K 19
+svnmerge-integrated
+V 74
+/pypy/branch/arre-experiments:1-22499 /pypy/branch/jit-refactoring:1-22714
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/etree
+END
+ElementTree.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/etree/ElementTree.py
+END
+cElementTree.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/etree/cElementTree.py
+END
+ElementInclude.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/etree/ElementInclude.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/etree/__init__.py
+END
+ElementPath.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xml/etree/ElementPath.py
+END

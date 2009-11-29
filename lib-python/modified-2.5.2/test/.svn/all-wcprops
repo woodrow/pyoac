@@ -1,0 +1,629 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test
+END
+test_old_mailbox.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_old_mailbox.py
+END
+string_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/string_tests.py
+END
+test_mmap.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_mmap.py
+END
+test_pyexpat.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_pyexpat.py
+END
+test_csv.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_csv.py
+END
+test_extcall.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_extcall.py
+END
+infinite_reload.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/infinite_reload.py
+END
+test_urllib2_localnet.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_urllib2_localnet.py
+END
+test_optparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_optparse.py
+END
+test_slice.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_slice.py
+END
+regrtest.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/regrtest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/__init__.py
+END
+test_codecs.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_codecs.py
+END
+test_float.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_float.py
+END
+test_xmlrpc.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_xmlrpc.py
+END
+test_repr.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_repr.py
+END
+test_str.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_str.py
+END
+test_genexps.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_genexps.py
+END
+test_scope.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_scope.py
+END
+test_import.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_import.py
+END
+test_sha.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_sha.py
+END
+test_pkgimport.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_pkgimport.py
+END
+test_pep352.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_pep352.py
+END
+test_file.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_file.py
+END
+test_unicodedata.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_unicodedata.py
+END
+test_exceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_exceptions.py
+END
+test_marshal.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_marshal.py
+END
+tf_inherit_check.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/tf_inherit_check.py
+END
+test_pyclbr.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_pyclbr.py
+END
+test_doctest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_doctest.txt
+END
+test_bz2.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_bz2.py
+END
+test_descrtut.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_descrtut.py
+END
+test__locale.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test__locale.py
+END
+test_time.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_time.py
+END
+test_sqlite.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_sqlite.py
+END
+test_dbm.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_dbm.py
+END
+test_iter.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_iter.py
+END
+test_deque.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_deque.py
+END
+test___all__.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test___all__.py
+END
+test_dumbdbm.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_dumbdbm.py
+END
+test_copy.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_copy.py
+END
+test_cpickle.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_cpickle.py
+END
+test_functools.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_functools.py
+END
+test_importhooks.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_importhooks.py
+END
+mapping_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/mapping_tests.py
+END
+test_sets.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_sets.py
+END
+test_traceback.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_traceback.py
+END
+test_os.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_os.py
+END
+test_unpack.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_unpack.py
+END
+test_operations.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_operations.py
+END
+exception_hierarchy.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/exception_hierarchy.txt
+END
+cfgparser.1
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/cfgparser.1
+END
+test_syntax.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_syntax.py
+END
+test_tarfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_tarfile.py
+END
+test_compile.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_compile.py
+END
+test_new.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_new.py
+END
+test_mailbox.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_mailbox.py
+END
+test_set.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_set.py
+END
+test_parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_parser.py
+END
+list_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/list_tests.py
+END
+test_descr.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_descr.py
+END
+test_coercion.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_coercion.py
+END
+test_bufio.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_bufio.py
+END
+test_doctest.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_doctest.py
+END
+test_class.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_class.py
+END
+test_complex.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_complex.py
+END
+test_generators.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_generators.py
+END
+test_urllib2.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_urllib2.py
+END
+test_xrange.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_xrange.py
+END
+test_module.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_module.py
+END
+test_grammar.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_grammar.py
+END
+test_sort.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_sort.py
+END
+test_mutants.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_mutants.py
+END
+test_trace.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_trace.py
+END
+pickletester.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/pickletester.py
+END
+test_isinstance.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_isinstance.py
+END
+test_site.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_site.py
+END
+test_inspect.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_inspect.py
+END
+test_tempfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_tempfile.py
+END
+test_threading.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_threading.py
+END
+test_builtin.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_builtin.py
+END
+test_re.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_re.py
+END
+test_funcattrs.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_funcattrs.py
+END
+test_codeop.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_codeop.py
+END
+test_compiler.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_compiler.py
+END
+pyclbr_input.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/pyclbr_input.py
+END
+test_support.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_support.py
+END
+test_doctest2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_doctest2.txt
+END
+test_array.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_array.py
+END
+test_sys.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_sys.py
+END
+test_doctest3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_doctest3.txt
+END
+test_dis.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_dis.py
+END
+test_doctest4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_doctest4.txt
+END
+test_random.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_random.py
+END
+test_peepholer.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_peepholer.py
+END
+test_itertools.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_itertools.py
+END
+test_base64.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_base64.py
+END
+test_struct.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_struct.py
+END
+test_weakref.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_weakref.py
+END
+test_enumerate.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_enumerate.py
+END
+test_unicode.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_unicode.py
+END
+test_format.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_format.py
+END
+test_socket.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_socket.py
+END
+test_subprocess.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/lib-python/modified-2.5.2/test/test_subprocess.py
+END

@@ -1,0 +1,40 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/translator/cli/src/stub
+http://codespeak.net/svn
+
+
+
+2007-11-09T16:32:25.396771Z
+48474
+antocuni
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+main.il
+file
+
+
+
+
+2009-11-16T04:56:32.000000Z
+1077f92a4999e0836ef012860ae89df2
+2007-11-09T16:32:25.396771Z
+48474
+antocuni
+

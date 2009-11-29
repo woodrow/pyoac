@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test
+END
+test_iterobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_iterobject.py
+END
+test_set.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_set.py
+END
+test_ropeobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_ropeobject.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/__init__.py
+END
+test_versionedtype.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_versionedtype.py
+END
+test_builtinshortcut.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_builtinshortcut.py
+END
+test_ropeunicodeobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_ropeunicodeobject.py
+END
+test_strutil.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_strutil.py
+END
+test_proxy_usercreated.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_proxy_usercreated.py
+END
+test_proxy_object.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_proxy_object.py
+END
+test_index.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_index.py
+END
+test_shadowtracking.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_shadowtracking.py
+END
+test_typeobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_typeobject.py
+END
+test_dictobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_dictobject.py
+END
+test_callmethod.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_callmethod.py
+END
+test_unicodeobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_unicodeobject.py
+END
+test_stringformat.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_stringformat.py
+END
+test_strsliceobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_strsliceobject.py
+END
+test_resizable.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_resizable.py
+END
+test_proxy.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_proxy.py
+END
+test_intobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_intobject.py
+END
+test_boolobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_boolobject.py
+END
+test_instmethobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_instmethobject.py
+END
+test_rangeobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_rangeobject.py
+END
+test_dictmultiobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_dictmultiobject.py
+END
+test_dictproxy.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_dictproxy.py
+END
+test_sliceobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_sliceobject.py
+END
+test_multimethod.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_multimethod.py
+END
+test_floatobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_floatobject.py
+END
+test_stringobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_stringobject.py
+END
+test_complexobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_complexobject.py
+END
+test_proxy_internals.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_proxy_internals.py
+END
+test_operation.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_operation.py
+END
+test_prebuiltint.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_prebuiltint.py
+END
+test_stdobjspace.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_stdobjspace.py
+END
+test_listobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_listobject.py
+END
+test_proxy_iter.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_proxy_iter.py
+END
+test_userobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_userobject.py
+END
+test_obj.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_obj.py
+END
+test_smallintobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_smallintobject.py
+END
+test_listmultiobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_listmultiobject.py
+END
+test_strjoinobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_strjoinobject.py
+END
+helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/helper.py
+END
+test_tupleobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_tupleobject.py
+END
+test_dictbucket.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_dictbucket.py
+END
+test_blistimplementation.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_blistimplementation.py
+END
+test_proxy_function.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_proxy_function.py
+END
+test_noneobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_noneobject.py
+END
+test_longobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/objspace/std/test/test_longobject.py
+END

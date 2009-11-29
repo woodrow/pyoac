@@ -1,0 +1,53 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/lib-python/2.5.2/xml
+http://codespeak.net/svn
+
+
+
+2008-09-22T20:04:52.540358Z
+58345
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+dom
+dir
+
+parsers
+dir
+
+etree
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:58:33.000000Z
+b8db22e915043c6b02063e4b0a0618ca
+2008-08-11T14:59:01.228136Z
+57197
+bgola
+has-props
+
+sax
+dir
+

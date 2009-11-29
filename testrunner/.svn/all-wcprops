@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/69132/pypy/build/testrunner
+END
+runner.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/68313/pypy/build/testrunner/runner.py
+END
+scratchbox_runner.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/59846/pypy/build/testrunner/scratchbox_runner.py
+END

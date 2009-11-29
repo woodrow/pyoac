@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/rpython/memory/gc/test
+http://codespeak.net/svn
+
+
+
+2008-10-22T13:07:08.761165Z
+59314
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_direct.py
+file
+
+
+
+
+2009-11-16T04:56:44.000000Z
+da25f49e1d90bcf163e4e229b60ff1b2
+2008-10-22T13:07:08.761165Z
+59314
+arigo
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:44.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-10-13T20:22:43.977067Z
+47433
+cfbolz
+has-props
+

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/63361/py/dist/py/misc
+END
+buildcmodule.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/63361/py/dist/py/misc/buildcmodule.py
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/63361/py/dist/py/misc/error.py
+END
+findmissingdocstrings.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/misc/findmissingdocstrings.py
+END
+std.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/63361/py/dist/py/misc/std.py
+END
+terminal_helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/63361/py/dist/py/misc/terminal_helper.py
+END
+svnlook.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/misc/svnlook.py
+END
+dynpkg.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/63361/py/dist/py/misc/dynpkg.py
+END
+rest.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/63361/py/dist/py/misc/rest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/misc/__init__.py
+END
+_dist.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/63361/py/dist/py/misc/_dist.py
+END
+cache.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/63361/py/dist/py/misc/cache.py
+END
+difftime.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/63361/py/dist/py/misc/difftime.py
+END
+warn.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/63361/py/dist/py/misc/warn.py
+END

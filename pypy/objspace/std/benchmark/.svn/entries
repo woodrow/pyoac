@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/objspace/std/benchmark
+http://codespeak.net/svn
+
+
+
+2007-03-21T22:59:40.135710Z
+40996
+cfbolz
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+bench_dict.py
+file
+
+
+
+
+2009-11-16T04:56:12.000000Z
+760cfe38639661c635cf9619c55a9a76
+2007-03-21T22:59:40.135710Z
+40996
+cfbolz
+has-props
+

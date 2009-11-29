@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_minimal_curses/test
+http://codespeak.net/svn
+
+
+
+2008-04-08T20:00:59.526007Z
+53595
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-10-18T16:32:13.379595Z
+47558
+arigo
+has-props
+
+test_curses.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+c34a5fd027b7a8cc2538b753b5360b1d
+2008-04-08T20:00:59.526007Z
+53595
+arigo
+has-props
+

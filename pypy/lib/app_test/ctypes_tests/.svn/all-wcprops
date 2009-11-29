@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests
+END
+test_cast.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_cast.py
+END
+test_callback_traceback.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_callback_traceback.py
+END
+test_buffers.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_buffers.py
+END
+test_sizes.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_sizes.py
+END
+test_incomplete.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_incomplete.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/__init__.py
+END
+_ctypes_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/_ctypes_test.c
+END
+test_pointers.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_pointers.py
+END
+test_parameters.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_parameters.py
+END
+test_array_in_pointer.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_array_in_pointer.py
+END
+test_bitfields.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_bitfields.py
+END
+test_repr.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_repr.py
+END
+test_libc.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_libc.py
+END
+test_base.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_base.py
+END
+test_unions.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_unions.py
+END
+test_loading.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_loading.py
+END
+test_callbacks.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_callbacks.py
+END
+test_funcptr.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_funcptr.py
+END
+test_cfuncs.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_cfuncs.py
+END
+test_simplesubclasses.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_simplesubclasses.py
+END
+test_structures.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_structures.py
+END
+test_strings.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_strings.py
+END
+test_checkretval.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_checkretval.py
+END
+test_anon.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_anon.py
+END
+test_stringptr.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_stringptr.py
+END
+test_values.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_values.py
+END
+test_win32.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_win32.py
+END
+test_init.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_init.py
+END
+test_as_parameter.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_as_parameter.py
+END
+test_keeprefs.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_keeprefs.py
+END
+test_guess_argtypes.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_guess_argtypes.py
+END
+test_returnfuncptrs.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_returnfuncptrs.py
+END
+test_keepalive.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_keepalive.py
+END
+test_memfunctions.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_memfunctions.py
+END
+test_functions.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_functions.py
+END
+test_struct_fields.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_struct_fields.py
+END
+test_numbers.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_numbers.py
+END
+description.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/description.txt
+END
+support.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/support.py
+END
+test_array.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_array.py
+END
+test_find.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_find.py
+END
+test_extra.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_extra.py
+END
+conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/conftest.py
+END
+test_unicode.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_unicode.py
+END
+test_varsize_struct.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_varsize_struct.py
+END
+test_prototypes.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_prototypes.py
+END
+test_slicing.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/lib/app_test/ctypes_tests/test_slicing.py
+END

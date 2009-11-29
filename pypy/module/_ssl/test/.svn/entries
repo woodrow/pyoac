@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_ssl/test
+http://codespeak.net/svn
+
+
+
+2009-04-09T14:56:25.337416Z
+63904
+afa
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_ssl.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+7460f8045cba6d2c49767f01277d8f2e
+2009-04-09T14:56:25.337416Z
+63904
+afa
+has-props
+

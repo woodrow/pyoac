@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/fcntl
+http://codespeak.net/svn
+
+
+
+2009-01-14T22:37:45.650614Z
+60980
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+25f0097b5d1b9afe7d912c5220faafb2
+2006-08-09T10:20:46.136577Z
+31191
+arigo
+has-props
+
+app_fcntl.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+b8e19a66c6622755d09f053ceff55aac
+2006-08-09T10:20:46.136577Z
+31191
+arigo
+has-props
+
+interp_fcntl.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+5b8013d210b0470397519fc3586228b1
+2009-01-14T22:37:45.650614Z
+60980
+fijal
+has-props
+

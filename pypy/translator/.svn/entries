@@ -1,0 +1,213 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/translator
+http://codespeak.net/svn
+
+
+
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+translator.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+f1f6a8657ee71b6c7ea080f99b4318f5
+2008-10-23T10:32:04.826300Z
+59329
+fijal
+has-props
+
+exceptiontransform.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+291d677ceb88664c4ef8de1f498b040f
+2009-03-11T10:05:52.639920Z
+62841
+arigo
+has-props
+
+goal
+dir
+
+c
+dir
+
+driver.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+9da7a728a7016e19b60a4ae5185d9aaa
+2009-04-17T09:15:18.099664Z
+64224
+pedronis
+has-props
+
+simplify.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+9a660f961727e714d89082b9146ef357
+2008-10-11T17:01:14.329582Z
+59000
+arigo
+has-props
+
+platform
+dir
+
+unsimplify.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+b55b6638941dd7983774db3ad61d9eae
+2007-10-04T20:12:05.786892Z
+47166
+rxe
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2003-09-30T08:33:20.497188Z
+1457
+arigo
+has-props
+
+benchmark
+dir
+
+jvm
+dir
+
+stackless
+dir
+
+sandbox
+dir
+
+transform.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+58005c721be1770d221242688b339cd9
+2009-04-18T02:44:10.516197Z
+64323
+benjamin
+has-props
+
+llsupport
+dir
+
+interactive.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+b315c9913d07e130e8d5803ffe60a8b4
+2009-04-17T10:50:42.247105Z
+64246
+pedronis
+has-props
+
+cli
+dir
+
+gensupp.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+4be8e92564d1bfe86ac50321a365aae6
+2009-04-18T02:44:10.516197Z
+64323
+benjamin
+has-props
+
+microbench
+dir
+
+backendopt
+dir
+
+oosupport
+dir
+
+geninterplevel.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+9786283e847e5876b5caedb56d173887
+2009-04-19T15:36:44.714006Z
+64388
+pedronis
+has-props
+
+autopath.py
+file
+
+
+
+
+2009-11-16T04:56:37.000000Z
+4c658ec969746ebf0e06ee90665662f8
+2008-10-24T15:19:47.769561Z
+59379
+fijal
+has-props
+
+tool
+dir
+

@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lang/gameboy/tool
+http://codespeak.net/svn
+
+
+
+2008-10-24T15:19:47.769561Z
+59379
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:18.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+autopath.py
+file
+
+
+
+
+2009-11-16T04:55:18.000000Z
+4c658ec969746ebf0e06ee90665662f8
+2008-10-24T15:19:47.769561Z
+59379
+fijal
+has-props
+

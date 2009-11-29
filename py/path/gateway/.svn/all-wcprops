@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/63361/py/dist/py/path/gateway
+END
+channeltest.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/path/gateway/channeltest.py
+END
+remotepath.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/63361/py/dist/py/path/gateway/remotepath.py
+END
+channeltest2.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/path/gateway/channeltest2.py
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/63361/py/dist/py/path/gateway/TODO.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/path/gateway/__init__.py
+END

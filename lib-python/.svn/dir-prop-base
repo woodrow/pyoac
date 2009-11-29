@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 13
+
+*.pyc
+*.pyo
+
+K 13
+svn:mergeinfo
+V 70
+/pypy/trunk/lib-python:64416,64459-64460,64476,64516,64546,64559,64720
+END

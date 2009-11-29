@@ -1,0 +1,1163 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2
+END
+rlcompleter.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/rlcompleter.py
+END
+CGIHTTPServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/CGIHTTPServer.py
+END
+sgmllib.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sgmllib.py
+END
+os2emxpath.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/os2emxpath.py
+END
+markupbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/markupbase.py
+END
+dircache.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/dircache.py
+END
+wave.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/wave.py
+END
+nturl2path.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/nturl2path.py
+END
+site.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/site.py
+END
+UserString.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/UserString.py
+END
+symbol.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/symbol.py
+END
+__future__.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/__future__.py
+END
+copy_reg.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/copy_reg.py
+END
+asynchat.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/asynchat.py
+END
+sha.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sha.py
+END
+stat.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/stat.py
+END
+mimetypes.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/mimetypes.py
+END
+pipes.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pipes.py
+END
+SimpleHTTPServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/SimpleHTTPServer.py
+END
+token.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/token.py
+END
+os.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/os.py
+END
+sndhdr.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sndhdr.py
+END
+smtpd.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/smtpd.py
+END
+xmlrpclib.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xmlrpclib.py
+END
+optparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/optparse.py
+END
+audiodev.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/audiodev.py
+END
+py_compile.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/py_compile.py
+END
+threading.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/threading.py
+END
+stringold.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/stringold.py
+END
+uuid.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/uuid.py
+END
+getpass.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/getpass.py
+END
+whichdb.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/whichdb.py
+END
+dumbdbm.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/dumbdbm.py
+END
+smtplib.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/smtplib.py
+END
+tabnanny.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/tabnanny.py
+END
+imaplib.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/imaplib.py
+END
+fpformat.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/fpformat.py
+END
+textwrap.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/textwrap.py
+END
+user.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/user.py
+END
+posixpath.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/posixpath.py
+END
+quopri.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/quopri.py
+END
+symtable.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/symtable.py
+END
+pdb.doc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pdb.doc
+END
+DocXMLRPCServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/DocXMLRPCServer.py
+END
+glob.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/glob.py
+END
+shelve.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/shelve.py
+END
+xmllib.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xmllib.py
+END
+tokenize.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/tokenize.py
+END
+warnings.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/warnings.py
+END
+sunau.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sunau.py
+END
+ntpath.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/ntpath.py
+END
+htmlentitydefs.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/htmlentitydefs.py
+END
+formatter.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/formatter.py
+END
+mailcap.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/mailcap.py
+END
+_strptime.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/_strptime.py
+END
+re.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/re.py
+END
+wsgiref.egg-info
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/wsgiref.egg-info
+END
+calendar.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/calendar.py
+END
+bisect.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/bisect.py
+END
+gzip.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/gzip.py
+END
+copy.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/copy.py
+END
+gopherlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/gopherlib.py
+END
+netrc.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/netrc.py
+END
+pty.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pty.py
+END
+modulefinder.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/modulefinder.py
+END
+macpath.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/macpath.py
+END
+SocketServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/SocketServer.py
+END
+ftplib.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/ftplib.py
+END
+fnmatch.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/fnmatch.py
+END
+random.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/random.py
+END
+asyncore.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/asyncore.py
+END
+shlex.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/shlex.py
+END
+base64.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/base64.py
+END
+struct.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/struct.py
+END
+pickletools.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pickletools.py
+END
+socket.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/socket.py
+END
+ihooks.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/ihooks.py
+END
+stringprep.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/stringprep.py
+END
+heapq.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/heapq.py
+END
+atexit.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/atexit.py
+END
+decimal.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/decimal.py
+END
+difflib.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/difflib.py
+END
+cookielib.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/cookielib.py
+END
+BaseHTTPServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/BaseHTTPServer.py
+END
+getopt.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/getopt.py
+END
+inspect.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/inspect.py
+END
+string.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/string.py
+END
+mimetools.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/mimetools.py
+END
+shutil.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/shutil.py
+END
+imghdr.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/imghdr.py
+END
+anydbm.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/anydbm.py
+END
+runpy.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/runpy.py
+END
+traceback.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/traceback.py
+END
+dummy_threading.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/dummy_threading.py
+END
+compileall.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/compileall.py
+END
+webbrowser.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/webbrowser.py
+END
+weakref.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/weakref.py
+END
+sched.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sched.py
+END
+csv.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/csv.py
+END
+pyclbr.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pyclbr.py
+END
+__phello__.foo.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/__phello__.foo.py
+END
+commands.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/commands.py
+END
+cgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/cgi.py
+END
+posixfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/posixfile.py
+END
+robotparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/robotparser.py
+END
+tempfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/tempfile.py
+END
+pdb.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pdb.py
+END
+nntplib.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/nntplib.py
+END
+chunk.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/chunk.py
+END
+Cookie.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/Cookie.py
+END
+opcode.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/opcode.py
+END
+pydoc.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pydoc.py
+END
+pstats.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pstats.py
+END
+macurl2path.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/macurl2path.py
+END
+MimeWriter.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/MimeWriter.py
+END
+gettext.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/gettext.py
+END
+sre_constants.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sre_constants.py
+END
+md5.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/md5.py
+END
+sunaudio.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sunaudio.py
+END
+urllib.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/urllib.py
+END
+sre.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sre.py
+END
+htmllib.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/htmllib.py
+END
+trace.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/trace.py
+END
+Bastion.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/Bastion.py
+END
+profile.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/profile.py
+END
+aifc.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/aifc.py
+END
+cmd.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/cmd.py
+END
+cProfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/cProfile.py
+END
+types.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/types.py
+END
+rfc822.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/rfc822.py
+END
+repr.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/repr.py
+END
+code.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/code.py
+END
+contextlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/contextlib.py
+END
+unittest.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/unittest.py
+END
+UserDict.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/UserDict.py
+END
+telnetlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/telnetlib.py
+END
+Queue.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/Queue.py
+END
+platform.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/platform.py
+END
+tarfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/tarfile.py
+END
+bdb.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/bdb.py
+END
+_LWPCookieJar.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/_LWPCookieJar.py
+END
+new.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/new.py
+END
+mimify.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/mimify.py
+END
+statvfs.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/statvfs.py
+END
+mhlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/mhlib.py
+END
+mailbox.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/mailbox.py
+END
+_MozillaCookieJar.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/_MozillaCookieJar.py
+END
+StringIO.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/StringIO.py
+END
+fileinput.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/fileinput.py
+END
+zipfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/zipfile.py
+END
+doctest.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/doctest.py
+END
+httplib.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/httplib.py
+END
+rexec.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/rexec.py
+END
+toaiff.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/toaiff.py
+END
+codeop.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/codeop.py
+END
+hashlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/hashlib.py
+END
+UserList.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/UserList.py
+END
+linecache.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/linecache.py
+END
+urllib2.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/urllib2.py
+END
+pprint.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pprint.py
+END
+colorsys.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/colorsys.py
+END
+_threading_local.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/_threading_local.py
+END
+sets.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sets.py
+END
+filecmp.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/filecmp.py
+END
+tty.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/tty.py
+END
+ConfigParser.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/ConfigParser.py
+END
+dummy_thread.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/dummy_thread.py
+END
+xdrlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/xdrlib.py
+END
+cgitb.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/cgitb.py
+END
+subprocess.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/subprocess.py
+END
+dbhash.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/dbhash.py
+END
+uu.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/uu.py
+END
+multifile.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/multifile.py
+END
+timeit.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/timeit.py
+END
+urlparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/urlparse.py
+END
+locale.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/locale.py
+END
+codecs.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/codecs.py
+END
+sre_compile.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sre_compile.py
+END
+mutex.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/mutex.py
+END
+popen2.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/popen2.py
+END
+SimpleXMLRPCServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/SimpleXMLRPCServer.py
+END
+pickle.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pickle.py
+END
+this.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/this.py
+END
+hmac.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/hmac.py
+END
+functools.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/functools.py
+END
+binhex.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/binhex.py
+END
+pkgutil.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/pkgutil.py
+END
+dis.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/dis.py
+END
+HTMLParser.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/HTMLParser.py
+END
+imputil.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/imputil.py
+END
+sre_parse.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/sre_parse.py
+END
+keyword.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/keyword.py
+END
+poplib.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/poplib.py
+END

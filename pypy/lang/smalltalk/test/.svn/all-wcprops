@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test
+END
+test_primitives.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test/test_primitives.py
+END
+test_squeakimage.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test/test_squeakimage.py
+END
+test_miniimage.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test/test_miniimage.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test/__init__.py
+END
+test_model.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test/test_model.py
+END
+test_wrapper.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test/test_wrapper.py
+END
+test_objectspace.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test/test_objectspace.py
+END
+test_interpreter.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test/test_interpreter.py
+END
+test_shadow.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/lang/smalltalk/test/test_shadow.py
+END

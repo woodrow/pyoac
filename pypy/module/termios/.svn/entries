@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/termios
+http://codespeak.net/svn
+
+
+
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:05.000000Z
+45a60b241d8272458ada54b041b34097
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+app_termios.py
+file
+
+
+
+
+2009-11-16T04:56:05.000000Z
+d5aac97e4f17ccfaff67ec66506ddf5d
+2007-05-28T20:30:46.542207Z
+43825
+fijal
+has-props
+
+interp_termios.py
+file
+
+
+
+
+2009-11-16T04:56:05.000000Z
+76939b0c48547ed2e370cc318bf7040d
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk
+END
+tkMessageBox.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/tkMessageBox.py
+END
+tkFileDialog.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/tkFileDialog.py
+END
+FileDialog.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/FileDialog.py
+END
+Dialog.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/Dialog.py
+END
+tkColorChooser.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/tkColorChooser.py
+END
+Tkdnd.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/Tkdnd.py
+END
+Tix.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/Tix.py
+END
+tkFont.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/tkFont.py
+END
+tkCommonDialog.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/tkCommonDialog.py
+END
+tkSimpleDialog.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/tkSimpleDialog.py
+END
+SimpleDialog.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/SimpleDialog.py
+END
+Tkconstants.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/Tkconstants.py
+END
+Canvas.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/Canvas.py
+END
+ScrolledText.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/ScrolledText.py
+END
+turtle.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/turtle.py
+END
+Tkinter.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/Tkinter.py
+END
+FixTk.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/lib-tk/FixTk.py
+END

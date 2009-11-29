@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/operator/test
+http://codespeak.net/svn
+
+
+
+2008-10-08T09:46:35.369439Z
+58796
+jlg
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_operator.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+8f7b1a7016f24290e02da5d4e466fb4c
+2008-10-08T09:46:35.369439Z
+58796
+jlg
+has-props
+

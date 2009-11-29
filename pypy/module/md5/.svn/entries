@@ -1,0 +1,57 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/md5
+http://codespeak.net/svn
+
+
+
+2009-04-21T10:04:19.015132Z
+64495
+iko
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+0e4222eeb98dad19e6b0dd4b9e481a07
+2009-04-19T11:15:55.478360Z
+64355
+arigo
+has-props
+
+interp_md5.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+3a46fcf29c9082bfb838d39029ffc14e
+2009-04-19T11:15:55.478360Z
+64355
+arigo
+has-props
+

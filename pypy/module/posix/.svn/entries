@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/posix
+http://codespeak.net/svn
+
+
+
+2009-04-27T09:27:03.983025Z
+64718
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+50c4ed0cb2933d662bae1a00c468d480
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+app_posix.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+0be24e39310125e09cac00256131433d
+2009-04-27T09:27:03.983025Z
+64718
+pedronis
+has-props
+
+interp_posix.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+3fb4c836077cfe2a05847440f4f0722a
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+

@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples
+END
+snippet_simple_for_loop.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_simple_for_loop.py
+END
+snippet_encoding_declaration.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_encoding_declaration.py
+END
+snippet_with_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_with_1.py
+END
+snippet_simple_function.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_simple_function.py
+END
+snippet_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_1.py
+END
+snippet_multiline.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_multiline.py
+END
+snippet_3.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_3.py
+END
+snippet_comment.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_comment.py
+END
+snippet_decorators.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_decorators.py
+END
+snippet_several_statements.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_several_statements.py
+END
+snippet_redirected_prints.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_redirected_prints.py
+END
+snippet_numbers.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_numbers.py
+END
+snippet_whilelineno.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_whilelineno.py
+END
+snippet_simple_in_expr.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_simple_in_expr.py
+END
+snippet_simple_class.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_simple_class.py
+END
+snippet_encoding_declaration3.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_encoding_declaration3.py
+END
+snippet_simple_assignment.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_simple_assignment.py
+END
+snippet_exceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_exceptions.py
+END
+snippet_decorators_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_decorators_2.py
+END
+snippet_generator.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_generator.py
+END
+snippet_docstring.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_docstring.py
+END
+snippet_with_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_with_2.py
+END
+snippet_classes.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_classes.py
+END
+snippet_transformer_bug.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_transformer_bug.py
+END
+snippet_slice.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_slice.py
+END
+snippet_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_2.py
+END
+snippet_listlinenos.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_listlinenos.py
+END
+snippet_4.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_4.py
+END
+snippet_function_calls.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_function_calls.py
+END
+snippet_only_one_comment.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_only_one_comment.py
+END
+snippet_while.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_while.py
+END
+snippet_list_comps.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_list_comps.py
+END
+snippet_encoding_declaration2.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_encoding_declaration2.py
+END
+snippet_whitespaces.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_whitespaces.py
+END
+snippet_import_statements.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/64776/pypy/dist/pypy/interpreter/pyparser/test/samples/snippet_import_statements.py
+END

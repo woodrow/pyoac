@@ -1,0 +1,57 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/time
+http://codespeak.net/svn
+
+
+
+2007-09-05T10:35:18.990395Z
+46335
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:44.000000Z
+933db8c715d81c02f3a4da4c6e72223e
+2005-08-26T12:46:39.639311Z
+16621
+arigo
+has-props
+
+interp_time.py
+file
+
+
+
+
+2009-11-16T04:55:44.000000Z
+0287a659864a4cf1ec584538ffe47469
+2007-08-25T14:47:47.152286Z
+45985
+fijal
+has-props
+

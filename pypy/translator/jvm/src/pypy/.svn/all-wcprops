@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy
+END
+Interlink.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/Interlink.java
+END
+FilterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/FilterIterator.java
+END
+DictItemsIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/DictItemsIterator.java
+END
+VoidArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/VoidArray.java
+END
+PyPy.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/PyPy.java
+END
+FilterSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/FilterSet.java
+END
+PyPyWeakRef.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/PyPyWeakRef.java
+END
+ll_os.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/ll_os.java
+END
+PyPyThrowable.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/PyPyThrowable.java
+END
+StatResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/StatResult.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/Constants.java
+END
+HashCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/HashCode.java
+END
+CustomDict.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/CustomDict.java
+END
+AbstractMethodException.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/AbstractMethodException.java
+END
+Filter.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/Filter.java
+END
+Equals.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/Equals.java
+END
+Callback.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/jvm/src/pypy/Callback.java
+END

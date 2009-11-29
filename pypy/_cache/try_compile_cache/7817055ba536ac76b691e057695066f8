@@ -1,0 +1,2 @@
+FAIL
+<CompilationError err='/var/folders/pm/pmrCZmBHG9WnPSp-s3buI++++TI/-Tmp-/usession-dist-0/platcheck_1.c: In function \xe2\x80\x98main\xe2\x80...++++TI/-Tmp-/usession-dist-0/platcheck_1.c:12: error: too many arguments to function \xe2\x80\x98getpgrp\xe2\x80\x99\n'>

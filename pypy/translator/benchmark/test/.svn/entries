@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/translator/benchmark/test
+http://codespeak.net/svn
+
+
+
+2007-01-18T07:28:16.230561Z
+36904
+hpk
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_result.py
+file
+
+
+
+
+2009-11-16T04:56:25.000000Z
+64e749f7449e4533971e205a4bc001f4
+2007-01-13T16:59:18.805549Z
+36679
+mwh
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:25.000000Z
+552dacb15f2019c8f3f74c55befa242c
+2006-12-20T12:38:56.799952Z
+35916
+mwh
+has-props
+

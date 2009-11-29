@@ -1,0 +1,57 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/itertools
+http://codespeak.net/svn
+
+
+
+2008-10-07T16:00:52.250462Z
+58778
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+e0400e4cf77fe34c2998576638c0a4f0
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+has-props
+
+interp_itertools.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+649a14cc5af31ab87cf545914d599f81
+2008-10-07T16:00:52.250462Z
+58778
+arigo
+has-props
+

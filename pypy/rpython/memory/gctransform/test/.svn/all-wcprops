@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gctransform/test
+END
+test_boehm.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gctransform/test/test_boehm.py
+END
+test_statistics.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gctransform/test/test_statistics.py
+END
+test_transform.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gctransform/test/test_transform.py
+END
+test_framework.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gctransform/test/test_framework.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gctransform/test/__init__.py
+END
+test_refcounting.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/64776/pypy/dist/pypy/rpython/memory/gctransform/test/test_refcounting.py
+END

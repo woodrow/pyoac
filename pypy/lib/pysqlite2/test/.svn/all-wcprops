@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/61465/pypy/pysqlite2/test
+END
+transactions.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/55838/pypy/pysqlite2/test/transactions.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/55838/pypy/pysqlite2/test/__init__.py
+END
+dbapi.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/55838/pypy/pysqlite2/test/dbapi.py
+END
+regression.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/55838/pypy/pysqlite2/test/regression.py
+END
+py25tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/55838/pypy/pysqlite2/test/py25tests.py
+END
+hooks.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/61465/pypy/pysqlite2/test/hooks.py
+END
+types.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/55838/pypy/pysqlite2/test/types.py
+END
+factory.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/55838/pypy/pysqlite2/test/factory.py
+END
+userfunctions.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/55838/pypy/pysqlite2/test/userfunctions.py
+END

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/63361/py/dist/py/test/testing
+END
+test_deprecated_api.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_deprecated_api.py
+END
+test_runner_functional.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_runner_functional.py
+END
+test_parseopt.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_parseopt.py
+END
+test_pycollect.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_pycollect.py
+END
+test_pickling.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_pickling.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/test/testing/__init__.py
+END
+test_conftesthandle.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_conftesthandle.py
+END
+test_setup_nested.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_setup_nested.py
+END
+test_config.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_config.py
+END
+test_pytestplugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_pytestplugin.py
+END
+test_outcome.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_outcome.py
+END
+test_genitems.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_genitems.py
+END
+test_recording.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_recording.py
+END
+test_traceback.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_traceback.py
+END
+test_session.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_session.py
+END
+test_compat.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_compat.py
+END
+test_collect.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63361/py/dist/py/test/testing/test_collect.py
+END
+conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/63361/py/dist/py/test/testing/conftest.py
+END
+acceptance_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/test/testing/acceptance_test.py
+END

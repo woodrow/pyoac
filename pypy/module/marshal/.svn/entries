@@ -1,0 +1,57 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/marshal
+http://codespeak.net/svn
+
+
+
+2009-03-20T13:59:58.508741Z
+63138
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+interp_marshal.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+9d70f9a09e7124e666236bf2fd531e74
+2009-02-09T15:22:57.177569Z
+61663
+arigo
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:42.000000Z
+5638571be98fa6aabbbb24f2d9799f98
+2005-08-03T04:48:41.147152Z
+15534
+tismer
+has-props
+

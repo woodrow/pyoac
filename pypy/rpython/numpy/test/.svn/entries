@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/rpython/numpy/test
+http://codespeak.net/svn
+
+
+
+2009-04-17T10:22:50.817603Z
+64241
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_array.py
+file
+
+
+
+
+2009-11-16T04:56:44.000000Z
+8281bf173c99d25533c710ea312ab8c6
+2009-04-17T10:22:50.817603Z
+64241
+pedronis
+has-props
+
+conftest.py
+file
+
+
+
+
+2009-11-16T04:56:44.000000Z
+2fde599dca1ce0ff36c30071283acdca
+2006-08-09T10:20:46.136577Z
+31191
+arigo
+has-props
+

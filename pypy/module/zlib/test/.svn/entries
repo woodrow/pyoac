@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/zlib/test
+http://codespeak.net/svn
+
+
+
+2009-04-06T11:58:36.727376Z
+63714
+cfbolz
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_zlib.py
+file
+
+
+
+
+2009-11-16T04:55:44.000000Z
+a51115b4a036e2790eeced7572e360e0
+2009-04-06T11:58:36.727376Z
+63714
+cfbolz
+has-props
+

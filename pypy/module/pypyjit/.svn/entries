@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/pypyjit
+http://codespeak.net/svn
+
+
+
+2009-03-07T18:23:12.005454Z
+62726
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+8699bfe63f810cfce0a8c5a06f8a7349
+2008-03-29T16:15:09.572044Z
+53098
+arigo
+has-props
+
+portal.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+e321d519c27878efe5e803a80489fc76
+2009-03-07T18:23:12.005454Z
+62726
+arigo
+has-props
+
+interp_jit.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+38da4c1f4bd6bbbd77828dc83e88cf26
+2009-03-03T21:42:23.466844Z
+62501
+fijal
+has-props
+

@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lang/test
+http://codespeak.net/svn
+
+
+
+2007-10-18T16:32:13.379595Z
+47558
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_translation.py
+file
+
+
+
+
+2009-11-16T04:55:15.000000Z
+85560e1d73fb06cb90cfdcffefe22439
+2007-08-13T17:06:19.945855Z
+45638
+jlg
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:55:15.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-08-13T16:33:33.455182Z
+45635
+fijal
+has-props
+

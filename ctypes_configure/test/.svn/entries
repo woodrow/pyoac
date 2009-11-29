@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/ctypes_configure/test
+http://codespeak.net/svn
+
+
+
+2008-03-17T16:25:37.836218Z
+52648
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:58:36.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-03-17T16:03:25.640008Z
+52645
+fijal
+has-props
+
+test_configure.py
+file
+
+
+
+
+2009-11-16T04:58:36.000000Z
+989783171f637e9bfde2ba3e384f7aec
+2008-03-17T16:25:37.836218Z
+52648
+fijal
+has-props
+

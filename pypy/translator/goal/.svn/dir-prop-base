@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 86
+*.pyc
+*.pyo
+pypy-translation-snapshot
+pypy-c*
+pypy-llvm*
+*.exe
+target*-c
+target*-llvm
+
+END

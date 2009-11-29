@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/63361/py/dist/py/rest/testing/data
+END
+example1.dot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/rest/testing/data/example1.dot
+END
+formula.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/rest/testing/data/formula.txt
+END
+tocdepth.rst2pdfconfig
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/63361/py/dist/py/rest/testing/data/tocdepth.rst2pdfconfig
+END
+example.rst2pdfconfig
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/63361/py/dist/py/rest/testing/data/example.rst2pdfconfig
+END
+formula1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/rest/testing/data/formula1.txt
+END
+part1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/rest/testing/data/part1.txt
+END
+part2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/rest/testing/data/part2.txt
+END
+graphviz.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/rest/testing/data/graphviz.txt
+END

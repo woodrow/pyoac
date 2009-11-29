@@ -1,0 +1,40 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/translator/platform/test/include
+http://codespeak.net/svn
+
+
+
+2008-10-23T10:32:04.826300Z
+59329
+fijal
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test.h
+file
+
+
+
+
+2009-11-16T04:56:25.000000Z
+3ccf0ee002aeafd7374babe22074fbdc
+2008-10-23T10:32:04.826300Z
+59329
+fijal
+

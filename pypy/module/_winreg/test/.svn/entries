@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_winreg/test
+http://codespeak.net/svn
+
+
+
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_winreg.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+e342159c74374fe26583d247e8a0194e
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+

@@ -1,0 +1,52 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/rlib/rsdl/macosx-sdl-main
+http://codespeak.net/svn
+
+
+
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+SDLMain.m
+file
+
+
+
+
+2009-11-16T04:56:18.000000Z
+97b64338ea0a77015f50b9ef7782b4d6
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+
+SDLMain.h
+file
+
+
+
+
+2009-11-16T04:56:18.000000Z
+6f2f2d37cdd7c4b27d3fa991ff3f641b
+2008-09-23T14:57:10.417302Z
+58387
+fijal
+

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/execnet/testing
+END
+test_multi.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/execnet/testing/test_multi.py
+END
+test_rsync.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/execnet/testing/test_rsync.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/execnet/testing/__init__.py
+END
+test_event.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/execnet/testing/test_event.py
+END
+test_gateway.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/execnet/testing/test_gateway.py
+END
+test_xspec.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/63361/py/dist/py/execnet/testing/test_xspec.py
+END
+conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/execnet/testing/conftest.py
+END
+test_gwmanage.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/63361/py/dist/py/execnet/testing/test_gwmanage.py
+END
+test_pickle.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/63361/py/dist/py/execnet/testing/test_pickle.py
+END

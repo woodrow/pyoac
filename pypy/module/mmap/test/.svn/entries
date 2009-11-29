@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/mmap/test
+http://codespeak.net/svn
+
+
+
+2008-03-08T10:21:08.625521Z
+52299
+arigo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_mmap.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+0ea809ca2b7e175f3543aa4e62053e97
+2008-03-08T10:21:08.625521Z
+52299
+arigo
+has-props
+

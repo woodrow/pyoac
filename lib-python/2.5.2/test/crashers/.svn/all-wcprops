@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers
+END
+loosing_dict_ref.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/loosing_dict_ref.py
+END
+infinite_rec_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/infinite_rec_1.py
+END
+nasty_eq_vs_dict.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/nasty_eq_vs_dict.py
+END
+borrowed_ref_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/borrowed_ref_1.py
+END
+infinite_rec_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/infinite_rec_2.py
+END
+borrowed_ref_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/borrowed_ref_2.py
+END
+infinite_rec_4.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/infinite_rec_4.py
+END
+infinite_rec_5.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/infinite_rec_5.py
+END
+recursive_call.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/recursive_call.py
+END
+bogus_code_obj.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/bogus_code_obj.py
+END
+gc_inspection.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/gc_inspection.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/README
+END
+recursion_limit_too_high.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/test/crashers/recursion_limit_too_high.py
+END

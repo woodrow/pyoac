@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_file
+http://codespeak.net/svn
+
+
+
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+interp_stream.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+98ad4cb46b10709387e928cc0c502241
+2009-01-30T15:02:07.474738Z
+61460
+arigo
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+d79edb5da0aa9f0801674f30714d263a
+2009-03-03T18:27:30.718295Z
+62494
+afa
+has-props
+
+interp_file.py
+file
+
+
+
+
+2009-11-16T04:56:08.000000Z
+94be671d29d4b08fe11a101eb59c0b56
+2009-04-17T21:28:16.912268Z
+64311
+afa
+has-props
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/test
+END
+test_email_torture.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/test/test_email_torture.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/test/__init__.py
+END
+test_email_codecs_renamed.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/test/test_email_codecs_renamed.py
+END
+test_email_renamed.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/test/test_email_renamed.py
+END
+test_email.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/test/test_email.py
+END
+test_email_codecs.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/email/test/test_email_codecs.py
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test
+END
+test_translate.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_translate.py
+END
+test_pypackrat.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_pypackrat.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/__init__.py
+END
+test_deterministic.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_deterministic.py
+END
+test_regexparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_regexparse.py
+END
+test_ebnfparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_ebnfparse.py
+END
+test_parseerrors.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_parseerrors.py
+END
+test_regex.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_regex.py
+END
+test_parse.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_parse.py
+END
+test_pythonparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_pythonparse.py
+END
+test_lexer.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_lexer.py
+END
+pcre_test_7.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/pcre_test_7.py
+END
+test_pythonlexer.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_pythonlexer.py
+END
+test_pcre_regtest.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/test_pcre_regtest.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/autopath.py
+END
+pygrammar.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/rlib/parsing/test/pygrammar.txt
+END

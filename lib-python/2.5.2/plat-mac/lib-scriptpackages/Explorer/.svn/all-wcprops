@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Explorer
+END
+Required_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Explorer/Required_Suite.py
+END
+Standard_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Explorer/Standard_Suite.py
+END
+Web_Browser_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Explorer/Web_Browser_Suite.py
+END
+Netscape_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Explorer/Netscape_Suite.py
+END
+URL_Suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Explorer/URL_Suite.py
+END
+Microsoft_Internet_Explorer.py
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Explorer/Microsoft_Internet_Explorer.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/64776/pypy/dist/lib-python/2.5.2/plat-mac/lib-scriptpackages/Explorer/__init__.py
+END

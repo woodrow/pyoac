@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/64776/pypy/dist/demo
+END
+foodbill.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/demo/foodbill.py
+END
+bpnn.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/64776/pypy/dist/demo/bpnn.py
+END
+fibonacci.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64776/pypy/dist/demo/fibonacci.py
+END
+pickle_coroutine.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64776/pypy/dist/demo/pickle_coroutine.py
+END
+dis-goal.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/demo/dis-goal.py
+END
+fibonacci2.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64776/pypy/dist/demo/fibonacci2.py
+END
+sharedref.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64776/pypy/dist/demo/sharedref.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64776/pypy/dist/demo/autopath.py
+END

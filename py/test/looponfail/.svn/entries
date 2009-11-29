@@ -1,0 +1,70 @@
+8
+
+dir
+64398
+http://codespeak.net/svn/py/dist/py/test/looponfail
+http://codespeak.net/svn
+
+
+
+2009-03-21T20:07:45.829237Z
+63195
+hpk
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+remote.py
+file
+
+
+
+
+2009-11-16T04:58:40.000000Z
+fbc7caf9ec532cb1491f6149c8668cde
+2009-03-21T20:07:45.829237Z
+63195
+hpk
+has-props
+
+util.py
+file
+
+
+
+
+2009-11-16T04:58:40.000000Z
+f8a6d4189dbe9a32fcc0498afc7bf08d
+2009-02-27T10:18:27.450373Z
+62211
+hpk
+has-props
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:58:40.000000Z
+552dacb15f2019c8f3f74c55befa242c
+2005-04-10T20:44:22.431355Z
+10522
+hpk
+has-props
+
+testing
+dir
+

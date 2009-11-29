@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/65015/pypy/dist/pypy/config
+END
+pypyoption.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64776/pypy/dist/pypy/config/pypyoption.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/pypy/config/__init__.py
+END
+makerestdoc.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/config/makerestdoc.py
+END
+autopath.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64776/pypy/dist/pypy/config/autopath.py
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64776/pypy/dist/pypy/config/config.py
+END
+translationoption.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/65015/pypy/dist/pypy/config/translationoption.py
+END

@@ -1,0 +1,54 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/crypt/test
+http://codespeak.net/svn
+
+
+
+2006-07-13T09:52:11.191106Z
+30005
+cfbolz
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:07.000000Z
+552dacb15f2019c8f3f74c55befa242c
+2006-06-05T09:36:27.274300Z
+28308
+hpk
+has-props
+
+test_crypt.py
+file
+
+
+
+
+2009-11-16T04:56:07.000000Z
+d8d27c9cc8e5fb63a5441a09e6b2b74e
+2006-07-13T09:52:11.191106Z
+30005
+cfbolz
+has-props
+

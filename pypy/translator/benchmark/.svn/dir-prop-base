@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 72
+*.pyc
+*.pyo
+docutils
+templess
+gadfly
+mako
+bench-custom.benchmark_result
+
+END

@@ -1,0 +1,86 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/ctypes_configure
+http://codespeak.net/svn
+
+
+
+2009-04-19T14:55:30.140405Z
+64381
+iko
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+doc
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:58:36.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-03-17T16:03:25.640008Z
+52645
+fijal
+has-props
+
+configure.py
+file
+
+
+
+
+2009-11-16T04:58:36.000000Z
+e3bd0573ab039d6625bb9d9d4a9ea42c
+2009-04-19T14:55:30.140405Z
+64381
+iko
+has-props
+
+cbuild.py
+file
+
+
+
+
+2009-11-16T04:58:36.000000Z
+e42125974f7295df69088ab1dbefa78b
+2008-03-17T19:13:26.435279Z
+52662
+fijal
+has-props
+
+stdoutcapture.py
+file
+
+
+
+
+2009-11-16T04:58:36.000000Z
+72644521d4209205b02f50f230287794
+2008-03-17T16:25:37.836218Z
+52648
+fijal
+has-props
+

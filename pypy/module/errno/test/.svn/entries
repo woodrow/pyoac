@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/errno/test
+http://codespeak.net/svn
+
+
+
+2006-07-13T09:52:11.191106Z
+30005
+cfbolz
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test_errno.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+4208ff98a9ab98caa962ca3c3c781fd4
+2006-07-13T09:52:11.191106Z
+30005
+cfbolz
+has-props
+

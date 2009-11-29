@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/translator/goal/win32
+http://codespeak.net/svn
+
+
+
+2007-01-19T18:30:27.288070Z
+37036
+cfbolz
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+gc_patch_windows.py
+file
+
+
+
+
+2009-11-16T04:56:25.000000Z
+05a3b395ef8be776e60a73748433b782
+2007-01-19T18:30:27.288070Z
+37036
+cfbolz
+has-props
+

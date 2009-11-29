@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/c/winproj/standalone
+END
+standalone.sln
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/c/winproj/standalone/standalone.sln
+END
+pypytest_slp.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/c/winproj/standalone/pypytest_slp.py
+END
+standalone.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/64776/pypy/dist/pypy/translator/c/winproj/standalone/standalone.vcproj
+END

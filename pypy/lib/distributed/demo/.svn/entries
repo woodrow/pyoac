@@ -1,0 +1,41 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/lib/distributed/demo
+http://codespeak.net/svn
+
+
+
+2007-10-02T08:31:39.971757Z
+47085
+fijal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+sockdemo.py
+file
+
+
+
+
+2009-11-16T04:57:11.000000Z
+1da91624c57ff1f885f2b5ac96eff48e
+2007-04-12T19:45:27.253898Z
+42009
+fijal
+has-props
+

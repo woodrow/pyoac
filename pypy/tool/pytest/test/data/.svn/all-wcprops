@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pytest/test/data
+END
+test___all__.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pytest/test/data/test___all__.txt
+END
+test_compile.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pytest/test/data/test_compile.txt
+END
+test_generators.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pytest/test/data/test_generators.txt
+END
+test_sys.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pytest/test/data/test_sys.txt
+END
+test_descr.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pytest/test/data/test_descr.txt
+END
+test_global.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/64776/pypy/dist/pypy/tool/pytest/test/data/test_global.txt
+END

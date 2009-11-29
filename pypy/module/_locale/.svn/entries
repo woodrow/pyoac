@@ -1,0 +1,70 @@
+8
+
+dir
+69315
+http://codespeak.net/svn/pypy/dist/pypy/module/_locale
+http://codespeak.net/svn
+
+
+
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fd0d7bf2-dfb6-0310-8d31-b7ecfe96aada
+
+test
+dir
+
+__init__.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+3212066c24589251fea09595f03e9ba4
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+
+app_locale.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+33d0d55c79d3118d265ce88cde6b9321
+2009-03-07T13:59:19.560541Z
+62703
+fijal
+has-props
+
+interp_locale.py
+file
+
+
+
+
+2009-11-16T04:56:06.000000Z
+0ca99f38b83abceb23fe887d2ecb7e9a
+2009-04-24T11:42:40.253673Z
+64636
+pedronis
+has-props
+

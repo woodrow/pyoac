@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/61608/pyrepl/trunk/pyrepl/pyrepl
+END
+pygame_keymap.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/53507/pyrepl/trunk/pyrepl/pyrepl/pygame_keymap.py
+END
+unix_eventqueue.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/53507/pyrepl/trunk/pyrepl/pyrepl/unix_eventqueue.py
+END
+completer.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/completer.py
+END
+input.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/input.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/53507/pyrepl/trunk/pyrepl/pyrepl/__init__.py
+END
+commands.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/53507/pyrepl/trunk/pyrepl/pyrepl/commands.py
+END
+fancy_termios.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/fancy_termios.py
+END
+console.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/console.py
+END
+reader.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/53590/pyrepl/trunk/pyrepl/pyrepl/reader.py
+END
+python_reader.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/47089/pyrepl/trunk/pyrepl/pyrepl/python_reader.py
+END
+pygame_console.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/pygame_console.py
+END
+curses.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/53507/pyrepl/trunk/pyrepl/pyrepl/curses.py
+END
+copy_code.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/copy_code.py
+END
+unix_console.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/58745/pyrepl/trunk/pyrepl/pyrepl/unix_console.py
+END
+module_lister.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/module_lister.py
+END
+keymaps.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/keymaps.py
+END
+simple_interact.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/61608/pyrepl/trunk/pyrepl/pyrepl/simple_interact.py
+END
+historical_reader.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/historical_reader.py
+END
+completing_reader.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5436/pyrepl/trunk/pyrepl/pyrepl/completing_reader.py
+END
+readline.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/61608/pyrepl/trunk/pyrepl/pyrepl/readline.py
+END
+keymap.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/53507/pyrepl/trunk/pyrepl/pyrepl/keymap.py
+END
+cmdrepl.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/43419/pyrepl/trunk/pyrepl/pyrepl/cmdrepl.py
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4602/pyrepl/trunk/pyrepl/pyrepl/.cvsignore
+END

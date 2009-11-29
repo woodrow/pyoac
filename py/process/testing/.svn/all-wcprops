@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63361/py/dist/py/process/testing
+END
+test_killproc.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/63361/py/dist/py/process/testing/test_killproc.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/63361/py/dist/py/process/testing/__init__.py
+END
+test_forkedfunc.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/63361/py/dist/py/process/testing/test_forkedfunc.py
+END
+test_cmdexec.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/63361/py/dist/py/process/testing/test_cmdexec.py
+END
