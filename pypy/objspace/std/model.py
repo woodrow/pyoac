@@ -57,6 +57,7 @@ class StdTypeModel:
         # imported here.  This registers them into the multimethod tables,
         # *before* the type objects are built from these multimethod tables.
         from pypy.objspace.std import objectobject
+        from pypy.objspace.std import nametokenobject
         from pypy.objspace.std import boolobject
         from pypy.objspace.std import intobject
         from pypy.objspace.std import floatobject
@@ -90,6 +91,7 @@ class StdTypeModel:
         # the set of implementation types
         self.typeorder = {
             objectobject.W_ObjectObject: [],
+            nametokenobject.W_NametokenObject: [],
             boolobject.W_BoolObject: [],
             intobject.W_IntObject: [],
             floatobject.W_FloatObject: [],
