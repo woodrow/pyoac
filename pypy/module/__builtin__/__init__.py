@@ -53,6 +53,7 @@ class Module(MixedModule):
         'reload'        : 'app_misc.reload',
 
         '__filestub'    : 'app_file_stub.file',
+        
     }
 
     interpleveldefs = {
@@ -112,6 +113,9 @@ class Module(MixedModule):
         'staticmethod'  : 'descriptor.StaticMethod',
         'classmethod'   : 'descriptor.ClassMethod',
         'property'      : 'descriptor.W_Property',
+        
+        'newtoken'      : 'namespace.newtoken',
+        'changetoken'   : 'namespace.changetoken',
 
     }
 

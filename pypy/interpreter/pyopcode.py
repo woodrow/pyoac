@@ -20,6 +20,16 @@ from pypy.tool.stdlib_opcode import unrolling_opcode_descs
 from pypy.tool.stdlib_opcode import opcode_method_names
 from pypy.rlib.unroll import unrolling_iterable
 
+global id_table
+try:
+    len(id_table)
+except NameError:
+    try:
+        id_table = __builtins__["id_table"]
+    except KeyError:
+        __builtins__["id_table"] = {}
+        id_table = __builtins__["id_table"] 
+
 def unaryoperation(operationname):
     """NOT_RPYTHON"""
     def opimpl(f, *ignored):
@@ -334,6 +344,13 @@ class __extend__(pyframe.PyFrame):
     def STORE_FAST(f, varindex, *ignored):
         w_newvalue = f.popvalue()
         assert w_newvalue is not None
+        global id_table
+        import sys
+        func_name = sys._getframe().f_code.co_name
+        if id(w_newvalue) in id_table:
+            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+        else:
+            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.fastlocals_w[varindex] = w_newvalue
         #except:
         #    print "exception: got index error"
@@ -494,6 +511,13 @@ class __extend__(pyframe.PyFrame):
         w_subscr = f.popvalue()
         w_obj = f.popvalue()
         w_newvalue = f.popvalue()
+        global id_table
+        import sys
+        func_name = sys._getframe().f_code.co_name
+        if id(w_newvalue) in id_table:
+            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+        else:
+            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.space.setitem(w_obj, w_subscr, w_newvalue)
 
     def DELETE_SUBSCR(f, *ignored):
@@ -617,6 +641,13 @@ class __extend__(pyframe.PyFrame):
     def STORE_NAME(f, varindex, *ignored):
         w_varname = f.getname_w(varindex)
         w_newvalue = f.popvalue()
+        global id_table
+        import sys
+        func_name = sys._getframe().f_code.co_name
+        if id(w_newvalue) in id_table:
+            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+        else:
+            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.space.set_str_keyed_item(f.w_locals, w_varname, w_newvalue)
 
     def DELETE_NAME(f, varindex, *ignored):
@@ -643,6 +674,13 @@ class __extend__(pyframe.PyFrame):
         w_attributename = f.getname_w(nameindex)
         w_obj = f.popvalue()
         w_newvalue = f.popvalue()
+        global id_table
+        import sys
+        func_name = sys._getframe().f_code.co_name
+        if id(w_newvalue) in id_table:
+            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+        else:
+            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.space.setattr(w_obj, w_attributename, w_newvalue)
 
     def DELETE_ATTR(f, nameindex, *ignored):
@@ -654,6 +692,13 @@ class __extend__(pyframe.PyFrame):
     def STORE_GLOBAL(f, nameindex, *ignored):
         w_varname = f.getname_w(nameindex)
         w_newvalue = f.popvalue()
+        global id_table
+        import sys
+        func_name = sys._getframe().f_code.co_name
+        if id(w_newvalue) in id_table:
+            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+        else:
+            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.space.set_str_keyed_item(f.w_globals, w_varname, w_newvalue)
 
     def DELETE_GLOBAL(f, nameindex, *ignored):

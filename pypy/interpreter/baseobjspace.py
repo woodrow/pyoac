@@ -228,6 +228,8 @@ class ObjSpace(object):
     http://codespeak.net/pypy/dist/pypy/doc/objspace.html"""
 
     full_exceptions = True  # full support for exceptions (normalization & more)
+    
+    namespace_table = {}
 
     def __init__(self, config=None):
         "NOT_RPYTHON: Basic initialization of objects."
