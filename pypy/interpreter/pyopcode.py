@@ -30,12 +30,16 @@ def namecheck_load(f,w_obj):
     #check to see if space.namespace_table(id(obj)) == __nametoken__
     #if not, check if space.namepsace_table(id(obj)) in __alltokens__
     #if not, return false
-    #####
     #f contains globals (and hopefully space.namespace_table, w_obj is the wrapped object whose namespace we're going to check
+    ##########
     w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap("__nametoken__"))
-    w_obj_nametoken = f.space.namespace_table[id(w_obj)]
+    try:
+        w_obj_nametoken = f.space.namespace_table[id(w_obj)]
+    except KeyError:
+        w_obj_nametoken = None
+        
     if w_obj_nametoken is None or w_frameglobals_nametoken is None:
-        return False
+        return True #was False; change made to deal with bytecode interpreter brokenness
     if f.space.is_w(w_obj_nametoken, w_frameglobals_nametoken):
         return True
     else:
@@ -47,18 +51,22 @@ def namecheck_load(f,w_obj):
 def namecheck_store(f,w_obj):
     #check w_globals.__nametoken__
     #w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap("__nametoken__"))
-    w_frameglobals_nametoken = f.get_builtin().getdictvalue(f.space, f.space.wrap("__nametoken__"))
-    if w_frameglobals_nametoken is None:
         #if not there, call newtoken() and store in __nametoken
-        ##### INSERT CODE HERE #####
-        print("########################" + str(f))
-        print(f.get_builtin())
-        w_frameglobals_nametoken = f.space.call_function(f.get_builtin().getdictvalue(f.space, f.space.wrap('newtoken')))
-        #f.space.setitem(f.w_globals, f.space.wrap("__nametoken__"), w_frameglobals_nametoken)
-        f.get_builtin().setdictvalue(f.space, f.space.wrap("__nametoken__"), w_frameglobals_nametoken)
-        
     #annotate store object with __nametoken__
-    f.space.namespace_table[id(w_obj)] = w_frameglobals_nametoken
+    ##########
+    w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap("__nametoken__"))
+    if w_frameglobals_nametoken is not None:
+        f.space.namespace_table[id(w_obj)] = w_frameglobals_nametoken
+#    if w_frameglobals_nametoken is None:
+# disabled due to bytecode interpreter brokenness
+#        ##### INSERT CODE HERE #####
+#        print("########################" + str(f))
+#        print(f.get_builtin())
+#        w_frameglobals_nametoken = f.space.call_function(f.get_builtin().getdictvalue(f.space, f.space.wrap('newtoken')))
+#        #f.space.setitem(f.w_globals, f.space.wrap("__nametoken__"), w_frameglobals_nametoken)
+#        f.get_builtin().setdictvalue(f.space, f.space.wrap("__nametoken__"), w_frameglobals_nametoken)
+#
+#    f.space.namespace_table[id(w_obj)] = w_frameglobals_nametoken
 
 #def namecheck_func(f,w_obj):
 #    pass
@@ -768,11 +776,6 @@ class __extend__(pyframe.PyFrame):
     _load_global_failed._dont_inline_ = True
 
     def LOAD_GLOBAL(f, nameindex, *ignored):
-##SRW
-        x = (1,2,3)
-        namecheck_store(f,x)
-        print (namecheck_load(f,x))
-
         f.pushvalue(f._load_global(f.getname_w(nameindex)))
     LOAD_GLOBAL._always_inline_ = True
 
