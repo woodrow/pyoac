@@ -1,0 +1,2 @@
+*.pyc
+pypy/_cache/*
