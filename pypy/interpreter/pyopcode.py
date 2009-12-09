@@ -20,15 +20,51 @@ from pypy.tool.stdlib_opcode import unrolling_opcode_descs
 from pypy.tool.stdlib_opcode import opcode_method_names
 from pypy.rlib.unroll import unrolling_iterable
 
-global id_table
-try:
-    len(id_table)
-except NameError:
-    try:
-        id_table = __builtins__["id_table"]
-    except KeyError:
-        __builtins__["id_table"] = {}
-        id_table = __builtins__["id_table"] 
+##SRW
+
+# if false, throw "not found" exceptions and return None
+# if true, throw access exceptions
+throw_access_exceptions_for_name_acessess = False
+
+def namecheck_load(f,w_obj):
+    #check to see if space.namespace_table(id(obj)) == __nametoken__
+    #if not, check if space.namepsace_table(id(obj)) in __alltokens__
+    #if not, return false
+    #####
+    #f contains globals (and hopefully space.namespace_table, w_obj is the wrapped object whose namespace we're going to check
+    w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap("__nametoken__"))
+    w_obj_nametoken = f.space.namespace_table[id(w_obj)]
+    if w_obj_nametoken is None or w_frameglobals_nametoken is None:
+        return False
+    if f.space.is_w(w_obj_nametoken, w_frameglobals_nametoken):
+        return True
+    else:
+        w_frameglobals_alltokens =  f.space.finditem(f.w_globals, f.space.wrap("__alltokens__"))
+        if w_frameglobals_alltokens is not None and f.space.finditem(w_frameglobals_alltokens, f.space.namespace_table[id(w_obj)]) is not None:
+            return True
+    return False
+
+def namecheck_store(f,w_obj):
+    #check w_globals.__nametoken__
+    #w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap("__nametoken__"))
+    w_frameglobals_nametoken = f.get_builtin().getdictvalue(f.space, f.space.wrap("__nametoken__"))
+    if w_frameglobals_nametoken is None:
+        #if not there, call newtoken() and store in __nametoken
+        ##### INSERT CODE HERE #####
+        print("########################" + str(f))
+        print(f.get_builtin())
+        w_frameglobals_nametoken = f.space.call_function(f.get_builtin().getdictvalue(f.space, f.space.wrap('newtoken')))
+        #f.space.setitem(f.w_globals, f.space.wrap("__nametoken__"), w_frameglobals_nametoken)
+        f.get_builtin().setdictvalue(f.space, f.space.wrap("__nametoken__"), w_frameglobals_nametoken)
+        
+    #annotate store object with __nametoken__
+    f.space.namespace_table[id(w_obj)] = w_frameglobals_nametoken
+
+#def namecheck_func(f,w_obj):
+#    pass
+#look inside closure for __nametoken__ in __allowexecute__
+
+##end SRW
 
 def unaryoperation(operationname):
     """NOT_RPYTHON"""
@@ -344,13 +380,13 @@ class __extend__(pyframe.PyFrame):
     def STORE_FAST(f, varindex, *ignored):
         w_newvalue = f.popvalue()
         assert w_newvalue is not None
-        global id_table
-        import sys
-        func_name = sys._getframe().f_code.co_name
-        if id(w_newvalue) in id_table:
-            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
-        else:
-            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+#SRW     global id_table
+#        import sys
+#        func_name = sys._getframe().f_code.co_name
+#        if id(w_newvalue) in id_table:
+#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+#        else:
+#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.fastlocals_w[varindex] = w_newvalue
         #except:
         #    print "exception: got index error"
@@ -511,13 +547,13 @@ class __extend__(pyframe.PyFrame):
         w_subscr = f.popvalue()
         w_obj = f.popvalue()
         w_newvalue = f.popvalue()
-        global id_table
-        import sys
-        func_name = sys._getframe().f_code.co_name
-        if id(w_newvalue) in id_table:
-            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
-        else:
-            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+#SRW     global id_table
+#        import sys
+#        func_name = sys._getframe().f_code.co_name
+#        if id(w_newvalue) in id_table:
+#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+#        else:
+#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.space.setitem(w_obj, w_subscr, w_newvalue)
 
     def DELETE_SUBSCR(f, *ignored):
@@ -641,13 +677,13 @@ class __extend__(pyframe.PyFrame):
     def STORE_NAME(f, varindex, *ignored):
         w_varname = f.getname_w(varindex)
         w_newvalue = f.popvalue()
-        global id_table
-        import sys
-        func_name = sys._getframe().f_code.co_name
-        if id(w_newvalue) in id_table:
-            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
-        else:
-            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+#SRW     global id_table
+#        import sys
+#        func_name = sys._getframe().f_code.co_name
+#        if id(w_newvalue) in id_table:
+#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+#        else:
+#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.space.set_str_keyed_item(f.w_locals, w_varname, w_newvalue)
 
     def DELETE_NAME(f, varindex, *ignored):
@@ -674,13 +710,13 @@ class __extend__(pyframe.PyFrame):
         w_attributename = f.getname_w(nameindex)
         w_obj = f.popvalue()
         w_newvalue = f.popvalue()
-        global id_table
-        import sys
-        func_name = sys._getframe().f_code.co_name
-        if id(w_newvalue) in id_table:
-            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
-        else:
-            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+#SRW     global id_table
+#        import sys
+#        func_name = sys._getframe().f_code.co_name
+#        if id(w_newvalue) in id_table:
+#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+#        else:
+#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.space.setattr(w_obj, w_attributename, w_newvalue)
 
     def DELETE_ATTR(f, nameindex, *ignored):
@@ -692,13 +728,13 @@ class __extend__(pyframe.PyFrame):
     def STORE_GLOBAL(f, nameindex, *ignored):
         w_varname = f.getname_w(nameindex)
         w_newvalue = f.popvalue()
-        global id_table
-        import sys
-        func_name = sys._getframe().f_code.co_name
-        if id(w_newvalue) in id_table:
-            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
-        else:
-            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+#SRW     global id_table
+#        import sys
+#        func_name = sys._getframe().f_code.co_name
+#        if id(w_newvalue) in id_table:
+#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
+#        else:
+#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
         f.space.set_str_keyed_item(f.w_globals, w_varname, w_newvalue)
 
     def DELETE_GLOBAL(f, nameindex, *ignored):
@@ -732,6 +768,11 @@ class __extend__(pyframe.PyFrame):
     _load_global_failed._dont_inline_ = True
 
     def LOAD_GLOBAL(f, nameindex, *ignored):
+##SRW
+        x = (1,2,3)
+        namecheck_store(f,x)
+        print (namecheck_load(f,x))
+
         f.pushvalue(f._load_global(f.getname_w(nameindex)))
     LOAD_GLOBAL._always_inline_ = True
 
