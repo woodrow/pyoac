@@ -1,8 +1,14 @@
 from pypy.interpreter.error import OperationError
 from pypy.interpreter import function, pycode, pyframe
+from pypy.interpreter.pyopcode import namecheck_store, namecheck_load, throw_access_exceptions_for_name_acessess
 from pypy.interpreter.baseobjspace import Wrappable
 from pypy.interpreter.mixedmodule import MixedModule
 from pypy.tool.uid import uid
+
+# if false, throw "not found" exceptions and return None
+# if true, throw access exceptions
+# ALSO: change in pyopcode.py
+#throw_access_exceptions_for_name_acessess = False
 
 class Cell(Wrappable):
     "A simple container for a wrapped value."
@@ -173,13 +179,26 @@ class __extend__(pyframe.PyFrame):
         # nested scopes: access the cell object
         cell = f.cells[varindex]
         w_value = f.space.wrap(cell)
-        f.pushvalue(w_value)
+        if namecheck_load(f, w_value):
+            f.pushvalue(w_value)
+        else:
+            if throw_access_exceptions_for_name_acessess:
+                #SRW TODO raise
+                pass
+            else:
+                f.pushvalue(w_None) #TODO BETTER THAN THIS
 
     def LOAD_DEREF(f, varindex, *ignored):
         # nested scopes: access a variable through its cell object
         cell = f.cells[varindex]
         try:
             w_value = cell.get()
+            if not namecheck_load(f, w_value):
+                if throw_access_exceptions_for_name_acessess:
+                    #SRW TODO raise
+                    pass
+                else:
+                    raise ValueError()
         except ValueError:
             varname = f.getfreevarname(varindex)
             if f.iscellvar(varindex):
@@ -201,6 +220,7 @@ class __extend__(pyframe.PyFrame):
         #except IndexError:
         #    import pdb; pdb.set_trace()
         #    raise
+        namecheck_store(f, w_newvalue) #SRW
         cell.set(w_newvalue)
 
     def MAKE_CLOSURE(f, numdefaults, *ignored):

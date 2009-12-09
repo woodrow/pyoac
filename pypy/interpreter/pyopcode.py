@@ -24,6 +24,7 @@ from pypy.rlib.unroll import unrolling_iterable
 
 # if false, throw "not found" exceptions and return None
 # if true, throw access exceptions
+# ALSO: change in nestedscope.py
 throw_access_exceptions_for_name_acessess = False
 
 def namecheck_load(f,w_obj):
@@ -555,13 +556,7 @@ class __extend__(pyframe.PyFrame):
         w_subscr = f.popvalue()
         w_obj = f.popvalue()
         w_newvalue = f.popvalue()
-#SRW     global id_table
-#        import sys
-#        func_name = sys._getframe().f_code.co_name
-#        if id(w_newvalue) in id_table:
-#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
-#        else:
-#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+        namecheck_store(f,w_newvalue) #SRW
         f.space.setitem(w_obj, w_subscr, w_newvalue)
 
     def DELETE_SUBSCR(f, *ignored):
@@ -685,19 +680,21 @@ class __extend__(pyframe.PyFrame):
     def STORE_NAME(f, varindex, *ignored):
         w_varname = f.getname_w(varindex)
         w_newvalue = f.popvalue()
-#SRW     global id_table
-#        import sys
-#        func_name = sys._getframe().f_code.co_name
-#        if id(w_newvalue) in id_table:
-#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
-#        else:
-#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+        namecheck_store(f, w_newvalue)
         f.space.set_str_keyed_item(f.w_locals, w_varname, w_newvalue)
 
     def DELETE_NAME(f, varindex, *ignored):
         w_varname = f.getname_w(varindex)
         try:
-            f.space.delitem(f.w_locals, w_varname)
+            if namecheck_load(f,f.space.finditem(f.w_locals, w_varname)):
+                f.space.delitem(f.w_locals, w_varname)
+            else:
+                if not throw_access_exceptions_for_name_acessess:
+                    message = "name '%s' is not defined" % f.space.str_w(w_varname)
+                    raise OperationError(f.space.w_NameError, f.space.wrap(message))
+                else:
+                    #SRW TODO raise
+                    pass
         except OperationError, e:
             # catch KeyErrors and turn them into NameErrors
             if not e.match(f.space, f.space.w_KeyError):
@@ -711,6 +708,13 @@ class __extend__(pyframe.PyFrame):
             items = f.space.unpackiterable(w_iterable, itemcount)
         except UnpackValueError, e:
             raise OperationError(f.space.w_ValueError, f.space.wrap(e.msg))
+        for i in range(len(items)):
+            if not namecheck_load(f,items[i]):
+                if not throw_access_exceptions_for_name_acessess:
+                    items[i] = w_None #TODO BETTER THAN THIS
+                else:
+                    #SRW TODO raise
+                    pass                
         f.pushrevvalues(itemcount, items)
 
     def STORE_ATTR(f, nameindex, *ignored):
@@ -718,53 +722,74 @@ class __extend__(pyframe.PyFrame):
         w_attributename = f.getname_w(nameindex)
         w_obj = f.popvalue()
         w_newvalue = f.popvalue()
-#SRW     global id_table
-#        import sys
-#        func_name = sys._getframe().f_code.co_name
-#        if id(w_newvalue) in id_table:
-#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
-#        else:
-#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+        namecheck_store(f, w_newvalue) #SRW
         f.space.setattr(w_obj, w_attributename, w_newvalue)
 
     def DELETE_ATTR(f, nameindex, *ignored):
         "del obj.attributename"
         w_attributename = f.getname_w(nameindex)
         w_obj = f.popvalue()
-        f.space.delattr(w_obj, w_attributename)
-
+        if namecheck_load(f,f.space.getattr(w_obj, w_attributename)):
+            f.space.delattr(w_obj, w_attributename)
+        else:
+            if throw_access_exceptions_for_name_acessess:
+                #SRW TODO raise
+                pass
+                    
     def STORE_GLOBAL(f, nameindex, *ignored):
         w_varname = f.getname_w(nameindex)
         w_newvalue = f.popvalue()
-#SRW     global id_table
-#        import sys
-#        func_name = sys._getframe().f_code.co_name
-#        if id(w_newvalue) in id_table:
-#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
-#        else:
-#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+        namecheck_store(f, w_newvalue) #SRW
         f.space.set_str_keyed_item(f.w_globals, w_varname, w_newvalue)
 
     def DELETE_GLOBAL(f, nameindex, *ignored):
         w_varname = f.getname_w(nameindex)
-        f.space.delitem(f.w_globals, w_varname)
+        if namecheck_load(f,f.space.finditem(f.w_globals, w_varname)):
+            f.space.delitem(f.w_globals, w_varname)
+        else:
+            if not throw_access_exceptions_for_name_acessess:
+                varname = f.space.str_w(w_varname)
+                message = "global name '%s' is not defined" % varname
+                raise OperationError(f.space.w_NameError,
+                             f.space.wrap(message))
+            else:
+                #SRW TODO raise
+                pass        
 
     def LOAD_NAME(f, nameindex, *ignored):
         if f.w_locals is not f.w_globals:
             w_varname = f.getname_w(nameindex)
             w_value = f.space.finditem(f.w_locals, w_varname)
-            if w_value is not None:
-                f.pushvalue(w_value)
-                return
+            if namecheck_load(f, w_value):
+                if w_value is not None:
+                    f.pushvalue(w_value)
+                    return
+            else:
+                if throw_access_exceptions_for_name_acessess:
+                    #SRW TODO raise
+                    pass
         f.LOAD_GLOBAL(nameindex)    # fall-back
 
     def _load_global(f, w_varname):
         w_value = f.space.finditem(f.w_globals, w_varname)
+        if not namecheck_load(f, w_value):
+            if throw_access_exceptions_for_name_acessess:
+                #SRW TODO raise
+                pass
+            else:
+                w_value = None
         if w_value is None:
             # not in the globals, now look in the built-ins
             w_value = f.get_builtin().getdictvalue(f.space, w_varname)
-            if w_value is None:
-                f._load_global_failed(w_varname)
+            if namecheck_load(f, w_value):
+                if w_value is None:
+                    f._load_global_failed(w_varname)
+            else:
+                if throw_access_exceptions_for_name_acessess:
+                    #SRW TODO raise
+                    pass
+                else:
+                    f._load_global_failed(w_varname)
         return w_value
     _load_global._always_inline_ = True
 
@@ -822,7 +847,15 @@ class __extend__(pyframe.PyFrame):
         w_attributename = f.getname_w(nameindex)
         w_obj = f.popvalue()
         w_value = f.space.getattr(w_obj, w_attributename)
-        f.pushvalue(w_value)
+        if namecheck_load(f,w_value):
+            f.pushvalue(w_value)
+        else:
+            if throw_access_exceptions_for_name_acessess:
+                #SRW TODO raise
+                pass
+            else:
+                f.pushvalue(w_None) #TODO BETTER THAN THIS
+
     LOAD_ATTR._always_inline_ = True
 
     def cmp_lt(f, w_1, w_2):  return f.space.lt(w_1, w_2)
@@ -938,6 +971,13 @@ class __extend__(pyframe.PyFrame):
             f.popvalue()
             next_instr += jumpby
         else:
+            if not namecheck_load(f,w_nextitem):
+                if not throw_access_exceptions_for_name_acessess:
+                    w_nextitem = w_None #TODO BETTER THAN THIS
+                else:
+                    #SRW TODO raise
+                    pass                
+
             f.pushvalue(w_nextitem)
         return next_instr
 
