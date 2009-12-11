@@ -1,2 +1,3 @@
 *.pyc
 pypy/_cache/*
+.DS_Store
