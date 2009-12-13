@@ -75,6 +75,7 @@ def _prepare_module(space, w_mod, filename, pkgdir):
     if pkgdir is not None:
         space.setattr(w_mod, w('__path__'), space.newlist([w(pkgdir)]))    
 
+#TODO: add an extra argument to try_import_mod to pass __nametoken__ through
 def try_import_mod(space, w_modulename, filepart, w_parent, w_name, pkgdir=None):
 
     # decide what type we want (pyc/py)
@@ -84,6 +85,7 @@ def try_import_mod(space, w_modulename, filepart, w_parent, w_name, pkgdir=None)
         return None
 
     w = space.wrap
+    #TODO: tag token ownership (and search for module instantiation elsewhere to do the same)
     w_mod = w(Module(space, w_modulename))
 
     try:
@@ -99,11 +101,13 @@ def try_import_mod(space, w_modulename, filepart, w_parent, w_name, pkgdir=None)
             _prepare_module(space, w_mod, filename, pkgdir)
             try:
                 if modtype == PYFILE:
+                    #TODO: add an extra argument to load_source_module to pass __nametoken__ through
                     load_source_module(space, w_modulename, w_mod, filename,
                                        stream.readall())
                 else:
                     magic = _r_long(stream)
                     timestamp = _r_long(stream)
+                    #TODO: add an extra argument to load_compiled_module to pass __nametoken__ through
                     load_compiled_module(space, w_modulename, w_mod, filename,
                                          magic, timestamp, stream.readall())
 
@@ -142,6 +146,7 @@ def try_getitem(space, w_obj, w_key):
 def check_sys_modules(space, w_modulename):
     w_modules = space.sys.get('modules')
     try:
+        #TODO: Add access check here
         w_mod = space.getitem(w_modules, w_modulename) 
     except OperationError, e:
         pass
@@ -153,6 +158,12 @@ def check_sys_modules(space, w_modulename):
 
 def importhook(space, modulename, w_globals=None,
                w_locals=None, w_fromlist=None, level=-1):
+    # w_locals is not currently used by this function, so it has been 
+    #   expropriated by SRW for 6.893
+    # w_locals may now contain {"__nametoken__": tokenobj} which we will want to
+    #   load into the module's __dict__ as well as the globals under which these
+    #   objects are compiled/created
+    #TODO: if w_locals is None, we should check the __nametoken__ for the current executioncontext
     timername = "importhook " + modulename
     space.timer.start(timername)
     if not modulename and level < 0: 
@@ -198,6 +209,7 @@ def importhook(space, modulename, w_globals=None,
             if (w_mod is None or
                 not space.is_w(w_mod, space.w_None)):
                 
+                #TODO: add an extra argument to absolute_import to pass __nametoken__ through
                 w_mod = absolute_import(space, rel_modulename,
                                         baselevel,
                                         w_fromlist, tentative=1)
@@ -209,6 +221,7 @@ def importhook(space, modulename, w_globals=None,
     if level > 0:
         msg = "Attempted relative import in non-package"
         raise OperationError(space.w_ValueError, w(msg))
+    #TODO: add an extra argument to absolute_import to pass __nametoken__ through
     w_mod = absolute_import(space, modulename, 0, w_fromlist, tentative=0)
     if rel_modulename is not None:
         space.setitem(space.sys.get('modules'), w(rel_modulename),space.w_None)
@@ -221,11 +234,13 @@ def absolute_import(space, modulename, baselevel, w_fromlist, tentative):
     lock = getimportlock(space)
     lock.acquire_lock()
     try:
+        #TODO: add an extra argument to _absolute_import to pass __nametoken__ through
         return _absolute_import(space, modulename, baselevel,
                                 w_fromlist, tentative)
     finally:
         lock.release_lock()
 
+#TODO: add an extra argument to _absolute_import to pass __nametoken__ through
 def _absolute_import(space, modulename, baselevel, w_fromlist, tentative):
     w = space.wrap
     
@@ -240,6 +255,7 @@ def _absolute_import(space, modulename, baselevel, w_fromlist, tentative):
     level = 0
 
     for part in parts:
+        #TODO: add an extra argument to load_part to pass __nametoken__ through
         w_mod = load_part(space, w_path, prefix, part, w_mod,
                           tentative=tentative)
         if w_mod is None:
@@ -261,12 +277,14 @@ def _absolute_import(space, modulename, baselevel, w_fromlist, tentative):
                     fromlist_w = space.unpackiterable(w_all)
             for w_name in fromlist_w:
                 if try_getattr(space, w_mod, w_name) is None:
+                    #TODO: add an extra argument to load_part to pass __nametoken__ through
                     load_part(space, w_path, prefix, space.str_w(w_name), w_mod,
                               tentative=1)
         return w_mod
     else:
         return first
-
+        
+#TODO: add an extra argument to load_part to pass __nametoken__ through
 def load_part(space, w_path, prefix, partname, w_parent, tentative):
     w_find_module = space.getattr(space.builtin, space.wrap("_find_module"))
     w = space.wrap
@@ -277,6 +295,7 @@ def load_part(space, w_path, prefix, partname, w_parent, tentative):
         if not space.is_w(w_mod, space.w_None):
             return w_mod
     else:
+        #TODO: should this be disabled to prevent token-annotated imports, or do we let the programmer make that decision?
         # Examin importhooks (PEP302) before doing the import
         if w_path is not None:
             w_loader  = space.call_function(w_find_module, w_modulename, w_path)
@@ -298,6 +317,7 @@ def load_part(space, w_path, prefix, partname, w_parent, tentative):
                 dir = os.path.join(path, partname)
                 if os.path.isdir(dir) and case_ok(dir):
                     fn = os.path.join(dir, '__init__')
+                    #TODO: add an extra argument to try_import_mod to pass __nametoken__ through
                     w_mod = try_import_mod(space, w_modulename, fn,
                                            w_parent, w(partname),
                                            pkgdir=dir)
@@ -308,6 +328,7 @@ def load_part(space, w_path, prefix, partname, w_parent, tentative):
                                 "'%s' missing __init__.py" % dir
                         space.warn(msg, space.w_ImportWarning)
                 fn = dir
+                #TODO: add an extra argument to try_import_mod to pass __nametoken__ through
                 w_mod = try_import_mod(space, w_modulename, fn, w_parent,
                                        w(partname))
                 if w_mod is not None:
@@ -437,15 +458,18 @@ def get_pyc_magic(space):
 def parse_source_module(space, pathname, source):
     """ Parse a source file and return the corresponding code object """
     ec = space.getexecutioncontext()
+    #TODO: insert nametoken in globals here in the event creation of code object
     pycode = ec.compiler.compile(source, pathname, 'exec', 0)
     return pycode
 
+#TODO: add an extra argument to load_source_module to pass __nametoken__ through
 def load_source_module(space, w_modulename, w_mod, pathname, source,
                        write_pyc=True):
     """
     Load a source module from a given file and return its module
     object.
     """
+    #TODO: tag with nametoken
     pycode = parse_source_module(space, pathname, source)
 
     if space.config.objspace.usepycfiles and write_pyc:
@@ -458,6 +482,7 @@ def load_source_module(space, w_modulename, w_mod, pathname, source,
     space.call_method(w_dict, 'setdefault',
                       w('__builtins__'),
                       w(space.builtin))
+    #TODO: insert __nametoken__ into __dict__
     pycode.exec_code(space, w_dict, w_dict)
 
     return w_mod
@@ -525,6 +550,7 @@ def read_compiled_module(space, cpathname, strbuf):
             "Non-code object in %s" % cpathname))
     return pycode
 
+#TODO: add an extra argument to load_compiled_module to pass __nametoken__ through
 def load_compiled_module(space, w_modulename, w_mod, cpathname, magic,
                          timestamp, source):
     """
