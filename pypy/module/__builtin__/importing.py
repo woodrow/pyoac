@@ -172,6 +172,14 @@ def importhook(space, modulename, w_globals=None,
             space.wrap("Empty module name"))
     w = space.wrap
 
+    #Victor additions
+    untrusted = False
+    uindex = modulename.find("_untrusted")
+    if uindex != -1:
+        untrusted = True
+        modulename = modulename[:uindex]
+    #end Victor additions
+
     ctxt_name = None
     if w_globals is not None and not space.is_w(w_globals, space.w_None):
         ctxt_w_name = try_getitem(space, w_globals, w('__name__'))
@@ -223,6 +231,43 @@ def importhook(space, modulename, w_globals=None,
         raise OperationError(space.w_ValueError, w(msg))
     #TODO: add an extra argument to absolute_import to pass __nametoken__ through
     w_mod = absolute_import(space, modulename, 0, w_fromlist, tentative=0)
+
+    # Victor Additions
+    if untrusted:
+        #print modulename + ": " + str(type(w_mod.getdict())) + " " + str(w_mod.getdict())
+        #space.setitem(w_mod.getdict(), space.new_interned_str('badarg'), space.new_interned_str('got it!'))
+        import victor
+        #Copy the module breadth-first to depth fo 14
+        w_mod = victor.fdcop(w_mod,14)
+        #Below not used - future work to explore modifying module builtins
+        """
+        builtins_key = None
+        for k in w_mod.w_dict.content._dict.keys():
+            if hasattr(k.key,'_value') and k.key._value == '__builtins__':
+                builtins_key = k
+                break
+        if builtins_key:
+            id_key = None
+            builtins = w_mod.w_dict.content._dict[builtins_key]
+            keytopop = None
+            for k in builtins.w_dict.content._dict.keys():
+                if hasattr(k.key,'_value'):
+                    if k.key._value == 'eval':
+                        keytopop = k
+                    if k.key._value == 'id':
+                        id_key = k
+            if keytopop and id_key:
+                print 'changing eval to id'
+                builtins.w_dict.content._dict[keytopop] = builtins.w_dict.content._dict[id_key]
+        """
+        #import copy
+        #w_mybuiltin = copy.copy(space.builtin)
+        #from pypy.objspace.std.dictobject import W_DictObject
+        #w_mydict = W_DictObject(space,space.builtin.w_dict)
+        #w_mod.w_dict.set_str_keyed_item(space.new_interned_str('__builtins__'),w_mybuiltin)
+        #del w_mybuiltin.w_dict.content[space.new_interned_str('eval')]
+    #end Victor Additions
+
     if rel_modulename is not None:
         space.setitem(space.sys.get('modules'), w(rel_modulename),space.w_None)
     space.timer.stop(timername)
@@ -543,7 +588,10 @@ def read_compiled_module(space, cpathname, strbuf):
     """ Read a code object from a file and check it for validity """
     
     w_marshal = space.getbuiltinmodule('marshal')
+    #TODO: load __nametokens__ into whatever global this is executed under, or tag recursively after-the-fact...?
+    ##TODO: Do code objects need tagging? argubly yes for closures...
     w_code = space.call_method(w_marshal, 'loads', space.wrap(strbuf))
+    #TODO: tag with nametoken
     pycode = space.interpclass_w(w_code)
     if pycode is None or not isinstance(pycode, Code):
         raise OperationError(space.w_ImportError, space.wrap(
@@ -562,15 +610,26 @@ def load_compiled_module(space, w_modulename, w_mod, cpathname, magic,
         raise OperationError(space.w_ImportError, w(
             "Bad magic number in %s" % cpathname))
     #print "loading pyc file:", cpathname
+
+    #TODO: add an extra argument to read_compiled_module to pass __nametoken__ through
     code_w = read_compiled_module(space, cpathname, source)
     #if (Py_VerboseFlag)
     #    PySys_WriteStderr("import %s # precompiled from %s\n",
     #        name, cpathname);
+
+    #TODO: insert __nametoken__ into __dict__
     w_dic = space.getattr(w_mod, w('__dict__'))
+    #Victor
+    #if space.unwrap(w_modulename) == 'victor':
+    #    print "load_source_module call_method: " + str(w_dic)
     space.call_method(w_dic, 'setdefault', 
                       w('__builtins__'), 
                       w(space.builtin))
+    #if space.unwrap(w_modulename) == 'victor':
+    #    print "load_source_module EXIT call_method: " + str(w_dic)
     code_w.exec_code(space, w_dic, w_dic)
+    #if space.unwrap(w_modulename) == 'victor':
+    #    print "load_source_module EXIT code_w.exec_code: " + str(w_dic)
     return w_mod
 
 
