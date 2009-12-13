@@ -56,7 +56,11 @@ def changetoken(space,w_obj,w_token):
         
 def _changetoken(space, w_obj, w_token):
     """Internal (interp-level) implementation of changetoken that doesn't check the existing owner -- use this wisely"""
-    space.namespace_table[id(w_obj)] = w_token
+    try:
+        space.namespace_table[id(w_obj)] = w_token
+    except NameError or TypeError: # space.namespace_table not yet instantiated
+        space.namespace_table = {}
+        space.namespace_table[id(w_obj)] = w_token
         
     
 def _currentframe_has_access(space, w_obj):
@@ -64,7 +68,7 @@ def _currentframe_has_access(space, w_obj):
     try:
         w_objtoken = space.namespace_table[id(w_obj)]
     except KeyError:
-        return True # THINK: this means that an object with no token is open -- this seems reasonable for functionality's sake
+        return True #!!!: this means that an object with no token is open -- this seems reasonable for functionality's sake
     
     try: # check against __nametoken__
         w_frameglobals_nametoken = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_NAMETOKEN))

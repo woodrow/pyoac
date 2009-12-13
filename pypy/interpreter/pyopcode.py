@@ -702,7 +702,7 @@ class __extend__(pyframe.PyFrame):
                     message = "name '%s' is not defined" % f.space.str_w(w_varname)
                     raise OperationError(f.space.w_NameError, f.space.wrap(message))
                 else:
-                    #SRW TODO raise
+                    #SRW TODO: raise
                     pass
         except OperationError, e:
             # catch KeyErrors and turn them into NameErrors
@@ -720,9 +720,9 @@ class __extend__(pyframe.PyFrame):
         for i in range(len(items)):
             if not namecheck_load(f,items[i]):
                 if not throw_access_exceptions_for_name_acessess:
-                    items[i] = w_None #TODO BETTER THAN THIS
+                    items[i] = f.space.w_None #TODO: BETTER THAN THIS
                 else:
-                    #SRW TODO raise
+                    #SRW TODO: raise
                     pass                
         f.pushrevvalues(itemcount, items)
 
@@ -742,7 +742,7 @@ class __extend__(pyframe.PyFrame):
             f.space.delattr(w_obj, w_attributename)
         else:
             if throw_access_exceptions_for_name_acessess:
-                #SRW TODO raise
+                #SRW TODO: raise
                 pass
                     
     def STORE_GLOBAL(f, nameindex, *ignored):
@@ -762,7 +762,7 @@ class __extend__(pyframe.PyFrame):
                 raise OperationError(f.space.w_NameError,
                              f.space.wrap(message))
             else:
-                #SRW TODO raise
+                #SRW TODO: raise
                 pass        
 
     def LOAD_NAME(f, nameindex, *ignored):
@@ -775,7 +775,7 @@ class __extend__(pyframe.PyFrame):
                     return
             else:
                 if throw_access_exceptions_for_name_acessess:
-                    #SRW TODO raise
+                    #SRW TODO: raise
                     pass
         f.LOAD_GLOBAL(nameindex)    # fall-back
 
@@ -783,7 +783,7 @@ class __extend__(pyframe.PyFrame):
         w_value = f.space.finditem(f.w_globals, w_varname)
         if not namecheck_load(f, w_value):
             if throw_access_exceptions_for_name_acessess:
-                #SRW TODO raise
+                #SRW TODO: raise
                 pass
             else:
                 w_value = None
@@ -795,7 +795,7 @@ class __extend__(pyframe.PyFrame):
                     f._load_global_failed(w_varname)
             else:
                 if throw_access_exceptions_for_name_acessess:
-                    #SRW TODO raise
+                    #SRW TODO: raise
                     pass
                 else:
                     f._load_global_failed(w_varname)
@@ -860,10 +860,10 @@ class __extend__(pyframe.PyFrame):
             f.pushvalue(w_value)
         else:
             if throw_access_exceptions_for_name_acessess:
-                #SRW TODO raise
+                #SRW TODO: raise
                 pass
             else:
-                f.pushvalue(w_None) #TODO BETTER THAN THIS
+                f.pushvalue(f.space.w_None) #TODO: BETTER THAN THIS
 
     LOAD_ATTR._always_inline_ = True
 
@@ -994,9 +994,9 @@ class __extend__(pyframe.PyFrame):
         else:
             if not namecheck_load(f,w_nextitem):
                 if not throw_access_exceptions_for_name_acessess:
-                    w_nextitem = w_None #TODO BETTER THAN THIS
+                    w_nextitem = f.space.w_None #TODO: BETTER THAN THIS
                 else:
-                    #SRW TODO raise
+                    #SRW TODO: raise
                     pass                
 
             f.pushvalue(w_nextitem)

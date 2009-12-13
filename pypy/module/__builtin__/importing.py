@@ -18,6 +18,36 @@ NOFILE = 0
 PYFILE = 1
 PYCFILE = 2
 
+# "constants"
+SLOTNAME_ALLTOKENS = "__alltokens__"
+SLOTNAME_NAMETOKEN = "__nametoken__"
+
+#TODO: this is a clone of the function in modules/__builtins__/namespace.py -- move into a central module
+def _currentframe_has_access(space, w_obj):
+    """Return a boolean result about whether the current frame has access to the given object"""
+    try:
+        w_objtoken = space.namespace_table[id(w_obj)]
+    except KeyError:
+        return True #!!!: this means that an object with no token is open -- this seems reasonable for functionality's sake
+    
+    try: # check against __nametoken__
+        w_frameglobals_nametoken = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_NAMETOKEN))
+        if space.is_w(w_objtoken, w_frameglobals_nametoken):
+            return True
+    except OperationError, e:
+        if not e.match(space, space.w_KeyError):
+            raise
+    
+    try: # check against __alltokens__
+        w_frameglobals_alltokens = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_ALLTOKENS))
+        return w_objtoken in space.unpackiterable(space.call_function(space.getattr(w_frameglobals_alltokens,space.wrap("values"))))
+    except OperationError, e:
+ #       if not e.match(space, space.w_KeyError):
+ #           raise
+        return False
+ #   return False
+
+
 def find_modtype(space, filepart):
     """Check which kind of module to import for the given filepart,
     which is a path without extension.  Returns PYFILE, PYCFILE or
@@ -75,8 +105,7 @@ def _prepare_module(space, w_mod, filename, pkgdir):
     if pkgdir is not None:
         space.setattr(w_mod, w('__path__'), space.newlist([w(pkgdir)]))    
 
-#TODO: add an extra argument to try_import_mod to pass __nametoken__ through
-def try_import_mod(space, w_modulename, filepart, w_parent, w_name, pkgdir=None):
+def try_import_mod(space, w_modulename, filepart, w_parent, w_name, w_import_nametoken, pkgdir=None):
 
     # decide what type we want (pyc/py)
     modtype = find_modtype(space, filepart)
@@ -85,8 +114,11 @@ def try_import_mod(space, w_modulename, filepart, w_parent, w_name, pkgdir=None)
         return None
 
     w = space.wrap
-    #TODO: tag token ownership (and search for module instantiation elsewhere to do the same)
     w_mod = w(Module(space, w_modulename))
+    # tag module with import_token
+    if not w_import_nametoken is None:
+        space.namespace_table[id(w_mod)] = w_import_nametoken
+    #else: TODO: add objects with (w_import_nametoken == None) to a separate table
 
     try:
         if modtype == PYFILE:
@@ -101,15 +133,14 @@ def try_import_mod(space, w_modulename, filepart, w_parent, w_name, pkgdir=None)
             _prepare_module(space, w_mod, filename, pkgdir)
             try:
                 if modtype == PYFILE:
-                    #TODO: add an extra argument to load_source_module to pass __nametoken__ through
                     load_source_module(space, w_modulename, w_mod, filename,
-                                       stream.readall())
+                                       stream.readall(), w_import_nametoken)
                 else:
                     magic = _r_long(stream)
                     timestamp = _r_long(stream)
-                    #TODO: add an extra argument to load_compiled_module to pass __nametoken__ through
                     load_compiled_module(space, w_modulename, w_mod, filename,
-                                         magic, timestamp, stream.readall())
+                                         magic, timestamp, stream.readall(),
+                                         w_import_nametoken)
 
             except OperationError, e:
                 w_mods = space.sys.get('modules')
@@ -146,14 +177,13 @@ def try_getitem(space, w_obj, w_key):
 def check_sys_modules(space, w_modulename):
     w_modules = space.sys.get('modules')
     try:
-        #TODO: Add access check here
         w_mod = space.getitem(w_modules, w_modulename) 
     except OperationError, e:
-        pass
+        if not e.match(space, space.w_KeyError):
+            raise
     else:
-        return w_mod
-    if not e.match(space, space.w_KeyError):
-        raise
+        if _currentframe_has_access(space, w_mod):
+            return w_mod
     return None
 
 def importhook(space, modulename, w_globals=None,
@@ -163,7 +193,6 @@ def importhook(space, modulename, w_globals=None,
     # w_locals may now contain {"__nametoken__": tokenobj} which we will want to
     #   load into the module's __dict__ as well as the globals under which these
     #   objects are compiled/created
-    #TODO: if w_locals is None, we should check the __nametoken__ for the current executioncontext
     timername = "importhook " + modulename
     space.timer.start(timername)
     if not modulename and level < 0: 
@@ -171,6 +200,23 @@ def importhook(space, modulename, w_globals=None,
             space.w_ValueError,
             space.wrap("Empty module name"))
     w = space.wrap
+    
+    # prepare import_nametoken from w_locals
+    w_import_nametoken = None
+    try:
+        w_import_nametoken = space.getitem(w_locals, space.wrap(SLOTNAME_NAMETOKEN))
+    except OperationError, e:
+        if not (e.match(space, space.w_KeyError) or e.match(space, space.w_TypeError)):
+            raise
+        # if w_locals is None or doesn't contain a __nametoken__ key, we should check the __nametoken__ for the current executioncontext
+        try:
+            w_import_nametoken = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_NAMETOKEN))
+        except OperationError, e:
+            if not e.match(space, space.w_KeyError):
+                raise
+        except IndexError:
+            #print("stack empty??")##SRW
+            w_import_nametoken = None    
 
     #Victor additions
     untrusted = False
@@ -211,16 +257,16 @@ def importhook(space, modulename, w_globals=None,
                 if modulename:
                     rel_modulename += '.' + modulename
             baselevel = len(ctxt_name_prefix_parts)
-            
+
         if rel_modulename is not None:
             w_mod = check_sys_modules(space, w(rel_modulename))
             if (w_mod is None or
                 not space.is_w(w_mod, space.w_None)):
                 
-                #TODO: add an extra argument to absolute_import to pass __nametoken__ through
                 w_mod = absolute_import(space, rel_modulename,
                                         baselevel,
-                                        w_fromlist, tentative=1)
+                                        w_fromlist, w_import_nametoken,
+                                        tentative=1)
                 if w_mod is not None:
                     space.timer.stop(timername)
                     return w_mod
@@ -229,8 +275,7 @@ def importhook(space, modulename, w_globals=None,
     if level > 0:
         msg = "Attempted relative import in non-package"
         raise OperationError(space.w_ValueError, w(msg))
-    #TODO: add an extra argument to absolute_import to pass __nametoken__ through
-    w_mod = absolute_import(space, modulename, 0, w_fromlist, tentative=0)
+    w_mod = absolute_import(space, modulename, 0, w_fromlist, w_import_nametoken, tentative=0)
 
     # Victor Additions
     if untrusted:
@@ -275,18 +320,16 @@ def importhook(space, modulename, w_globals=None,
 #
 importhook.unwrap_spec = [ObjSpace, str, W_Root, W_Root, W_Root, int]
 
-def absolute_import(space, modulename, baselevel, w_fromlist, tentative):
+def absolute_import(space, modulename, baselevel, w_fromlist, w_import_nametoken, tentative):
     lock = getimportlock(space)
     lock.acquire_lock()
     try:
-        #TODO: add an extra argument to _absolute_import to pass __nametoken__ through
         return _absolute_import(space, modulename, baselevel,
-                                w_fromlist, tentative)
+                                w_fromlist, w_import_nametoken, tentative)
     finally:
         lock.release_lock()
 
-#TODO: add an extra argument to _absolute_import to pass __nametoken__ through
-def _absolute_import(space, modulename, baselevel, w_fromlist, tentative):
+def _absolute_import(space, modulename, baselevel, w_fromlist, w_import_nametoken, tentative):
     w = space.wrap
     
     w_mod = None
@@ -300,9 +343,8 @@ def _absolute_import(space, modulename, baselevel, w_fromlist, tentative):
     level = 0
 
     for part in parts:
-        #TODO: add an extra argument to load_part to pass __nametoken__ through
         w_mod = load_part(space, w_path, prefix, part, w_mod,
-                          tentative=tentative)
+                          w_import_nametoken, tentative=tentative)
         if w_mod is None:
             return None
 
@@ -322,15 +364,13 @@ def _absolute_import(space, modulename, baselevel, w_fromlist, tentative):
                     fromlist_w = space.unpackiterable(w_all)
             for w_name in fromlist_w:
                 if try_getattr(space, w_mod, w_name) is None:
-                    #TODO: add an extra argument to load_part to pass __nametoken__ through
                     load_part(space, w_path, prefix, space.str_w(w_name), w_mod,
-                              tentative=1)
+                              w_import_nametoken, tentative=1)
         return w_mod
     else:
         return first
         
-#TODO: add an extra argument to load_part to pass __nametoken__ through
-def load_part(space, w_path, prefix, partname, w_parent, tentative):
+def load_part(space, w_path, prefix, partname, w_parent, w_import_nametoken, tentative):
     w_find_module = space.getattr(space.builtin, space.wrap("_find_module"))
     w = space.wrap
     modulename = '.'.join(prefix + [partname])
@@ -362,9 +402,9 @@ def load_part(space, w_path, prefix, partname, w_parent, tentative):
                 dir = os.path.join(path, partname)
                 if os.path.isdir(dir) and case_ok(dir):
                     fn = os.path.join(dir, '__init__')
-                    #TODO: add an extra argument to try_import_mod to pass __nametoken__ through
                     w_mod = try_import_mod(space, w_modulename, fn,
                                            w_parent, w(partname),
+                                           w_import_nametoken,
                                            pkgdir=dir)
                     if w_mod is not None:
                         return w_mod
@@ -373,9 +413,8 @@ def load_part(space, w_path, prefix, partname, w_parent, tentative):
                                 "'%s' missing __init__.py" % dir
                         space.warn(msg, space.w_ImportWarning)
                 fn = dir
-                #TODO: add an extra argument to try_import_mod to pass __nametoken__ through
                 w_mod = try_import_mod(space, w_modulename, fn, w_parent,
-                                       w(partname))
+                                       w(partname), w_import_nametoken)
                 if w_mod is not None:
                     return w_mod
 
@@ -507,9 +546,8 @@ def parse_source_module(space, pathname, source):
     pycode = ec.compiler.compile(source, pathname, 'exec', 0)
     return pycode
 
-#TODO: add an extra argument to load_source_module to pass __nametoken__ through
 def load_source_module(space, w_modulename, w_mod, pathname, source,
-                       write_pyc=True):
+                       w_import_nametoken, write_pyc=True):
     """
     Load a source module from a given file and return its module
     object.
@@ -527,7 +565,11 @@ def load_source_module(space, w_modulename, w_mod, pathname, source,
     space.call_method(w_dict, 'setdefault',
                       w('__builtins__'),
                       w(space.builtin))
-    #TODO: insert __nametoken__ into __dict__
+    if not w_import_nametoken is None:
+        # set __nametoken__
+        space.call_method(w_dict, 'setdefault',
+                          w(SLOTNAME_NAMETOKEN),
+                          w_import_nametoken)
     pycode.exec_code(space, w_dict, w_dict)
 
     return w_mod
@@ -584,11 +626,11 @@ def check_compiled_module(space, pycfilename, expected_mtime=0):
         return False
     return True
 
-def read_compiled_module(space, cpathname, strbuf):
+def read_compiled_module(space, cpathname, strbuf, w_import_nametoken):
     """ Read a code object from a file and check it for validity """
     
     w_marshal = space.getbuiltinmodule('marshal')
-    #TODO: load __nametokens__ into whatever global this is executed under, or tag recursively after-the-fact...?
+    #TODO: load __nametokens__ into whatever global this is executed under, or tag recursively after-the-fact...somehow?
     ##TODO: Do code objects need tagging? argubly yes for closures...
     w_code = space.call_method(w_marshal, 'loads', space.wrap(strbuf))
     #TODO: tag with nametoken
@@ -598,9 +640,8 @@ def read_compiled_module(space, cpathname, strbuf):
             "Non-code object in %s" % cpathname))
     return pycode
 
-#TODO: add an extra argument to load_compiled_module to pass __nametoken__ through
 def load_compiled_module(space, w_modulename, w_mod, cpathname, magic,
-                         timestamp, source):
+                         timestamp, source, w_import_nametoken):
     """
     Load a module from a compiled file, execute it, and return its
     module object.
@@ -611,13 +652,11 @@ def load_compiled_module(space, w_modulename, w_mod, cpathname, magic,
             "Bad magic number in %s" % cpathname))
     #print "loading pyc file:", cpathname
 
-    #TODO: add an extra argument to read_compiled_module to pass __nametoken__ through
-    code_w = read_compiled_module(space, cpathname, source)
+    code_w = read_compiled_module(space, cpathname, source, w_import_nametoken)
     #if (Py_VerboseFlag)
     #    PySys_WriteStderr("import %s # precompiled from %s\n",
     #        name, cpathname);
 
-    #TODO: insert __nametoken__ into __dict__
     w_dic = space.getattr(w_mod, w('__dict__'))
     #Victor
     #if space.unwrap(w_modulename) == 'victor':
@@ -625,6 +664,11 @@ def load_compiled_module(space, w_modulename, w_mod, cpathname, magic,
     space.call_method(w_dic, 'setdefault', 
                       w('__builtins__'), 
                       w(space.builtin))
+    if not w_import_nametoken is None:
+        # set __nametoken__
+        space.call_method(w_dic, 'setdefault',
+                          w(SLOTNAME_NAMETOKEN),
+                          w_import_nametoken)
     #if space.unwrap(w_modulename) == 'victor':
     #    print "load_source_module EXIT call_method: " + str(w_dic)
     code_w.exec_code(space, w_dic, w_dic)
