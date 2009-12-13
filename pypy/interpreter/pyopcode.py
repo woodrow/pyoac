@@ -27,27 +27,33 @@ from pypy.rlib.unroll import unrolling_iterable
 # ALSO: change in nestedscope.py
 throw_access_exceptions_for_name_acessess = False
 
-def namecheck_load(f,w_obj):
-    #check to see if space.namespace_table(id(obj)) == __nametoken__
-    #if not, check if space.namepsace_table(id(obj)) in __alltokens__
-    #if not, return false
-    #f contains globals (and hopefully space.namespace_table, w_obj is the wrapped object whose namespace we're going to check
-    ##########
-    w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap("__nametoken__"))
+# "constants"
+SLOTNAME_ALLTOKENS = "__alltokens__"
+SLOTNAME_NAMETOKEN = "__nametoken__"
+
+def namecheck_load(f, w_obj):
     try:
-        w_obj_nametoken = f.space.namespace_table[id(w_obj)]
+        w_objtoken = f.space.namespace_table[id(w_obj)]
     except KeyError:
-        w_obj_nametoken = None
-        
-    if w_obj_nametoken is None or w_frameglobals_nametoken is None:
-        return True #was False; change made to deal with bytecode interpreter brokenness
-    if f.space.is_w(w_obj_nametoken, w_frameglobals_nametoken):
-        return True
-    else:
-        w_frameglobals_alltokens =  f.space.finditem(f.w_globals, f.space.wrap("__alltokens__"))
-        if w_frameglobals_alltokens is not None and f.space.finditem(w_frameglobals_alltokens, f.space.namespace_table[id(w_obj)]) is not None:
+        return True # THINK: this means that an object with no token is open -- this seems reasonable for functionality's sake
+
+    try: # check against __nametoken__
+        w_frameglobals_nametoken = f.space.getitem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN))
+        if f.space.is_w(w_objtoken, w_frameglobals_nametoken):
             return True
-    return False
+    except OperationError, e:
+        if not e.match(f.space, f.space.w_KeyError):
+            raise
+        return True
+
+    try: # check against __alltokens__
+        w_frameglobals_alltokens = f.space.getitem(f.w_globals, f.space.wrap(SLOTNAME_ALLTOKENS))
+        return w_objtoken in f.space.unpackiterable(f.space.call_function(f.space.getattr(w_frameglobals_alltokens,f.space.wrap("values"))))
+    except OperationError, e:
+    #       if not e.match(space, space.w_KeyError):
+    #           raise
+        return False
+    #   return False
 
 def namecheck_store(f,w_obj):
     #check w_globals.__nametoken__
@@ -55,10 +61,13 @@ def namecheck_store(f,w_obj):
         #if not there, call newtoken() and store in __nametoken
     #annotate store object with __nametoken__
     ##########
-    w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap("__nametoken__"))
+    w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN))
     if w_frameglobals_nametoken is not None:
         f.space.namespace_table[id(w_obj)] = w_frameglobals_nametoken
 #    if w_frameglobals_nametoken is None:
+#
+#TODO: append object being stored to a list of untagged objects, that will be made accessible to __main__ for tagging later...
+#
 # disabled due to bytecode interpreter brokenness
 #        ##### INSERT CODE HERE #####
 #        print("########################" + str(f))
@@ -904,9 +913,21 @@ class __extend__(pyframe.PyFrame):
         if w_import is None:
             raise OperationError(space.w_ImportError,
                                  space.wrap("__import__ not found"))
-        w_locals = f.w_locals
-        if w_locals is None:            # CPython does this
-            w_locals = space.w_None
+                                 
+        # w_locals is not passed through to __import__ because it isn't used there
+        # instead, we take advantage of it to pass through the current __nametoken__
+        try: # check against __nametoken__
+            w_frameglobals_nametoken = f.space.getitem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN))
+            w_locals = f.space.newdict()
+            space.set_str_keyed_item(w_locals, f.space.wrap(SLOTNAME_NAMETOKEN), w_frameglobals_nametoken)
+        except OperationError, e:
+            if not e.match(f.space, f.space.w_KeyError):
+                raise
+            # former pypy code:
+            w_locals = f.w_locals
+            if w_locals is None:            # CPython does this
+                w_locals = space.w_None
+
         w_modulename = space.wrap(modulename)
         w_globals = f.w_globals
         if w_flag is None:
