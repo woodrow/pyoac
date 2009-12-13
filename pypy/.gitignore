@@ -1,0 +1,4 @@
+# Ignore XCode Project stuff
+build/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
