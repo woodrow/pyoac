@@ -116,6 +116,7 @@ class Module(MixedModule):
         
         'newtoken'      : 'namespace.newtoken',
         'changetoken'   : 'namespace.changetoken',
+        'set_nametoken' : 'namespace.set_nametoken',
     }
 
     def pick_builtin(self, w_globals):

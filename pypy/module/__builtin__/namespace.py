@@ -13,13 +13,10 @@ from pypy.objspace.std import StdObjSpace
 from pypy.interpreter.error import OperationError
 from pypy.rlib.runicode import UNICHR
 import __builtin__
+from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, _currentframe_has_access
 
 NoneNotWrapped = gateway.NoneNotWrapped
 Buffer = buffer.Buffer
-
-# "constants"
-SLOTNAME_ALLTOKENS = "__alltokens__"
-SLOTNAME_NAMETOKEN = "__nametoken__"
 
 def newtoken(space, w_tokenkey_str):
     w_newtok = W_NametokenObject()
@@ -61,28 +58,11 @@ def _changetoken(space, w_obj, w_token):
     except NameError or TypeError: # space.namespace_table not yet instantiated
         space.namespace_table = {}
         space.namespace_table[id(w_obj)] = w_token
-        
-    
-def _currentframe_has_access(space, w_obj):
-    """Return a boolean result about whether the current frame has access to the given object"""
-    try:
-        w_objtoken = space.namespace_table[id(w_obj)]
-    except KeyError:
-        return True #!!!: this means that an object with no token is open -- this seems reasonable for functionality's sake
-    
-    try: # check against __nametoken__
-        w_frameglobals_nametoken = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_NAMETOKEN))
-        if space.is_w(w_objtoken, w_frameglobals_nametoken):
-            return True
-    except OperationError, e:
-        if not e.match(space, space.w_KeyError):
-            raise
-    
-    try: # check against __alltokens__
-        w_frameglobals_alltokens = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_ALLTOKENS))
-        return w_objtoken in space.unpackiterable(space.call_function(space.getattr(w_frameglobals_alltokens,space.wrap("values"))))
-    except OperationError, e:
- #       if not e.match(space, space.w_KeyError):
- #           raise
-        return False
- #   return False
+       
+def set_nametoken(space, w_token):
+    # assume that caller has access to w_token by virtue of being able to get it on the stack
+    # check that w_token is a nametoken object
+    if not isinstance(w_token, W_NametokenObject):
+        return space.w_False
+    space.setitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_NAMETOKEN), w_token)
+    return space.w_True

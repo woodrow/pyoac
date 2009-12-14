@@ -13,40 +13,11 @@ from pypy.rlib import streamio
 from pypy.rlib.streamio import StreamErrors
 from pypy.rlib.rarithmetic import intmask
 from pypy.rlib.objectmodel import we_are_translated
-
+from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, _currentframe_has_access, throw_access_exceptions, print_access_exceptions
+from sys import stderr
 NOFILE = 0
 PYFILE = 1
 PYCFILE = 2
-
-# "constants"
-SLOTNAME_ALLTOKENS = "__alltokens__"
-SLOTNAME_NAMETOKEN = "__nametoken__"
-
-#TODO: this is a clone of the function in modules/__builtins__/namespace.py -- move into a central module
-def _currentframe_has_access(space, w_obj):
-    """Return a boolean result about whether the current frame has access to the given object"""
-    try:
-        w_objtoken = space.namespace_table[id(w_obj)]
-    except KeyError:
-        return True #!!!: this means that an object with no token is open -- this seems reasonable for functionality's sake
-    
-    try: # check against __nametoken__
-        w_frameglobals_nametoken = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_NAMETOKEN))
-        if space.is_w(w_objtoken, w_frameglobals_nametoken):
-            return True
-    except OperationError, e:
-        if not e.match(space, space.w_KeyError):
-            raise
-    
-    try: # check against __alltokens__
-        w_frameglobals_alltokens = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_ALLTOKENS))
-        return w_objtoken in space.unpackiterable(space.call_function(space.getattr(w_frameglobals_alltokens,space.wrap("values"))))
-    except OperationError, e:
- #       if not e.match(space, space.w_KeyError):
- #           raise
-        return False
- #   return False
-
 
 def find_modtype(space, filepart):
     """Check which kind of module to import for the given filepart,
@@ -184,6 +155,9 @@ def check_sys_modules(space, w_modulename):
     else:
         if _currentframe_has_access(space, w_mod):
             return w_mod
+        else:
+            if print_access_exceptions:
+                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": modulename=" + space.str_w(w_modulename)
     return None
 
 def importhook(space, modulename, w_globals=None,

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		AA698A2110D5CBC900CE77E8 /* namespace_helpers.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = namespace_helpers.py; sourceTree = "<group>"; };
 		E668429510D1D58B0040BB54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
 		E668429610D1D58B0040BB54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
 		E668429810D1D58C0040BB54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
@@ -7061,6 +7062,7 @@
 				E6684B3810D1D58E0040BB54 /* interp_classobj.py */,
 				E6684B3910D1D58E0040BB54 /* interp_classobj.pyc */,
 				E6684B3A10D1D58E0040BB54 /* namespace.py */,
+				AA698A2110D5CBC900CE77E8 /* namespace_helpers.py */,
 				E6684B3B10D1D58E0040BB54 /* namespace.pyc */,
 				E6684B3C10D1D58E0040BB54 /* operation.py */,
 				E6684B3D10D1D58E0040BB54 /* operation.pyc */,
