@@ -19,7 +19,7 @@ class Function(Wrappable):
     an object space, a dictionary of globals, default arguments,
     and an arbitrary 'closure' passed to the code object."""
 
-    def __init__(self, space, code, w_globals=None, defs_w=[], closure=None, forcename=None):
+    def __init__(self, space, code, w_globals=None, defs_w=[], closure=None, forcename=None, creator_nametoken=None):
         self.space = space
         self.name = forcename or code.co_name
         self.w_doc = None   # lazily read from code.getdocstring()
@@ -29,6 +29,7 @@ class Function(Wrappable):
         self.defs_w    = defs_w     # list of w_default's
         self.w_func_dict = None # filled out below if needed
         self.w_module = None
+        self.creator_nametoken = creator_nametoken
 
     def __repr__(self):
         # return "function %s.%s" % (self.space, self.name)
@@ -343,9 +344,22 @@ class Function(Wrappable):
         self.w_module = space.w_None
 
     def fget_func_code(space, self):
-        return space.wrap(self.code)
+        from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, throw_access_exceptions, print_access_exceptions, _currentframe_has_access
+        from sys import stderr
+        
+        if _currentframe_has_access(space, self.creator_nametoken):
+            return space.wrap(self.code)
+        else:
+            if print_access_exceptions:
+                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + self.name + ".func_code"
 
-    def fset_func_code(space, self, w_code):
+            if throw_access_exceptions:
+                #SRW TODO: raise
+                pass
+            else:
+                return space.w_None
+
+    def fset_func_code(space, self, w_code): #SRW !!!: This could be hazardous for untrusted code to set the code object which is executed by trusted code -- deal with in future
         from pypy.interpreter.pycode import PyCode
         code = space.interp_w(Code, w_code)
         closure_len = 0
@@ -356,8 +370,21 @@ class Function(Wrappable):
         self.code = code
 
     def fget_func_closure(space, self):
+        from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, throw_access_exceptions, print_access_exceptions, _currentframe_has_access
+        from sys import stderr
+
         if self.closure is not None:
-            w_res = space.newtuple( [ space.wrap(i) for i in self.closure ] )
+            if _currentframe_has_access(space, self.creator_nametoken):
+                w_res = space.newtuple( [ space.wrap(i) for i in self.closure ] )
+            else:
+                if print_access_exceptions:
+                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + self.name + ".func_closure"
+
+                if throw_access_exceptions:
+                    #SRW TODO: raise
+                    pass
+                else:
+                    w_res = space.w_None
         else:
             w_res = space.w_None
         return w_res

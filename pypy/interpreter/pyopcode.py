@@ -19,17 +19,8 @@ from pypy.tool.stdlib_opcode import opcodedesc, HAVE_ARGUMENT
 from pypy.tool.stdlib_opcode import unrolling_opcode_descs
 from pypy.tool.stdlib_opcode import opcode_method_names
 from pypy.rlib.unroll import unrolling_iterable
-
-##SRW
-
-# if false, throw "not found" exceptions and return None
-# if true, throw access exceptions
-# ALSO: change in nestedscope.py
-throw_access_exceptions_for_name_acessess = False
-
-# "constants"
-SLOTNAME_ALLTOKENS = "__alltokens__"
-SLOTNAME_NAMETOKEN = "__nametoken__"
+from sys import stderr
+from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, throw_access_exceptions, print_access_exceptions, _currentframe_has_access
 
 def namecheck_load(f, w_obj):
     try:
@@ -56,27 +47,15 @@ def namecheck_load(f, w_obj):
     #   return False
 
 def namecheck_store(f,w_obj):
-    #check w_globals.__nametoken__
-    #w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap("__nametoken__"))
-        #if not there, call newtoken() and store in __nametoken
-    #annotate store object with __nametoken__
-    ##########
+    from pypy.objspace.std.nametokenobject import W_NametokenObject
+
     w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN))
-    if w_frameglobals_nametoken is not None:
-        f.space.namespace_table[id(w_obj)] = w_frameglobals_nametoken
-#    if w_frameglobals_nametoken is None:
-#
-#TODO: append object being stored to a list of untagged objects, that will be made accessible to __main__ for tagging later...
-#
-# disabled due to bytecode interpreter brokenness
-#        ##### INSERT CODE HERE #####
-#        print("########################" + str(f))
-#        print(f.get_builtin())
-#        w_frameglobals_nametoken = f.space.call_function(f.get_builtin().getdictvalue(f.space, f.space.wrap('newtoken')))
-#        #f.space.setitem(f.w_globals, f.space.wrap("__nametoken__"), w_frameglobals_nametoken)
-#        f.get_builtin().setdictvalue(f.space, f.space.wrap("__nametoken__"), w_frameglobals_nametoken)
-#
-#    f.space.namespace_table[id(w_obj)] = w_frameglobals_nametoken
+    if not isinstance(w_obj, W_NametokenObject): # don't change nametokens
+        if w_frameglobals_nametoken is not None:
+            f.space.namespace_table[id(w_obj)] = w_frameglobals_nametoken
+        else:
+            pass
+            #TODO: append object being stored to a list of untagged objects, that will be made accessible to __main__ for tagging later...
 
 #def namecheck_func(f,w_obj):
 #    pass
@@ -97,13 +76,34 @@ def unaryoperation(operationname):
 
 def binaryoperation(operationname):
     """NOT_RPYTHON"""    
-    def opimpl(f, *ignored):
-        operation = getattr(f.space, operationname)
-        w_2 = f.popvalue()
-        w_1 = f.popvalue()
-        w_result = operation(w_1, w_2)
-        f.pushvalue(w_result)
-    opimpl.binop = operationname
+    if operationname == "getitem":
+        def opimpl(f, *ignored):
+            operation = getattr(f.space, operationname)
+            w_2 = f.popvalue()
+            w_1 = f.popvalue()
+            w_result = operation(w_1, w_2)
+            
+            if namecheck_load(f, w_result):
+                f.pushvalue(w_result)
+            else:
+                if print_access_exceptions:
+                    print >> stderr, "\033[1;31mAccess Error:\033[1;m BINARY_SUBSCR: subscript=" + f.space.str_w(w_2)
+                    
+                if throw_access_exceptions:
+                    #SRW TODO: raise
+                    pass
+                else:
+                    f.pushvalue(f.space.w_None) #TODO: Can we do better than this?
+                    
+        opimpl.binop = operationname
+    else: 
+        def opimpl(f, *ignored):
+            operation = getattr(f.space, operationname)
+            w_2 = f.popvalue()
+            w_1 = f.popvalue()
+            w_result = operation(w_1, w_2)
+            f.pushvalue(w_result)
+        opimpl.binop = operationname
 
     return func_with_new_name(opimpl, "opcode_impl_for_%s" % operationname)
 
@@ -572,8 +572,17 @@ class __extend__(pyframe.PyFrame):
         "del obj[subscr]"
         w_subscr = f.popvalue()
         w_obj = f.popvalue()
-        f.space.delitem(w_obj, w_subscr)
-
+        
+        if namecheck_load(f, f.space.getitem(w_obj, w_subscr)):
+            f.space.delitem(w_obj, w_subscr)
+        else:
+            if print_access_exceptions:
+                print >> stderr, "\033[1;31mAccess Error:\033[1;m" + str(sys._getframe().f_code.co_name) + ": subscript=" + f.space.str_w(w_subscr)
+                
+            if throw_access_exceptions:
+                #SRW TODO: raise
+                pass
+        
     def PRINT_EXPR(f, *ignored):
         w_expr = f.popvalue()
         print_expr(f.space, w_expr)
@@ -698,7 +707,10 @@ class __extend__(pyframe.PyFrame):
             if namecheck_load(f,f.space.finditem(f.w_locals, w_varname)):
                 f.space.delitem(f.w_locals, w_varname)
             else:
-                if not throw_access_exceptions_for_name_acessess:
+                if print_access_exceptions:
+                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": varname=" + f.space.str_w(w_varname)
+                    
+                if not throw_access_exceptions:
                     message = "name '%s' is not defined" % f.space.str_w(w_varname)
                     raise OperationError(f.space.w_NameError, f.space.wrap(message))
                 else:
@@ -719,8 +731,11 @@ class __extend__(pyframe.PyFrame):
             raise OperationError(f.space.w_ValueError, f.space.wrap(e.msg))
         for i in range(len(items)):
             if not namecheck_load(f,items[i]):
-                if not throw_access_exceptions_for_name_acessess:
-                    items[i] = f.space.w_None #TODO: BETTER THAN THIS
+                if print_access_exceptions:
+                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": sequence_index=" + str(i)
+
+                if not throw_access_exceptions:
+                    items[i] = f.space.w_None #TODO: Can we do better than this?
                 else:
                     #SRW TODO: raise
                     pass                
@@ -741,7 +756,10 @@ class __extend__(pyframe.PyFrame):
         if namecheck_load(f,f.space.getattr(w_obj, w_attributename)):
             f.space.delattr(w_obj, w_attributename)
         else:
-            if throw_access_exceptions_for_name_acessess:
+            if print_access_exceptions:
+                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": attrname=" + f.space.str_w(w_attributename)
+    
+            if throw_access_exceptions:
                 #SRW TODO: raise
                 pass
                     
@@ -756,7 +774,10 @@ class __extend__(pyframe.PyFrame):
         if namecheck_load(f,f.space.finditem(f.w_globals, w_varname)):
             f.space.delitem(f.w_globals, w_varname)
         else:
-            if not throw_access_exceptions_for_name_acessess:
+            if print_access_exceptions:
+                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": varname=" + f.space.str_w(w_varname)
+                
+            if not throw_access_exceptions:
                 varname = f.space.str_w(w_varname)
                 message = "global name '%s' is not defined" % varname
                 raise OperationError(f.space.w_NameError,
@@ -774,7 +795,10 @@ class __extend__(pyframe.PyFrame):
                     f.pushvalue(w_value)
                     return
             else:
-                if throw_access_exceptions_for_name_acessess:
+                if print_access_exceptions:
+                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": varname=" + f.space.str_w(w_varname)
+                                
+                if throw_access_exceptions:
                     #SRW TODO: raise
                     pass
         f.LOAD_GLOBAL(nameindex)    # fall-back
@@ -782,7 +806,10 @@ class __extend__(pyframe.PyFrame):
     def _load_global(f, w_varname):
         w_value = f.space.finditem(f.w_globals, w_varname)
         if not namecheck_load(f, w_value):
-            if throw_access_exceptions_for_name_acessess:
+            if print_access_exceptions:
+                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": global_varname=" + f.space.str_w(w_varname)
+                    
+            if throw_access_exceptions:
                 #SRW TODO: raise
                 pass
             else:
@@ -794,7 +821,10 @@ class __extend__(pyframe.PyFrame):
                 if w_value is None:
                     f._load_global_failed(w_varname)
             else:
-                if throw_access_exceptions_for_name_acessess:
+                if print_access_exceptions:
+                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": builtin_varname=" + f.space.str_w(w_varname)
+                            
+                if throw_access_exceptions:
                     #SRW TODO: raise
                     pass
                 else:
@@ -859,11 +889,14 @@ class __extend__(pyframe.PyFrame):
         if namecheck_load(f,w_value):
             f.pushvalue(w_value)
         else:
-            if throw_access_exceptions_for_name_acessess:
+            if print_access_exceptions:
+                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": attrname=" + f.space.str_w(w_attributename)
+                
+            if throw_access_exceptions:
                 #SRW TODO: raise
                 pass
             else:
-                f.pushvalue(f.space.w_None) #TODO: BETTER THAN THIS
+                f.pushvalue(f.space.w_None) #TODO: Can we do better than this?
 
     LOAD_ATTR._always_inline_ = True
 
@@ -993,8 +1026,11 @@ class __extend__(pyframe.PyFrame):
             next_instr += jumpby
         else:
             if not namecheck_load(f,w_nextitem):
-                if not throw_access_exceptions_for_name_acessess:
-                    w_nextitem = f.space.w_None #TODO: BETTER THAN THIS
+                if print_access_exceptions:
+                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name)
+                    
+                if not throw_access_exceptions:
+                    w_nextitem = f.space.w_None #TODO: Can we do better than this?
                 else:
                     #SRW TODO: raise
                     pass                
@@ -1092,8 +1128,10 @@ class __extend__(pyframe.PyFrame):
         w_codeobj = f.popvalue()
         codeobj = f.space.interp_w(PyCode, w_codeobj)
         defaultarguments = f.popvalues_mutable(numdefaults)
-        fn = function.Function(f.space, codeobj, f.w_globals, defaultarguments)
-        f.pushvalue(f.space.wrap(fn))
+        fn = function.Function(f.space, codeobj, f.w_globals, defaultarguments, creator_nametoken=f.space.finditem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN)))
+        w_fn = f.space.wrap(fn)
+        namecheck_store(f, w_fn)
+        f.pushvalue(w_fn)
 
     def BUILD_SLICE(f, numargs, *ignored):
         if numargs == 3:

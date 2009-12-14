@@ -1,9 +1,11 @@
 from pypy.interpreter.error import OperationError
 from pypy.interpreter import function, pycode, pyframe
-from pypy.interpreter.pyopcode import namecheck_store, namecheck_load, throw_access_exceptions_for_name_acessess
+from pypy.interpreter.pyopcode import namecheck_store, namecheck_load#, throw_access_exceptions, print_access_exceptions
+from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, throw_access_exceptions, print_access_exceptions
 from pypy.interpreter.baseobjspace import Wrappable
 from pypy.interpreter.mixedmodule import MixedModule
 from pypy.tool.uid import uid
+from sys import stderr
 
 # if false, throw "not found" exceptions and return None
 # if true, throw access exceptions
@@ -182,11 +184,14 @@ class __extend__(pyframe.PyFrame):
         if namecheck_load(f, w_value):
             f.pushvalue(w_value)
         else:
-            if throw_access_exceptions_for_name_acessess:
-                #SRW TODO raise
+            if print_access_exceptions:
+                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": cellindex=" + str(varindex)
+                
+            if throw_access_exceptions:
+                #SRW TODO: raise
                 pass
             else:
-                f.pushvalue(w_None) #TODO BETTER THAN THIS
+                f.pushvalue(w_None) #TODO: BETTER THAN THIS
 
     def LOAD_DEREF(f, varindex, *ignored):
         # nested scopes: access a variable through its cell object
@@ -194,8 +199,11 @@ class __extend__(pyframe.PyFrame):
         try:
             w_value = cell.get()
             if not namecheck_load(f, w_value):
-                if throw_access_exceptions_for_name_acessess:
-                    #SRW TODO raise
+                if print_access_exceptions:
+                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": cellindex=" + str(varindex)
+                
+                if throw_access_exceptions:
+                    #SRW TODO: raise
                     pass
                 else:
                     raise ValueError()
@@ -238,5 +246,7 @@ class __extend__(pyframe.PyFrame):
         defaultarguments = [f.popvalue() for i in range(numdefaults)]
         defaultarguments.reverse()
         fn = function.Function(f.space, codeobj, f.w_globals,
-                               defaultarguments, freevars)
-        f.pushvalue(f.space.wrap(fn))
+                               defaultarguments, freevars, creator_nametoken=f.space.finditem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN)))
+        w_fn = f.space.wrap(fn)
+        namecheck_store(f, w_fn)
+        f.pushvalue(w_fn)
