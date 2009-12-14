@@ -1,0 +1,1843 @@
+diff --git a/pypy-dist/pypy/bin/victor.py b/pypy-dist/pypy/bin/victor.py
+new file mode 100644
+index 0000000..cc97095
+--- /dev/null
++++ b/pypy-dist/pypy/bin/victor.py
+@@ -0,0 +1,449 @@
++import inspect, sys
++import copy
++def trace(f,e,a):
++    if e == 'return':
++        output = "RETURN " + str(a) + "(" + f.f_code.co_name
++        co = f.f_code
++        if len(co.co_filename) > 75:
++            fname = co.co_filename[80:]
++        else:
++            fname = co.co_filename
++        output += " " + fname + " " + co.co_firstlineno + ")"
++        print output
++    if e == 'call':
++        co = f.f_code
++        if len(co.co_filename) > 75:
++            fname = co.co_filename[80:]
++        else:
++            fname = co.co_filename
++        args = inspect.getargvalues(f)
++        callee = ""
++        if len(args[0]) > 0:
++            if hasattr(args[3][args[0][0]],'__class__'):
++                callee = str(args[3][args[0][0]].__class__)
++        values = ""
++        try:
++            values = str(args[3])
++        except Exception, e:
++            pass
++        output = co.co_name + "(" + str(args[0]) + ")" + "(" + values + ") " + fname + " " + str(co.co_firstlineno)
++        if f.f_back is not None:
++            co = f.f_back.f_code
++            if len(co.co_filename) > 75 and co.co_filename.find("sourcetools.py") == -1:
++                fname = co.co_filename[80:]
++            else:
++                fname = co.co_filename
++            args = inspect.getargvalues(f.f_back)
++            caller = ""
++            if len(args[0]) > 0:
++                if hasattr(args[3][args[0][0]],'__class__'):
++                    caller = str(args[3][args[0][0]].__class__)
++                else:
++                    caller = str(type(args[3][args[0][0]]))
++            output += " " + co.co_name + "(" + caller + ") " + fname + " " + str(co.co_firstlineno)
++        print output
++
++def hello():
++    pow(2,3)
++
++
++def bad():
++    print badarg
++
++def ev():
++    inspect.getmembers(eval) 
++
++dnewtypes = {}
++dnotypes = {}
++dnewobjs = {}
++doldobjs = {}
++dobjlevels = {}
++depthreached = 0
++
++def dcop(obj,depth):
++    global dnewtypes
++    global dnotypes
++    global dnewobjs
++    global depthreached
++    global doldobjs
++    global dobjlevels
++    
++    dnewtypes = {}
++    dnotypes = {}
++    dnewobjs = {}
++    doldobjs = {}
++    dobjlevels = {}
++    depthreached = 0
++    new = obj
++    try:
++        new = copy.copy(obj)
++        assert id(new) != id(obj)
++    except Exception, e:
++        print e, type(e)
++    except AssertionError, e:
++        print e, type(e)
++    else:
++        doldobjs[id(obj)] = new
++        dnewobjs[id(new)] = new
++        dnewtypes[type(new).__name__] = type(new)
++        for r in range(0,depth):
++            dcoph(new,r)
++            print r, len(dnewobjs)
++    return new
++
++def fdcop(obj,depth):
++    global dnewtypes
++    global dnotypes
++    global dnewobjs
++    global depthreached
++    global doldobjs
++    global dobjlevels
++    
++    dnewtypes = {}
++    dnotypes = {}
++    dnewobjs = {}
++    doldobjs = {}
++    dobjlevels = {}
++    depthreached = 0
++    new = obj
++    try:
++        new = copy.copy(obj)
++        assert id(new) != id(obj)
++    except Exception, e:
++        print e, type(e)
++    except AssertionError, e:
++        print e, type(e)
++    else:
++        doldobjs[id(obj)] = new
++        dnewobjs[id(new)] = new
++        dnewtypes[type(new).__name__] = type(new)
++        for r in range(0,depth):
++            fdcoph(new,r)
++            #print r, len(dnewobjs)
++    return new
++
++def dcophatt(obj,name,att):
++    aco = att
++    if doldobjs.has_key(id(att)) or dnewobjs.has_key(id(att)): 
++        if doldobjs.has_key(id(att)):
++            aco = doldobjs[id(att)]
++        else:
++            aco = dnewobjs[id(att)]
++        # Take care that dict type keys don't cl
++        try:
++            t = type(obj).__name__
++            if dobjlevels[id(obj)] == depthreached-1 and hasattr(obj,name):
++                setattr(obj,name,aco)
++        except Exception, e:
++            pass
++        return aco
++    
++    t = type(obj).__name__
++    try:
++        aco = copy.copy(att)
++        assert id(aco) != id(att)
++        doldobjs[id(att)] = aco
++        dnewobjs[id(aco)] = aco
++        dobjlevels[id(aco)] = depthreached
++        dnewtypes[type(aco).__name__] = type(aco)
++        if hasattr(obj,name):
++            setattr(obj,name,aco)
++        #print type(obj), id(obj), name, type(att)
++    except AssertionError, e:
++        if not dnotypes.has_key(type(att).__name__):
++            dnotypes[t+'_'+name+'_'+type(att).__name__] = {}
++        dnotypes[t+'_'+name+'_'+type(att).__name__][str(e)] = type(e)
++    except AttributeError, e:
++        if str(e).find('read-only') == -1 and str(e).find('not writable') == -1 and str(e).find('unknown option') == -1:
++            if not dnotypes.has_key(type(att).__name__):
++                dnotypes[t+'_'+name+'_'+type(att).__name__] = {}
++            dnotypes[t+'_'+name+'_'+type(att).__name__][str(e)] = type(e)
++    except TypeError, e:
++        if str(e).find('readonly') == -1: 
++            if not dnotypes.has_key(type(att).__name__):
++                dnotypes[t+'_'+name+'_'+type(att).__name__] = {}
++            dnotypes[t+'_'+name+'_'+type(att).__name__][str(e)] = type(e) 
++    except Exception, e:
++        po = obj
++        atto = att
++        if t == 'dict' or t == 'list':
++            po = str(len(obj))
++        at = type(att).__name__
++        if at == 'dict' or at == 'list':
++            atto = len(att)
++        print po, type(obj), name+"="+str(atto),e, type(e), level
++    return aco
++
++def dcoph(obj,depth,level=0):
++    global depthreached
++    if level > depthreached:
++        depthreached = level
++    l = None
++    try:
++        l = inspect.getmembers(obj)
++    except Exception, e:
++        # These exceptions are out of my control
++        return
++    if level == depth:
++        adict = None
++        if hasattr(obj,'__dict__') and not id(obj) in dnewobjs:
++            adict_t = obj.__dict__
++            if type(adict_t).__name__ == 'dict':
++                adict = dcophatt(obj,'__dict__',adict_t)
++        for att in l:
++            if att[0] == 'content' or att[0] == 'w_dict' or att[0] == '_dict' or att[0] == 'w_func_globals' or att[0] == 'w_class' or att[0] == 'wrappeditems':
++                t = type(att[1]).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod'):
++                    dcophatt(obj,att[0],att[1])
++        t = type(obj).__name__
++        if t == 'dict':
++            for k,elt in obj.iteritems():
++                t = type(elt).__name__
++                newelt = None
++                newkey = None
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod'):
++                    t = type(k).__name__
++                    if t == 'dict' or t == 'set' or t == 'list' or t == 'buffer' or str(type(obj)).find('collections.') != -1:
++                        n = "key="+type(k).__name__
++                    else:
++                        n = "key="+str(k)
++                    newelt = dcophatt(obj,n,elt)
++                t = type(k).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod'):
++                    newkey = dcophatt(obj,'isadictkey',k)
++                if newelt is not None and newkey is not None:
++                    obj.pop(k)
++                    obj[newkey] = newelt
++                elif newelt is not None:
++                    obj[k] = newelt
++                elif newkey is not None:
++                    obj.pop(k)
++                    obj[newkey] = elt
++        if t == 'set' or t == 'list' or t == 'buffer' or str(type(obj)).find('collections.') != -1:
++            for i,elt in enumerate(obj):
++                t = type(elt).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod'):
++                    obj[i] = dcophatt(obj,"seqtype_"+str(i),elt)
++    elif level < depth:
++        for att in l:
++            t = type(att[1]).__name__
++            if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod') and id(att[1]) in dnewobjs:
++                dcoph(att[1],depth,level+1)
++        t = type(obj).__name__
++        if t == 'dict':
++            for k,elt in obj.iteritems():
++                t = type(elt).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod') and id(elt) in dnewobjs:
++                    dcoph(elt,depth,level+1)
++                t = type(k).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod') and id(k) in dnewobjs:
++                    dcoph(k,depth,level+1)
++        if t == 'set' or t == 'list' or t == 'buffer' or str(type(obj)).find('collections.') != -1:
++            for elt in obj:
++                t = type(elt).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod') and id(elt) in dnewobjs:
++                    dcoph(elt,depth,level+1)
++    else:
++        raise Exception("none or too many levels")
++
++def fdcoph(obj,depth,level=0):
++    global depthreached
++    if level > depthreached:
++        depthreached = level
++    l = None
++    try:
++        l = inspect.getmembers(obj)
++    except Exception, e:
++        #Nothing we can do here
++        return
++    if level == depth:
++        adict = None
++        if hasattr(obj,'__dict__') and not id(obj) in dnewobjs:
++            adict_t = obj.__dict__
++            if type(adict_t).__name__ == 'dict':
++                adict = dcophatt(obj,'__dict__',adict_t)
++        for att in l:
++            if (att[0] == 'content' or att[0] == 'w_dict' or att[0] == '_dict' or att[0] == 'w_func_globals' or att[0] == 'w_class' or att[0] == 'wrappeditems' or att[0] == 'key'):
++                t = type(att[1]).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod'):
++                    dcophatt(obj,att[0],att[1])
++        t = type(obj).__name__
++        if t == 'dict':
++            for k,elt in obj.iteritems():
++                newkey = None
++                newelt = None
++                tk = type(k).__name__
++                n = "key="+str(k)
++                if tk == '_r_dictkey':
++                    t = type(k.key).__name__
++                else:
++                    t = type(k).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod'):
++                    newkey = dcophatt(obj,'isadictkey',k)
++                    
++                t = type(elt).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod'):
++                    n = "key="+str(k)
++                    newelt = dcophatt(obj,n,elt)
++                if newelt is not None and newkey is not None:
++                    obj.pop(k)
++                    obj[newkey] = newelt
++                elif newelt is not None:
++                    obj[k] = newelt
++                elif newkey is not None:
++                    obj.pop(k)
++                    obj[newkey] = elt
++        if t == 'set' or t == 'list' or t == 'buffer' or str(type(obj)).find('collections.') != -1:
++            for i,elt in enumerate(obj):
++                t = type(elt).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod'):
++                    obj[i] = dcophatt(obj,"seqtype_"+str(i),elt)
++    elif level < depth:
++        for att in l:
++            t = type(att[1]).__name__
++            if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod') and id(att[1]) in dnewobjs:
++                fdcoph(att[1],depth,level+1)
++        t = type(obj).__name__
++        if t == 'dict':
++            for k,elt in obj.iteritems():
++                t = type(elt).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod') and id(elt) in dnewobjs:
++                    fdcoph(elt,depth,level+1)
++                t = type(k).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod') and id(k) in dnewobjs:
++                    fdcoph(k,depth,level+1)
++        if t == 'set' or t == 'list' or t == 'buffer' or str(type(obj)).find('collections.') != -1:
++            for elt in obj:
++                t = type(elt).__name__
++                if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod') and id(elt) in dnewobjs:
++                    fdcoph(elt,depth,level+1)
++    else:
++        raise Exception("none or too many levels")
++
++newtypes = {}
++notypes = {}
++newobjs = {}
++def cop(obj,limit=0,level=0):
++    new = obj
++    if limit and level > limit: 
++        return new
++    if newobjs.has_key(id(obj)):
++        return newobjs[id(obj)]
++    name = ''
++    numargs = 1
++    if hasattr(obj,'__name__'):
++        name = obj.__name__
++    if hasattr(obj,'__init__'):
++        pass
++        #numargs = len(obj.__init__.im_func.func_code.co_varnames)
++    t = type(obj).__name__
++    if (t != 'object' and t != 'type' and t != 'str' and t != 'NoneType' and t != 'builtin_function_or_method' and t != 'float' and t != 'int' and t != 'code' and t != 'bool' and t != 'method-wrapper' and t != 'instancemethod'):
++        new = copy.copy(obj)
++        newobjs[id(new)] = new
++        newtypes[type(new).__name__] = type(new)
++        l = inspect.getmembers(obj)
++        for att in l:
++            try:
++                setattr(new,att[0],cop(att[1],limit,level+1))
++            except AttributeError, e:
++                if str(e).find('read-only') == -1 and str(e).find('not writable') == -1 and str(e).find('unknown option') == -1:
++                    if not notypes.has_key(type(att[1]).__name__):
++                        notypes[t+'_'+att[0]+'_'+type(att[1]).__name__] = {}
++                    notypes[t+'_'+att[0]+'_'+type(att[1]).__name__][str(e)] = type(e)
++            except TypeError, e:
++                if str(e).find('readonly') == -1: 
++                    if not notypes.has_key(type(att[1]).__name__):
++                        notypes[t+'_'+att[0]+'_'+type(att[1]).__name__] = {}
++                    notypes[t+'_'+att[0]+'_'+type(att[1]).__name__][str(e)] = type(e) 
++            except Exception, e:
++                po = obj
++                atto = att[1]
++                if t == 'dict' or t == 'list':
++                    po = str(len(obj))
++                at = type(att[1]).__name__
++                if at == 'dict' or at == 'list':
++                    atto = len(att[1])
++                print po, type(obj), att[0]+"="+str(atto),e, type(e), level
++    newobjs[id(obj)] = new
++    return new
++
++def tcop(obj):
++    new = obj
++    try:
++        new = copy.copy(obj)
++    except Exception, e:
++        print "copy(obj):", obj, type(obj), e, type(e)
++    else:
++        l = inspect.getmembers(obj)
++        for att in l:
++            try:
++                catt = copy.copy(att[1])
++            except Exception, e:
++                print "copy(att[1]):", obj, type(obj), att[0]+"="+str(att[1]),e, type(e)
++            else:
++                try:
++                    setattr(new,att[0],catt)
++                except Exception, e:
++                    print "setattr(att[0]):", obj, type(obj), att[0]+"="+str(att[1]),e, type(e)
++                else:
++                    print "setattr", att[0], "success"
++    return new
++
++def fcop(obj):
++    l = inspect.getmembers(obj)
++    for att in l:
++        try:
++            setattr(obj,att[0],att[1])
++        except Exception, e:
++            if type(att[1]).__name__ == 'list' or type(att[1]).__name__ == 'dict':
++                atto = len(att[1])
++            else:
++                atto = att[1]
++            print "setattr(att[0]):", att[0]+"="+str(atto), e, type(e)
++        else:
++            print "setattr", att[0], "success"
++
++def rfcop(obj,depth=0):
++    for r in range(0,depth):
++        rfcoph(obj,r)
++
++
++def rfcoph(obj,depth=0,level=0):
++    l = inspect.getmembers(obj)
++    if level == depth:
++        for att in l:
++            try:
++                setattr(obj,att[0],att[1])
++            except Exception, e:
++                if type(att[1]).__name__ == 'list' or type(att[1]).__name__ == 'dict':
++                    atto = len(att[1])
++                else:
++                    atto = att[1]
++            #print "setattr(att[0]):", att[0]+"="+str(atto), e, type(e)
++            else:
++                if not (att[0] == '__module__' and att[1] == None):
++                    print "setattr", att[0], "success", type(obj), level
++    elif level < depth:
++        for att in l:
++            rfcoph(att[1],depth,level+1)
++
++def printypes(obj):
++    l = inspect.getmembers(obj)
++    out = ""
++    for att in l:
++        out += type(att[1]).__name__ + " "
++    print out
++
++
++def prof(str):
++    import cProfile
++    cProfile.run(str)
++
++def test(w_mod,level,i1,i2):
++    c = fdcop(w_mod,level)
++    k = w_mod.w_dict.content._dict.keys()[i1]
++    m = w_mod.w_dict.content._dict.values()[i2]
++    cm = fdcop(m,0)
++    c.w_dict.content._dict[k] = cm
++    print id(cm)
++    return c
+diff --git a/pypy-dist/pypy/interpreter/baseobjspace.py b/pypy-dist/pypy/interpreter/baseobjspace.py
+index 38835f6..f964582 100644
+--- a/pypy-dist/pypy/interpreter/baseobjspace.py
++++ b/pypy-dist/pypy/interpreter/baseobjspace.py
+@@ -228,6 +228,8 @@ class ObjSpace(object):
+     http://codespeak.net/pypy/dist/pypy/doc/objspace.html"""
+ 
+     full_exceptions = True  # full support for exceptions (normalization & more)
++    
++    namespace_table = {}
+ 
+     def __init__(self, config=None):
+         "NOT_RPYTHON: Basic initialization of objects."
+diff --git a/pypy-dist/pypy/interpreter/function.py b/pypy-dist/pypy/interpreter/function.py
+index 02fd316..f7001b0 100644
+--- a/pypy-dist/pypy/interpreter/function.py
++++ b/pypy-dist/pypy/interpreter/function.py
+@@ -19,7 +19,7 @@ class Function(Wrappable):
+     an object space, a dictionary of globals, default arguments,
+     and an arbitrary 'closure' passed to the code object."""
+ 
+-    def __init__(self, space, code, w_globals=None, defs_w=[], closure=None, forcename=None):
++    def __init__(self, space, code, w_globals=None, defs_w=[], closure=None, forcename=None, creator_nametoken=None):
+         self.space = space
+         self.name = forcename or code.co_name
+         self.w_doc = None   # lazily read from code.getdocstring()
+@@ -29,6 +29,7 @@ class Function(Wrappable):
+         self.defs_w    = defs_w     # list of w_default's
+         self.w_func_dict = None # filled out below if needed
+         self.w_module = None
++        self.creator_nametoken = creator_nametoken
+ 
+     def __repr__(self):
+         # return "function %s.%s" % (self.space, self.name)
+@@ -343,9 +344,22 @@ class Function(Wrappable):
+         self.w_module = space.w_None
+ 
+     def fget_func_code(space, self):
+-        return space.wrap(self.code)
++        from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, throw_access_exceptions, print_access_exceptions, _currentframe_has_access
++        from sys import stderr
++        
++        if _currentframe_has_access(space, self.creator_nametoken):
++            return space.wrap(self.code)
++        else:
++            if print_access_exceptions:
++                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + self.name + ".func_code"
++
++            if throw_access_exceptions:
++                #SRW TODO: raise
++                pass
++            else:
++                return space.w_None
+ 
+-    def fset_func_code(space, self, w_code):
++    def fset_func_code(space, self, w_code): #SRW !!!: This could be hazardous for untrusted code to set the code object which is executed by trusted code -- deal with in future
+         from pypy.interpreter.pycode import PyCode
+         code = space.interp_w(Code, w_code)
+         closure_len = 0
+@@ -356,8 +370,21 @@ class Function(Wrappable):
+         self.code = code
+ 
+     def fget_func_closure(space, self):
++        from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, throw_access_exceptions, print_access_exceptions, _currentframe_has_access
++        from sys import stderr
++
+         if self.closure is not None:
+-            w_res = space.newtuple( [ space.wrap(i) for i in self.closure ] )
++            if _currentframe_has_access(space, self.creator_nametoken):
++                w_res = space.newtuple( [ space.wrap(i) for i in self.closure ] )
++            else:
++                if print_access_exceptions:
++                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + self.name + ".func_closure"
++
++                if throw_access_exceptions:
++                    #SRW TODO: raise
++                    pass
++                else:
++                    w_res = space.w_None
+         else:
+             w_res = space.w_None
+         return w_res
+diff --git a/pypy-dist/pypy/interpreter/nestedscope.py b/pypy-dist/pypy/interpreter/nestedscope.py
+index a499b28..8926f58 100644
+--- a/pypy-dist/pypy/interpreter/nestedscope.py
++++ b/pypy-dist/pypy/interpreter/nestedscope.py
+@@ -1,8 +1,16 @@
+ from pypy.interpreter.error import OperationError
+ from pypy.interpreter import function, pycode, pyframe
++from pypy.interpreter.pyopcode import namecheck_store, namecheck_load#, throw_access_exceptions, print_access_exceptions
++from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, throw_access_exceptions, print_access_exceptions
+ from pypy.interpreter.baseobjspace import Wrappable
+ from pypy.interpreter.mixedmodule import MixedModule
+ from pypy.tool.uid import uid
++from sys import stderr
++
++# if false, throw "not found" exceptions and return None
++# if true, throw access exceptions
++# ALSO: change in pyopcode.py
++#throw_access_exceptions_for_name_acessess = False
+ 
+ class Cell(Wrappable):
+     "A simple container for a wrapped value."
+@@ -173,13 +181,32 @@ class __extend__(pyframe.PyFrame):
+         # nested scopes: access the cell object
+         cell = f.cells[varindex]
+         w_value = f.space.wrap(cell)
+-        f.pushvalue(w_value)
++        if namecheck_load(f, w_value):
++            f.pushvalue(w_value)
++        else:
++            if print_access_exceptions:
++                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": cellindex=" + str(varindex)
++                
++            if throw_access_exceptions:
++                #SRW TODO: raise
++                pass
++            else:
++                f.pushvalue(w_None) #TODO: BETTER THAN THIS
+ 
+     def LOAD_DEREF(f, varindex, *ignored):
+         # nested scopes: access a variable through its cell object
+         cell = f.cells[varindex]
+         try:
+             w_value = cell.get()
++            if not namecheck_load(f, w_value):
++                if print_access_exceptions:
++                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": cellindex=" + str(varindex)
++                
++                if throw_access_exceptions:
++                    #SRW TODO: raise
++                    pass
++                else:
++                    raise ValueError()
+         except ValueError:
+             varname = f.getfreevarname(varindex)
+             if f.iscellvar(varindex):
+@@ -201,6 +228,7 @@ class __extend__(pyframe.PyFrame):
+         #except IndexError:
+         #    import pdb; pdb.set_trace()
+         #    raise
++        namecheck_store(f, w_newvalue) #SRW
+         cell.set(w_newvalue)
+ 
+     def MAKE_CLOSURE(f, numdefaults, *ignored):
+@@ -218,5 +246,7 @@ class __extend__(pyframe.PyFrame):
+         defaultarguments = [f.popvalue() for i in range(numdefaults)]
+         defaultarguments.reverse()
+         fn = function.Function(f.space, codeobj, f.w_globals,
+-                               defaultarguments, freevars)
+-        f.pushvalue(f.space.wrap(fn))
++                               defaultarguments, freevars, creator_nametoken=f.space.finditem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN)))
++        w_fn = f.space.wrap(fn)
++        namecheck_store(f, w_fn)
++        f.pushvalue(w_fn)
+diff --git a/pypy-dist/pypy/interpreter/pyopcode.py b/pypy-dist/pypy/interpreter/pyopcode.py
+index f2933f2..65b8515 100644
+--- a/pypy-dist/pypy/interpreter/pyopcode.py
++++ b/pypy-dist/pypy/interpreter/pyopcode.py
+@@ -19,6 +19,49 @@ from pypy.tool.stdlib_opcode import opcodedesc, HAVE_ARGUMENT
+ from pypy.tool.stdlib_opcode import unrolling_opcode_descs
+ from pypy.tool.stdlib_opcode import opcode_method_names
+ from pypy.rlib.unroll import unrolling_iterable
++from sys import stderr
++from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, throw_access_exceptions, print_access_exceptions, _currentframe_has_access
++
++def namecheck_load(f, w_obj):
++    try:
++        w_objtoken = f.space.namespace_table[id(w_obj)]
++    except KeyError:
++        return True # THINK: this means that an object with no token is open -- this seems reasonable for functionality's sake
++
++    try: # check against __nametoken__
++        w_frameglobals_nametoken = f.space.getitem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN))
++        if f.space.is_w(w_objtoken, w_frameglobals_nametoken):
++            return True
++    except OperationError, e:
++        if not e.match(f.space, f.space.w_KeyError):
++            raise
++        return True
++
++    try: # check against __alltokens__
++        w_frameglobals_alltokens = f.space.getitem(f.w_globals, f.space.wrap(SLOTNAME_ALLTOKENS))
++        return w_objtoken in f.space.unpackiterable(f.space.call_function(f.space.getattr(w_frameglobals_alltokens,f.space.wrap("values"))))
++    except OperationError, e:
++    #       if not e.match(space, space.w_KeyError):
++    #           raise
++        return False
++    #   return False
++
++def namecheck_store(f,w_obj):
++    from pypy.objspace.std.nametokenobject import W_NametokenObject
++
++    w_frameglobals_nametoken = f.space.finditem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN))
++    if not isinstance(w_obj, W_NametokenObject): # don't change nametokens
++        if w_frameglobals_nametoken is not None:
++            f.space.namespace_table[id(w_obj)] = w_frameglobals_nametoken
++        else:
++            pass
++            #TODO: append object being stored to a list of untagged objects, that will be made accessible to __main__ for tagging later...
++
++#def namecheck_func(f,w_obj):
++#    pass
++#look inside closure for __nametoken__ in __allowexecute__
++
++##end SRW
+ 
+ def unaryoperation(operationname):
+     """NOT_RPYTHON"""
+@@ -33,13 +76,34 @@ def unaryoperation(operationname):
+ 
+ def binaryoperation(operationname):
+     """NOT_RPYTHON"""    
+-    def opimpl(f, *ignored):
+-        operation = getattr(f.space, operationname)
+-        w_2 = f.popvalue()
+-        w_1 = f.popvalue()
+-        w_result = operation(w_1, w_2)
+-        f.pushvalue(w_result)
+-    opimpl.binop = operationname
++    if operationname == "getitem":
++        def opimpl(f, *ignored):
++            operation = getattr(f.space, operationname)
++            w_2 = f.popvalue()
++            w_1 = f.popvalue()
++            w_result = operation(w_1, w_2)
++            
++            if namecheck_load(f, w_result):
++                f.pushvalue(w_result)
++            else:
++                if print_access_exceptions:
++                    print >> stderr, "\033[1;31mAccess Error:\033[1;m BINARY_SUBSCR: subscript=" + f.space.str_w(w_2)
++                    
++                if throw_access_exceptions:
++                    #SRW TODO: raise
++                    pass
++                else:
++                    f.pushvalue(f.space.w_None) #TODO: Can we do better than this?
++                    
++        opimpl.binop = operationname
++    else: 
++        def opimpl(f, *ignored):
++            operation = getattr(f.space, operationname)
++            w_2 = f.popvalue()
++            w_1 = f.popvalue()
++            w_result = operation(w_1, w_2)
++            f.pushvalue(w_result)
++        opimpl.binop = operationname
+ 
+     return func_with_new_name(opimpl, "opcode_impl_for_%s" % operationname)
+ 
+@@ -334,6 +398,13 @@ class __extend__(pyframe.PyFrame):
+     def STORE_FAST(f, varindex, *ignored):
+         w_newvalue = f.popvalue()
+         assert w_newvalue is not None
++#SRW     global id_table
++#        import sys
++#        func_name = sys._getframe().f_code.co_name
++#        if id(w_newvalue) in id_table:
++#            id_table[id(w_newvalue)] = (id_table[id(w_newvalue)][0]+1,func_name+"_"+str(f))
++#        else:
++#            id_table.setdefault(id(w_newvalue),(1,func_name+"_"+str(f)))
+         f.fastlocals_w[varindex] = w_newvalue
+         #except:
+         #    print "exception: got index error"
+@@ -494,14 +565,24 @@ class __extend__(pyframe.PyFrame):
+         w_subscr = f.popvalue()
+         w_obj = f.popvalue()
+         w_newvalue = f.popvalue()
++        namecheck_store(f,w_newvalue) #SRW
+         f.space.setitem(w_obj, w_subscr, w_newvalue)
+ 
+     def DELETE_SUBSCR(f, *ignored):
+         "del obj[subscr]"
+         w_subscr = f.popvalue()
+         w_obj = f.popvalue()
+-        f.space.delitem(w_obj, w_subscr)
+-
++        
++        if namecheck_load(f, f.space.getitem(w_obj, w_subscr)):
++            f.space.delitem(w_obj, w_subscr)
++        else:
++            if print_access_exceptions:
++                print >> stderr, "\033[1;31mAccess Error:\033[1;m" + str(sys._getframe().f_code.co_name) + ": subscript=" + f.space.str_w(w_subscr)
++                
++            if throw_access_exceptions:
++                #SRW TODO: raise
++                pass
++        
+     def PRINT_EXPR(f, *ignored):
+         w_expr = f.popvalue()
+         print_expr(f.space, w_expr)
+@@ -617,12 +698,24 @@ class __extend__(pyframe.PyFrame):
+     def STORE_NAME(f, varindex, *ignored):
+         w_varname = f.getname_w(varindex)
+         w_newvalue = f.popvalue()
++        namecheck_store(f, w_newvalue)
+         f.space.set_str_keyed_item(f.w_locals, w_varname, w_newvalue)
+ 
+     def DELETE_NAME(f, varindex, *ignored):
+         w_varname = f.getname_w(varindex)
+         try:
+-            f.space.delitem(f.w_locals, w_varname)
++            if namecheck_load(f,f.space.finditem(f.w_locals, w_varname)):
++                f.space.delitem(f.w_locals, w_varname)
++            else:
++                if print_access_exceptions:
++                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": varname=" + f.space.str_w(w_varname)
++                    
++                if not throw_access_exceptions:
++                    message = "name '%s' is not defined" % f.space.str_w(w_varname)
++                    raise OperationError(f.space.w_NameError, f.space.wrap(message))
++                else:
++                    #SRW TODO: raise
++                    pass
+         except OperationError, e:
+             # catch KeyErrors and turn them into NameErrors
+             if not e.match(f.space, f.space.w_KeyError):
+@@ -636,6 +729,16 @@ class __extend__(pyframe.PyFrame):
+             items = f.space.unpackiterable(w_iterable, itemcount)
+         except UnpackValueError, e:
+             raise OperationError(f.space.w_ValueError, f.space.wrap(e.msg))
++        for i in range(len(items)):
++            if not namecheck_load(f,items[i]):
++                if print_access_exceptions:
++                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": sequence_index=" + str(i)
++
++                if not throw_access_exceptions:
++                    items[i] = f.space.w_None #TODO: Can we do better than this?
++                else:
++                    #SRW TODO: raise
++                    pass                
+         f.pushrevvalues(itemcount, items)
+ 
+     def STORE_ATTR(f, nameindex, *ignored):
+@@ -643,39 +746,89 @@ class __extend__(pyframe.PyFrame):
+         w_attributename = f.getname_w(nameindex)
+         w_obj = f.popvalue()
+         w_newvalue = f.popvalue()
++        namecheck_store(f, w_newvalue) #SRW
+         f.space.setattr(w_obj, w_attributename, w_newvalue)
+ 
+     def DELETE_ATTR(f, nameindex, *ignored):
+         "del obj.attributename"
+         w_attributename = f.getname_w(nameindex)
+         w_obj = f.popvalue()
+-        f.space.delattr(w_obj, w_attributename)
+-
++        if namecheck_load(f,f.space.getattr(w_obj, w_attributename)):
++            f.space.delattr(w_obj, w_attributename)
++        else:
++            if print_access_exceptions:
++                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": attrname=" + f.space.str_w(w_attributename)
++    
++            if throw_access_exceptions:
++                #SRW TODO: raise
++                pass
++                    
+     def STORE_GLOBAL(f, nameindex, *ignored):
+         w_varname = f.getname_w(nameindex)
+         w_newvalue = f.popvalue()
++        namecheck_store(f, w_newvalue) #SRW
+         f.space.set_str_keyed_item(f.w_globals, w_varname, w_newvalue)
+ 
+     def DELETE_GLOBAL(f, nameindex, *ignored):
+         w_varname = f.getname_w(nameindex)
+-        f.space.delitem(f.w_globals, w_varname)
++        if namecheck_load(f,f.space.finditem(f.w_globals, w_varname)):
++            f.space.delitem(f.w_globals, w_varname)
++        else:
++            if print_access_exceptions:
++                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": varname=" + f.space.str_w(w_varname)
++                
++            if not throw_access_exceptions:
++                varname = f.space.str_w(w_varname)
++                message = "global name '%s' is not defined" % varname
++                raise OperationError(f.space.w_NameError,
++                             f.space.wrap(message))
++            else:
++                #SRW TODO: raise
++                pass        
+ 
+     def LOAD_NAME(f, nameindex, *ignored):
+         if f.w_locals is not f.w_globals:
+             w_varname = f.getname_w(nameindex)
+             w_value = f.space.finditem(f.w_locals, w_varname)
+-            if w_value is not None:
+-                f.pushvalue(w_value)
+-                return
++            if namecheck_load(f, w_value):
++                if w_value is not None:
++                    f.pushvalue(w_value)
++                    return
++            else:
++                if print_access_exceptions:
++                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": varname=" + f.space.str_w(w_varname)
++                                
++                if throw_access_exceptions:
++                    #SRW TODO: raise
++                    pass
+         f.LOAD_GLOBAL(nameindex)    # fall-back
+ 
+     def _load_global(f, w_varname):
+         w_value = f.space.finditem(f.w_globals, w_varname)
++        if not namecheck_load(f, w_value):
++            if print_access_exceptions:
++                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": global_varname=" + f.space.str_w(w_varname)
++                    
++            if throw_access_exceptions:
++                #SRW TODO: raise
++                pass
++            else:
++                w_value = None
+         if w_value is None:
+             # not in the globals, now look in the built-ins
+             w_value = f.get_builtin().getdictvalue(f.space, w_varname)
+-            if w_value is None:
+-                f._load_global_failed(w_varname)
++            if namecheck_load(f, w_value):
++                if w_value is None:
++                    f._load_global_failed(w_varname)
++            else:
++                if print_access_exceptions:
++                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": builtin_varname=" + f.space.str_w(w_varname)
++                            
++                if throw_access_exceptions:
++                    #SRW TODO: raise
++                    pass
++                else:
++                    f._load_global_failed(w_varname)
+         return w_value
+     _load_global._always_inline_ = True
+ 
+@@ -733,7 +886,18 @@ class __extend__(pyframe.PyFrame):
+         w_attributename = f.getname_w(nameindex)
+         w_obj = f.popvalue()
+         w_value = f.space.getattr(w_obj, w_attributename)
+-        f.pushvalue(w_value)
++        if namecheck_load(f,w_value):
++            f.pushvalue(w_value)
++        else:
++            if print_access_exceptions:
++                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": attrname=" + f.space.str_w(w_attributename)
++                
++            if throw_access_exceptions:
++                #SRW TODO: raise
++                pass
++            else:
++                f.pushvalue(f.space.w_None) #TODO: Can we do better than this?
++
+     LOAD_ATTR._always_inline_ = True
+ 
+     def cmp_lt(f, w_1, w_2):  return f.space.lt(w_1, w_2)
+@@ -782,9 +946,21 @@ class __extend__(pyframe.PyFrame):
+         if w_import is None:
+             raise OperationError(space.w_ImportError,
+                                  space.wrap("__import__ not found"))
+-        w_locals = f.w_locals
+-        if w_locals is None:            # CPython does this
+-            w_locals = space.w_None
++                                 
++        # w_locals is not passed through to __import__ because it isn't used there
++        # instead, we take advantage of it to pass through the current __nametoken__
++        try: # check against __nametoken__
++            w_frameglobals_nametoken = f.space.getitem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN))
++            w_locals = f.space.newdict()
++            space.set_str_keyed_item(w_locals, f.space.wrap(SLOTNAME_NAMETOKEN), w_frameglobals_nametoken)
++        except OperationError, e:
++            if not e.match(f.space, f.space.w_KeyError):
++                raise
++            # former pypy code:
++            w_locals = f.w_locals
++            if w_locals is None:            # CPython does this
++                w_locals = space.w_None
++
+         w_modulename = space.wrap(modulename)
+         w_globals = f.w_globals
+         if w_flag is None:
+@@ -849,6 +1025,16 @@ class __extend__(pyframe.PyFrame):
+             f.popvalue()
+             next_instr += jumpby
+         else:
++            if not namecheck_load(f,w_nextitem):
++                if print_access_exceptions:
++                    print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name)
++                    
++                if not throw_access_exceptions:
++                    w_nextitem = f.space.w_None #TODO: Can we do better than this?
++                else:
++                    #SRW TODO: raise
++                    pass                
++
+             f.pushvalue(w_nextitem)
+         return next_instr
+ 
+@@ -942,8 +1128,10 @@ class __extend__(pyframe.PyFrame):
+         w_codeobj = f.popvalue()
+         codeobj = f.space.interp_w(PyCode, w_codeobj)
+         defaultarguments = f.popvalues_mutable(numdefaults)
+-        fn = function.Function(f.space, codeobj, f.w_globals, defaultarguments)
+-        f.pushvalue(f.space.wrap(fn))
++        fn = function.Function(f.space, codeobj, f.w_globals, defaultarguments, creator_nametoken=f.space.finditem(f.w_globals, f.space.wrap(SLOTNAME_NAMETOKEN)))
++        w_fn = f.space.wrap(fn)
++        namecheck_store(f, w_fn)
++        f.pushvalue(w_fn)
+ 
+     def BUILD_SLICE(f, numargs, *ignored):
+         if numargs == 3:
+diff --git a/pypy-dist/pypy/module/__builtin__/__init__.py b/pypy-dist/pypy/module/__builtin__/__init__.py
+index f6a7bc3..28d071b 100644
+--- a/pypy-dist/pypy/module/__builtin__/__init__.py
++++ b/pypy-dist/pypy/module/__builtin__/__init__.py
+@@ -53,6 +53,7 @@ class Module(MixedModule):
+         'reload'        : 'app_misc.reload',
+ 
+         '__filestub'    : 'app_file_stub.file',
++        
+     }
+ 
+     interpleveldefs = {
+@@ -112,7 +113,10 @@ class Module(MixedModule):
+         'staticmethod'  : 'descriptor.StaticMethod',
+         'classmethod'   : 'descriptor.ClassMethod',
+         'property'      : 'descriptor.W_Property',
+-
++        
++        'newtoken'      : 'namespace.newtoken',
++        'changetoken'   : 'namespace.changetoken',
++        'set_nametoken' : 'namespace.set_nametoken',
+     }
+ 
+     def pick_builtin(self, w_globals):
+diff --git a/pypy-dist/pypy/module/__builtin__/importing.py b/pypy-dist/pypy/module/__builtin__/importing.py
+index 3beb522..2be1596 100644
+--- a/pypy-dist/pypy/module/__builtin__/importing.py
++++ b/pypy-dist/pypy/module/__builtin__/importing.py
+@@ -13,7 +13,8 @@ from pypy.rlib import streamio
+ from pypy.rlib.streamio import StreamErrors
+ from pypy.rlib.rarithmetic import intmask
+ from pypy.rlib.objectmodel import we_are_translated
+-
++from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, _currentframe_has_access, throw_access_exceptions, print_access_exceptions
++from sys import stderr
+ NOFILE = 0
+ PYFILE = 1
+ PYCFILE = 2
+@@ -75,7 +76,7 @@ def _prepare_module(space, w_mod, filename, pkgdir):
+     if pkgdir is not None:
+         space.setattr(w_mod, w('__path__'), space.newlist([w(pkgdir)]))    
+ 
+-def try_import_mod(space, w_modulename, filepart, w_parent, w_name, pkgdir=None):
++def try_import_mod(space, w_modulename, filepart, w_parent, w_name, w_import_nametoken, pkgdir=None):
+ 
+     # decide what type we want (pyc/py)
+     modtype = find_modtype(space, filepart)
+@@ -85,6 +86,10 @@ def try_import_mod(space, w_modulename, filepart, w_parent, w_name, pkgdir=None)
+ 
+     w = space.wrap
+     w_mod = w(Module(space, w_modulename))
++    # tag module with import_token
++    if not w_import_nametoken is None:
++        space.namespace_table[id(w_mod)] = w_import_nametoken
++    #else: TODO: add objects with (w_import_nametoken == None) to a separate table
+ 
+     try:
+         if modtype == PYFILE:
+@@ -100,12 +105,13 @@ def try_import_mod(space, w_modulename, filepart, w_parent, w_name, pkgdir=None)
+             try:
+                 if modtype == PYFILE:
+                     load_source_module(space, w_modulename, w_mod, filename,
+-                                       stream.readall())
++                                       stream.readall(), w_import_nametoken)
+                 else:
+                     magic = _r_long(stream)
+                     timestamp = _r_long(stream)
+                     load_compiled_module(space, w_modulename, w_mod, filename,
+-                                         magic, timestamp, stream.readall())
++                                         magic, timestamp, stream.readall(),
++                                         w_import_nametoken)
+ 
+             except OperationError, e:
+                 w_mods = space.sys.get('modules')
+@@ -144,15 +150,23 @@ def check_sys_modules(space, w_modulename):
+     try:
+         w_mod = space.getitem(w_modules, w_modulename) 
+     except OperationError, e:
+-        pass
++        if not e.match(space, space.w_KeyError):
++            raise
+     else:
+-        return w_mod
+-    if not e.match(space, space.w_KeyError):
+-        raise
++        if _currentframe_has_access(space, w_mod):
++            return w_mod
++        else:
++            if print_access_exceptions:
++                print >> stderr, "\033[1;31mAccess Error:\033[1;m " + str(sys._getframe().f_code.co_name) + ": modulename=" + space.str_w(w_modulename)
+     return None
+ 
+ def importhook(space, modulename, w_globals=None,
+                w_locals=None, w_fromlist=None, level=-1):
++    # w_locals is not currently used by this function, so it has been 
++    #   expropriated by SRW for 6.893
++    # w_locals may now contain {"__nametoken__": tokenobj} which we will want to
++    #   load into the module's __dict__ as well as the globals under which these
++    #   objects are compiled/created
+     timername = "importhook " + modulename
+     space.timer.start(timername)
+     if not modulename and level < 0: 
+@@ -160,6 +174,31 @@ def importhook(space, modulename, w_globals=None,
+             space.w_ValueError,
+             space.wrap("Empty module name"))
+     w = space.wrap
++    
++    # prepare import_nametoken from w_locals
++    w_import_nametoken = None
++    try:
++        w_import_nametoken = space.getitem(w_locals, space.wrap(SLOTNAME_NAMETOKEN))
++    except OperationError, e:
++        if not (e.match(space, space.w_KeyError) or e.match(space, space.w_TypeError)):
++            raise
++        # if w_locals is None or doesn't contain a __nametoken__ key, we should check the __nametoken__ for the current executioncontext
++        try:
++            w_import_nametoken = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_NAMETOKEN))
++        except OperationError, e:
++            if not e.match(space, space.w_KeyError):
++                raise
++        except IndexError:
++            #print("stack empty??")##SRW
++            w_import_nametoken = None    
++
++    #Victor additions
++    untrusted = False
++    uindex = modulename.find("_untrusted")
++    if uindex != -1:
++        untrusted = True
++        modulename = modulename[:uindex]
++    #end Victor additions
+ 
+     ctxt_name = None
+     if w_globals is not None and not space.is_w(w_globals, space.w_None):
+@@ -192,7 +231,7 @@ def importhook(space, modulename, w_globals=None,
+                 if modulename:
+                     rel_modulename += '.' + modulename
+             baselevel = len(ctxt_name_prefix_parts)
+-            
++
+         if rel_modulename is not None:
+             w_mod = check_sys_modules(space, w(rel_modulename))
+             if (w_mod is None or
+@@ -200,7 +239,8 @@ def importhook(space, modulename, w_globals=None,
+                 
+                 w_mod = absolute_import(space, rel_modulename,
+                                         baselevel,
+-                                        w_fromlist, tentative=1)
++                                        w_fromlist, w_import_nametoken,
++                                        tentative=1)
+                 if w_mod is not None:
+                     space.timer.stop(timername)
+                     return w_mod
+@@ -209,7 +249,44 @@ def importhook(space, modulename, w_globals=None,
+     if level > 0:
+         msg = "Attempted relative import in non-package"
+         raise OperationError(space.w_ValueError, w(msg))
+-    w_mod = absolute_import(space, modulename, 0, w_fromlist, tentative=0)
++    w_mod = absolute_import(space, modulename, 0, w_fromlist, w_import_nametoken, tentative=0)
++
++    # Victor Additions
++    if untrusted:
++        #print modulename + ": " + str(type(w_mod.getdict())) + " " + str(w_mod.getdict())
++        #space.setitem(w_mod.getdict(), space.new_interned_str('badarg'), space.new_interned_str('got it!'))
++        import victor
++        #Copy the module breadth-first to depth fo 14
++        w_mod = victor.fdcop(w_mod,14)
++        #Below not used - future work to explore modifying module builtins
++        """
++        builtins_key = None
++        for k in w_mod.w_dict.content._dict.keys():
++            if hasattr(k.key,'_value') and k.key._value == '__builtins__':
++                builtins_key = k
++                break
++        if builtins_key:
++            id_key = None
++            builtins = w_mod.w_dict.content._dict[builtins_key]
++            keytopop = None
++            for k in builtins.w_dict.content._dict.keys():
++                if hasattr(k.key,'_value'):
++                    if k.key._value == 'eval':
++                        keytopop = k
++                    if k.key._value == 'id':
++                        id_key = k
++            if keytopop and id_key:
++                print 'changing eval to id'
++                builtins.w_dict.content._dict[keytopop] = builtins.w_dict.content._dict[id_key]
++        """
++        #import copy
++        #w_mybuiltin = copy.copy(space.builtin)
++        #from pypy.objspace.std.dictobject import W_DictObject
++        #w_mydict = W_DictObject(space,space.builtin.w_dict)
++        #w_mod.w_dict.set_str_keyed_item(space.new_interned_str('__builtins__'),w_mybuiltin)
++        #del w_mybuiltin.w_dict.content[space.new_interned_str('eval')]
++    #end Victor Additions
++
+     if rel_modulename is not None:
+         space.setitem(space.sys.get('modules'), w(rel_modulename),space.w_None)
+     space.timer.stop(timername)
+@@ -217,16 +294,16 @@ def importhook(space, modulename, w_globals=None,
+ #
+ importhook.unwrap_spec = [ObjSpace, str, W_Root, W_Root, W_Root, int]
+ 
+-def absolute_import(space, modulename, baselevel, w_fromlist, tentative):
++def absolute_import(space, modulename, baselevel, w_fromlist, w_import_nametoken, tentative):
+     lock = getimportlock(space)
+     lock.acquire_lock()
+     try:
+         return _absolute_import(space, modulename, baselevel,
+-                                w_fromlist, tentative)
++                                w_fromlist, w_import_nametoken, tentative)
+     finally:
+         lock.release_lock()
+ 
+-def _absolute_import(space, modulename, baselevel, w_fromlist, tentative):
++def _absolute_import(space, modulename, baselevel, w_fromlist, w_import_nametoken, tentative):
+     w = space.wrap
+     
+     w_mod = None
+@@ -241,7 +318,7 @@ def _absolute_import(space, modulename, baselevel, w_fromlist, tentative):
+ 
+     for part in parts:
+         w_mod = load_part(space, w_path, prefix, part, w_mod,
+-                          tentative=tentative)
++                          w_import_nametoken, tentative=tentative)
+         if w_mod is None:
+             return None
+ 
+@@ -262,12 +339,12 @@ def _absolute_import(space, modulename, baselevel, w_fromlist, tentative):
+             for w_name in fromlist_w:
+                 if try_getattr(space, w_mod, w_name) is None:
+                     load_part(space, w_path, prefix, space.str_w(w_name), w_mod,
+-                              tentative=1)
++                              w_import_nametoken, tentative=1)
+         return w_mod
+     else:
+         return first
+-
+-def load_part(space, w_path, prefix, partname, w_parent, tentative):
++        
++def load_part(space, w_path, prefix, partname, w_parent, w_import_nametoken, tentative):
+     w_find_module = space.getattr(space.builtin, space.wrap("_find_module"))
+     w = space.wrap
+     modulename = '.'.join(prefix + [partname])
+@@ -277,6 +354,7 @@ def load_part(space, w_path, prefix, partname, w_parent, tentative):
+         if not space.is_w(w_mod, space.w_None):
+             return w_mod
+     else:
++        #TODO: should this be disabled to prevent token-annotated imports, or do we let the programmer make that decision?
+         # Examin importhooks (PEP302) before doing the import
+         if w_path is not None:
+             w_loader  = space.call_function(w_find_module, w_modulename, w_path)
+@@ -300,6 +378,7 @@ def load_part(space, w_path, prefix, partname, w_parent, tentative):
+                     fn = os.path.join(dir, '__init__')
+                     w_mod = try_import_mod(space, w_modulename, fn,
+                                            w_parent, w(partname),
++                                           w_import_nametoken,
+                                            pkgdir=dir)
+                     if w_mod is not None:
+                         return w_mod
+@@ -309,7 +388,7 @@ def load_part(space, w_path, prefix, partname, w_parent, tentative):
+                         space.warn(msg, space.w_ImportWarning)
+                 fn = dir
+                 w_mod = try_import_mod(space, w_modulename, fn, w_parent,
+-                                       w(partname))
++                                       w(partname), w_import_nametoken)
+                 if w_mod is not None:
+                     return w_mod
+ 
+@@ -437,15 +516,17 @@ def get_pyc_magic(space):
+ def parse_source_module(space, pathname, source):
+     """ Parse a source file and return the corresponding code object """
+     ec = space.getexecutioncontext()
++    #TODO: insert nametoken in globals here in the event creation of code object
+     pycode = ec.compiler.compile(source, pathname, 'exec', 0)
+     return pycode
+ 
+ def load_source_module(space, w_modulename, w_mod, pathname, source,
+-                       write_pyc=True):
++                       w_import_nametoken, write_pyc=True):
+     """
+     Load a source module from a given file and return its module
+     object.
+     """
++    #TODO: tag with nametoken
+     pycode = parse_source_module(space, pathname, source)
+ 
+     if space.config.objspace.usepycfiles and write_pyc:
+@@ -458,6 +539,11 @@ def load_source_module(space, w_modulename, w_mod, pathname, source,
+     space.call_method(w_dict, 'setdefault',
+                       w('__builtins__'),
+                       w(space.builtin))
++    if not w_import_nametoken is None:
++        # set __nametoken__
++        space.call_method(w_dict, 'setdefault',
++                          w(SLOTNAME_NAMETOKEN),
++                          w_import_nametoken)
+     pycode.exec_code(space, w_dict, w_dict)
+ 
+     return w_mod
+@@ -514,11 +600,14 @@ def check_compiled_module(space, pycfilename, expected_mtime=0):
+         return False
+     return True
+ 
+-def read_compiled_module(space, cpathname, strbuf):
++def read_compiled_module(space, cpathname, strbuf, w_import_nametoken):
+     """ Read a code object from a file and check it for validity """
+     
+     w_marshal = space.getbuiltinmodule('marshal')
++    #TODO: load __nametokens__ into whatever global this is executed under, or tag recursively after-the-fact...somehow?
++    ##TODO: Do code objects need tagging? argubly yes for closures...
+     w_code = space.call_method(w_marshal, 'loads', space.wrap(strbuf))
++    #TODO: tag with nametoken
+     pycode = space.interpclass_w(w_code)
+     if pycode is None or not isinstance(pycode, Code):
+         raise OperationError(space.w_ImportError, space.wrap(
+@@ -526,7 +615,7 @@ def read_compiled_module(space, cpathname, strbuf):
+     return pycode
+ 
+ def load_compiled_module(space, w_modulename, w_mod, cpathname, magic,
+-                         timestamp, source):
++                         timestamp, source, w_import_nametoken):
+     """
+     Load a module from a compiled file, execute it, and return its
+     module object.
+@@ -536,15 +625,29 @@ def load_compiled_module(space, w_modulename, w_mod, cpathname, magic,
+         raise OperationError(space.w_ImportError, w(
+             "Bad magic number in %s" % cpathname))
+     #print "loading pyc file:", cpathname
+-    code_w = read_compiled_module(space, cpathname, source)
++
++    code_w = read_compiled_module(space, cpathname, source, w_import_nametoken)
+     #if (Py_VerboseFlag)
+     #    PySys_WriteStderr("import %s # precompiled from %s\n",
+     #        name, cpathname);
++
+     w_dic = space.getattr(w_mod, w('__dict__'))
++    #Victor
++    #if space.unwrap(w_modulename) == 'victor':
++    #    print "load_source_module call_method: " + str(w_dic)
+     space.call_method(w_dic, 'setdefault', 
+                       w('__builtins__'), 
+                       w(space.builtin))
++    if not w_import_nametoken is None:
++        # set __nametoken__
++        space.call_method(w_dic, 'setdefault',
++                          w(SLOTNAME_NAMETOKEN),
++                          w_import_nametoken)
++    #if space.unwrap(w_modulename) == 'victor':
++    #    print "load_source_module EXIT call_method: " + str(w_dic)
+     code_w.exec_code(space, w_dic, w_dic)
++    #if space.unwrap(w_modulename) == 'victor':
++    #    print "load_source_module EXIT code_w.exec_code: " + str(w_dic)
+     return w_mod
+ 
+ 
+diff --git a/pypy-dist/pypy/module/__builtin__/namespace.py b/pypy-dist/pypy/module/__builtin__/namespace.py
+new file mode 100644
+index 0000000..922b720
+--- /dev/null
++++ b/pypy-dist/pypy/module/__builtin__/namespace.py
+@@ -0,0 +1,68 @@
++#
++#  namespace.py
++#  pypy_xcode
++#
++#  Created by Stephen Woodrow on 06/12/09.
++#  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
++#
++
++from pypy.objspace.std.nametokenobject import W_NametokenObject
++from pypy.interpreter import gateway, buffer
++from pypy.interpreter.baseobjspace import ObjSpace
++from pypy.objspace.std import StdObjSpace
++from pypy.interpreter.error import OperationError
++from pypy.rlib.runicode import UNICHR
++import __builtin__
++from pypy.module.__builtin__.namespace_helpers import SLOTNAME_ALLTOKENS, SLOTNAME_NAMETOKEN, _currentframe_has_access
++
++NoneNotWrapped = gateway.NoneNotWrapped
++Buffer = buffer.Buffer
++
++def newtoken(space, w_tokenkey_str):
++    w_newtok = W_NametokenObject()
++    _changetoken(space,w_newtok,w_newtok) # make self-owned
++
++    try: # get reference to __alltokens__ from frame globals
++        w_frameglobals_alltokens = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_ALLTOKENS))
++    except OperationError, e:
++        if e.match(space, space.w_KeyError):
++            w_frameglobals_alltokens = space.newdict() # instantiate __alltokens__
++            space.set_str_keyed_item(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_ALLTOKENS), w_frameglobals_alltokens)
++            #w_frameglobals_alltokens = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_ALLTOKENS))
++        else:
++            raise
++    finally:
++        space.set_str_keyed_item(w_frameglobals_alltokens, w_tokenkey_str, w_newtok)
++            
++    return w_newtok
++    
++    
++def changetoken(space,w_obj,w_token):
++    # ASSUMPTION: if caller can pass a reference to w_token, it has permission to use it
++    # check that w_obj is NOT a nametoken object (don't allow a token to change it's self-ownership)
++    if isinstance(w_obj, W_NametokenObject):
++        return space.w_False
++    # check that w_token is a nametoken object
++    if not isinstance(w_token, W_NametokenObject):
++        return space.w_False
++    # check that the caller has permission to change
++    if not _currentframe_has_access(space, w_obj):
++        return space.w_False
++    _changetoken(space, w_obj, w_token)
++    return space.w_True
++        
++def _changetoken(space, w_obj, w_token):
++    """Internal (interp-level) implementation of changetoken that doesn't check the existing owner -- use this wisely"""
++    try:
++        space.namespace_table[id(w_obj)] = w_token
++    except NameError or TypeError: # space.namespace_table not yet instantiated
++        space.namespace_table = {}
++        space.namespace_table[id(w_obj)] = w_token
++       
++def set_nametoken(space, w_token):
++    # assume that caller has access to w_token by virtue of being able to get it on the stack
++    # check that w_token is a nametoken object
++    if not isinstance(w_token, W_NametokenObject):
++        return space.w_False
++    space.setitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_NAMETOKEN), w_token)
++    return space.w_True
+diff --git a/pypy-dist/pypy/module/__builtin__/namespace_helpers.py b/pypy-dist/pypy/module/__builtin__/namespace_helpers.py
+new file mode 100644
+index 0000000..44087f1
+--- /dev/null
++++ b/pypy-dist/pypy/module/__builtin__/namespace_helpers.py
+@@ -0,0 +1,40 @@
++#
++#  namespace_helpers.py
++#  pypy
++
++from pypy.interpreter.baseobjspace import W_Root, ObjSpace
++from pypy.interpreter.error import OperationError
++
++# "constants"
++SLOTNAME_ALLTOKENS = "__alltokens__"
++SLOTNAME_NAMETOKEN = "__nametoken__"
++
++# if false, throw "not found" exceptions and return None
++# if true, throw access exceptions
++# ALSO: change in nestedscope.py
++throw_access_exceptions = False ##DO NOT set = True -- this will break lots of stuff!
++print_access_exceptions = True
++
++def _currentframe_has_access(space, w_obj):
++    """Return a boolean result about whether the current frame has access to the given object"""
++    try:
++        w_objtoken = space.namespace_table[id(w_obj)]
++    except KeyError:
++        return True #!!!: this means that an object with no token is open -- this seems reasonable for functionality's sake
++    
++    try: # check against __nametoken__
++        w_frameglobals_nametoken = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_NAMETOKEN))
++        if space.is_w(w_objtoken, w_frameglobals_nametoken):
++            return True
++    except OperationError, e:
++        if not e.match(space, space.w_KeyError):
++            raise
++    
++    try: # check against __alltokens__
++        w_frameglobals_alltokens = space.getitem(space.getexecutioncontext().framestack.top().w_globals, space.wrap(SLOTNAME_ALLTOKENS))
++        return w_objtoken in space.unpackiterable(space.call_function(space.getattr(w_frameglobals_alltokens,space.wrap("values"))))
++    except OperationError, e:
++ #       if not e.match(space, space.w_KeyError):
++ #           raise
++        return False
++ #   return False
+\ No newline at end of file
+diff --git a/pypy-dist/pypy/nametest.py b/pypy-dist/pypy/nametest.py
+new file mode 100644
+index 0000000..db798b2
+--- /dev/null
++++ b/pypy-dist/pypy/nametest.py
+@@ -0,0 +1,15 @@
++myname = __name__ + " (nametest.py)"
++print("\n"*2 + myname + "\n" + "="*len(myname))
++
++_nametest_secret = "The Magic Words are Squeamish Ossifrage."
++
++import nametest_trust
++
++myname = __name__ + " (nametest.py)"
++print("\n"*2 + myname + "\n" + "="*len(myname))
++
++filenames = ["/tmp/trusted.txt", "/tmp/notrust.txt"]
++for name in filenames:
++    f = open(name, "r")
++    print(name + ": " + f.readline().strip())
++    f.close()
+\ No newline at end of file
+diff --git a/pypy-dist/pypy/nametest_notrust.py b/pypy-dist/pypy/nametest_notrust.py
+new file mode 100644
+index 0000000..0d773a0
+--- /dev/null
++++ b/pypy-dist/pypy/nametest_notrust.py
+@@ -0,0 +1,43 @@
++myname = __name__ + " (nametest_notrust.py)"
++print("\n"*2 + myname + "\n" + "="*len(myname))
++
++print("id(globals.__nametoken__)=" + str(id(__nametoken__)))
++
++def filewrite(open_func):
++    print("\n" + ">>>> filewrite(open_func):")
++    f = open_func("notrust.txt", "w")
++    f.write(str(id(__nametoken__)) + "-untrusted.\n")
++    f.close()
++    print("untrusted module wrote file to /tmp/notrust.txt")
++    print("\n" + "NOW, let's look inside...")
++    print("open_func.func_closure: " + str(open_func.func_closure))
++    
++    if open_func.func_closure is not None:
++        for obj in open_func.func_closure:
++            print(" "*2+str(obj)+".cell_contents: " + str(obj.cell_contents))
++            print(" "*2+"id("+str(obj)+".cell_contents): " + str(id(obj.cell_contents)))
++
++    #compare with __builtins__.open, which is currently unrestricted -- this would need to be dealt with in future
++    print("\n" + "__builtins__.open: " + str(__builtins__.open))
++    print("id(__builtins__.open): " + str(id(__builtins__.open)))
++
++    print("\n" + "open_func.func_code: " + str(open_func.func_code))
++    
++def getsecrets():
++    print("\n" + ">>>> getsecrets():")
++    import sys
++    try:
++        print("""sys.modules["nametest"].__dict__["_nametest_secret"]: """ + str(sys.modules["nametest"].__dict__["_nametest_secret"]))
++    except KeyError:
++        try:
++            print("""sys.modules["__main__"].__dict__["_nametest_secret"]: """ + str(sys.modules["__main__"].__dict__["_nametest_secret"]))
++        except KeyError:
++            print("couldn't access '_nametest_secret'")
++            
++    try:
++        print("""sys.modules["nametest_trust"].__dict__["_nametest_trust_secret"]: """ + str(sys.modules["nametest_trust"].__dict__["_nametest_trust_secret"]))
++    except KeyError:
++        print("couldn't access '_nametest_trust_secret'")
++            
++    
++    
+\ No newline at end of file
+diff --git a/pypy-dist/pypy/nametest_trust.py b/pypy-dist/pypy/nametest_trust.py
+new file mode 100644
+index 0000000..afe8dcf
+--- /dev/null
++++ b/pypy-dist/pypy/nametest_trust.py
+@@ -0,0 +1,48 @@
++myname = __name__ + " (nametest_trust.py)"
++print("\n"*2 + myname + "\n" + "="*len(myname))
++
++def restricted_open(f_open, basepath):
++    def ropen(filename, mode='r', bufsize=-1):
++        from os import path
++        rpath = path.join(basepath, path.normpath(filename))
++        return f_open(rpath, mode, bufsize)
++    return ropen
++
++trusted_token = newtoken("trusted")
++print("id(trusted_token)=" + str(id(trusted_token)))
++set_nametoken(trusted_token)
++print("id(globals.__nametoken__)=" + str(id(__nametoken__)))
++untrusted_token = newtoken("untrusted")
++print("id(untrusted_token)=" + str(id(untrusted_token)))
++
++_nametest_trust_secret = "Mum's the word."
++
++ropen_tester = restricted_open(open,"/tmp")
++f = ropen_tester("trusted.txt", "w")
++f.write(str(id(__nametoken__)) + "-trusted.\n")
++f.close()
++print("trusted module wrote file to /tmp/trusted.txt")
++print("\n" + "NOW, let's look inside...")
++print("ropen_tester.func_closure: " + str(ropen_tester.func_closure))
++
++if ropen_tester.func_closure is not None:
++    for obj in ropen_tester.func_closure:
++        print(" "*2+str(obj)+".cell_contents: " + str(obj.cell_contents))
++        print(" "*2+"id("+str(obj)+".cell_contents): " + str(id(obj.cell_contents)))
++
++#compare with __builtins__.open
++print("\n" + "__builtins__.open: " + str(__builtins__.open))
++print("id(__builtins__.open): " + str(id(__builtins__.open)))
++
++print("\n" + "ropen_tester.func_code: " + str(ropen_tester.func_code))
++
++
++##########
++
++untrusted_module = __import__("nametest_notrust", globals(), {"__nametoken__": untrusted_token})
++
++untrusted_module.getsecrets()
++
++ropen = restricted_open(open, "/tmp")
++#print("changetoken=" + str(changetoken(ropen, untrusted_token)))
++untrusted_module.filewrite(ropen)
+diff --git a/pypy-dist/pypy/objspace/std/model.py b/pypy-dist/pypy/objspace/std/model.py
+index 8cab3a7..c9b35ea 100644
+--- a/pypy-dist/pypy/objspace/std/model.py
++++ b/pypy-dist/pypy/objspace/std/model.py
+@@ -57,6 +57,7 @@ class StdTypeModel:
+         # imported here.  This registers them into the multimethod tables,
+         # *before* the type objects are built from these multimethod tables.
+         from pypy.objspace.std import objectobject
++        from pypy.objspace.std import nametokenobject
+         from pypy.objspace.std import boolobject
+         from pypy.objspace.std import intobject
+         from pypy.objspace.std import floatobject
+@@ -90,6 +91,7 @@ class StdTypeModel:
+         # the set of implementation types
+         self.typeorder = {
+             objectobject.W_ObjectObject: [],
++            nametokenobject.W_NametokenObject: [],
+             boolobject.W_BoolObject: [],
+             intobject.W_IntObject: [],
+             floatobject.W_FloatObject: [],
+diff --git a/pypy-dist/pypy/objspace/std/nametokenobject.py b/pypy-dist/pypy/objspace/std/nametokenobject.py
+new file mode 100644
+index 0000000..52c0a2b
+--- /dev/null
++++ b/pypy-dist/pypy/objspace/std/nametokenobject.py
+@@ -0,0 +1,12 @@
++from pypy.objspace.std.objspace import *
++
++
++class W_NametokenObject(W_Object):
++    """Instances of this class are what the user can directly see with an
++    'nametokenobject()' call."""
++    from pypy.objspace.std.nametokentype import nametoken_typedef as typedef
++
++# ____________________________________________________________
++
++
++register_all(vars())
+diff --git a/pypy-dist/pypy/objspace/std/nametokentype.py b/pypy-dist/pypy/objspace/std/nametokentype.py
+new file mode 100644
+index 0000000..ce823c7
+--- /dev/null
++++ b/pypy-dist/pypy/objspace/std/nametokentype.py
+@@ -0,0 +1,187 @@
++from pypy.interpreter.error import OperationError
++from pypy.objspace.descroperation import Object
++from pypy.interpreter import gateway
++from pypy.interpreter.typedef import default_identity_hash
++from pypy.objspace.std.stdtypedef import *
++from pypy.objspace.std.register_all import register_all
++from pypy.objspace.std.objspace import StdObjSpace
++
++
++def descr__repr__(space, w_obj):
++    w = space.wrap
++    w_type = space.type(w_obj)
++    classname = w_type.getname(space, '?')
++    w_module = w_type.lookup("__module__")
++    if w_module is not None:
++        try:
++            modulename = space.str_w(w_module)
++        except OperationError, e:
++            if not e.match(space, space.w_TypeError):
++                raise
++        else:
++            classname = '%s.%s' % (modulename, classname)
++    return w_obj.getrepr(space, '%s object' % (classname,))
++
++def descr__str__(space, w_obj):
++    return space.repr(w_obj)
++
++def descr__class__(space, w_obj):
++    return space.type(w_obj)
++
++def descr_set___class__(space, w_obj, w_newcls):
++    from pypy.objspace.std.typeobject import W_TypeObject
++    if not isinstance(w_newcls, W_TypeObject):
++        raise OperationError(space.w_TypeError,
++                             space.wrap("__class__ must be set to new-style class, not '%s' object" % 
++                                        space.type(w_newcls).getname(space, '?')))
++    if not w_newcls.is_heaptype():
++        raise OperationError(space.w_TypeError,
++                             space.wrap("__class__ assignment: only for heap types"))
++    w_oldcls = space.type(w_obj)
++    # XXX taint space should raise a TaintError here if w_oldcls is tainted
++    assert isinstance(w_oldcls, W_TypeObject)
++    if w_oldcls.get_full_instance_layout() == w_newcls.get_full_instance_layout():
++        w_obj.setclass(space, w_newcls)
++    else:
++        raise OperationError(space.w_TypeError,
++                             space.wrap("__class__ assignment: '%s' object layout differs from '%s'" %
++                                        (w_oldcls.getname(space, '?'), w_newcls.getname(space, '?'))))
++    
++
++def descr__new__(space, w_type, __args__):
++    from pypy.objspace.std.nametokenobject import W_NametokenObject
++    from pypy.objspace.std.typetype import _precheck_for_new
++    # don't allow arguments if the default object.__init__() is about
++    # to be called
++    w_type = _precheck_for_new(space, w_type)
++    w_parentinit, w_ignored = w_type.lookup_where('__init__')
++    if w_parentinit is space.w_object:
++        try:
++            __args__.fixedunpack(0)
++        except ValueError:
++            raise OperationError(space.w_TypeError,
++                                 space.wrap("default __new__ takes "
++                                            "no parameters"))
++    w_obj = space.allocate_instance(W_NametokenObject, w_type)
++    #W_ObjectObject.__init__(w_obj)
++    return w_obj
++
++def descr__init__(space, w_obj, __args__):
++    pass
++
++def descr__reduce__(space, w_obj, proto=0):
++    if proto >= 2:
++        return reduce_2(space, w_obj)
++    w_proto = space.wrap(proto)
++    return reduce_1(space, w_obj, w_proto)
++
++def descr__reduce_ex__(space, w_obj, proto=0):
++    w_st_reduce = space.wrap('__reduce__')
++    w_reduce = space.findattr(w_obj, w_st_reduce)
++    if w_reduce is not None:
++        w_cls = space.getattr(w_obj, space.wrap('__class__'))
++        w_cls_reduce_meth = space.getattr(w_cls, w_st_reduce)
++        w_cls_reduce = space.getattr(w_cls_reduce_meth, space.wrap('im_func'))
++        w_objtype = space.w_object
++        w_obj_dict = space.getattr(w_objtype, space.wrap('__dict__'))
++        w_obj_reduce = space.getitem(w_obj_dict, w_st_reduce)
++        override = not space.is_w(w_cls_reduce, w_obj_reduce)
++        # print 'OVR', override, w_cls_reduce, w_obj_reduce
++        if override:
++            return space.call(w_reduce, space.newtuple([]))
++    return descr__reduce__(space, w_obj, proto)
++
++app = gateway.applevel(r'''
++def reduce_1(obj, proto):
++    import copy_reg
++    return copy_reg._reduce_ex(obj, proto)
++
++def reduce_2(obj):
++    cls = obj.__class__
++
++    try:
++        getnewargs = obj.__getnewargs__
++    except AttributeError:
++        args = ()
++    else:
++        args = getnewargs()
++        if not isinstance(args, tuple):
++            raise TypeError, "__getnewargs__ should return a tuple"
++
++    try:
++        getstate = obj.__getstate__
++    except AttributeError:
++        state = getattr(obj, "__dict__", None)
++        names = slotnames(cls) # not checking for list
++        if names is not None:
++            slots = {}
++            for name in names:
++                try:
++                    value = getattr(obj, name)
++                except AttributeError:
++                    pass
++                else:
++                    slots[name] =  value
++            if slots:
++                state = state, slots
++    else:
++        state = getstate()
++
++    if isinstance(obj, list):
++        listitems = iter(obj)
++    else:
++        listitems = None
++
++    if isinstance(obj, dict):
++        dictitems = obj.iteritems()
++    else:
++        dictitems = None
++
++    import copy_reg
++    newobj = copy_reg.__newobj__
++
++    args2 = (cls,) + args
++    return newobj, args2, state, listitems, dictitems
++
++def slotnames(cls):
++    if not isinstance(cls, type):
++        return None
++
++    try:
++        return cls.__dict__["__slotnames__"]
++    except KeyError:
++        pass
++
++    import copy_reg
++    slotnames = copy_reg._slotnames(cls)
++    if not isinstance(slotnames, list) and slotnames is not None:
++        raise TypeError, "copy_reg._slotnames didn't return a list or None"
++    return slotnames
++''', filename=__file__)
++
++reduce_1 = app.interphook('reduce_1') 
++reduce_2 = app.interphook('reduce_2')
++
++# ____________________________________________________________
++
++nametoken_typedef = StdTypeDef("nametoken",
++    __getattribute__ = gateway.interp2app(Object.descr__getattribute__.im_func),
++    __setattr__ = gateway.interp2app(Object.descr__setattr__.im_func),
++    __delattr__ = gateway.interp2app(Object.descr__delattr__.im_func),
++    __str__ = gateway.interp2app(descr__str__),
++    __repr__ = gateway.interp2app(descr__repr__),
++    __class__ = GetSetProperty(descr__class__, descr_set___class__),
++    __doc__ = '''Namespace capability token''',
++    __new__ = newmethod(descr__new__,
++                        unwrap_spec = [gateway.ObjSpace,gateway.W_Root,gateway.Arguments]),
++    __hash__ = gateway.interp2app(default_identity_hash),
++    __reduce_ex__ = gateway.interp2app(descr__reduce_ex__,
++                                  unwrap_spec=[gateway.ObjSpace,gateway.W_Root,int]),
++    __reduce__ = gateway.interp2app(descr__reduce__,
++                                  unwrap_spec=[gateway.ObjSpace,gateway.W_Root,int]),
++    __init__ = gateway.interp2app(descr__init__,
++                                  unwrap_spec=[gateway.ObjSpace,gateway.W_Root,gateway.Arguments]),
++    )
++
++nametoken_typedef.custom_hash = False    # object.__hash__ is not a custom hash
++nametoken_typedef.acceptable_as_base_class = False
+\ No newline at end of file
+diff --git a/pypy-dist/pypy/vtrust.py b/pypy-dist/pypy/vtrust.py
+new file mode 100644
+index 0000000..750f8e4
+--- /dev/null
++++ b/pypy-dist/pypy/vtrust.py
+@@ -0,0 +1,8 @@
++class c:
++    l = [1,2,3]
++    t = (1,2,3)
++
++i1 = c()
++i2 = c()
++
++nl = {i1:i2}
+diff --git a/pypy-dist/pypy/vy.py b/pypy-dist/pypy/vy.py
+new file mode 100644
+index 0000000..221c6a5
+--- /dev/null
++++ b/pypy-dist/pypy/vy.py
+@@ -0,0 +1,25 @@
++import sys, vtrust
++
++def destroy():
++    #print dir()
++    #print id(globals()['sys'])
++    #print id(sys)
++    #print locals()
++    sys.version = "gotcha!"
++    sys.stdin = None
++    print "trying to destroy your env."
++
++def evil():
++    print "sneaky eval"
++    r = eval('1+2')
++    print r
++
++def destroyout():
++    print "setting stdout to None!"
++    sys.stdout = None
++
++def hurtvtrust():
++    vtrust.c.l.append(4)
++    vtrust.c.t = ()
++    vtrust.i1.trick = "tricked you!"
++    print "Erase vtrust.c.t, append to vtrust.c.l, insert 'trick' attribute to i1."
